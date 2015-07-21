@@ -1,0 +1,5700 @@
+{
+  "stations": [
+    {
+      "mandator": "CAG",
+      "number": 858,
+      "displayName": "Rußdorf, Kindergarten",
+      "latitude": 50.8536168,
+      "longitude": 12.73808095,
+      "id": "CAG-858"
+    },
+    {
+      "mandator": "CAG",
+      "number": 859,
+      "displayName": "Limb.-O., Kreuzstraße",
+      "latitude": 50.854507749999996,
+      "longitude": 12.7406593,
+      "id": "CAG-859"
+    },
+    {
+      "mandator": "CAG",
+      "number": 856,
+      "displayName": "Rußdorf, Turnerheim",
+      "latitude": 50.84908445,
+      "longitude": 12.723325549999998,
+      "id": "CAG-856"
+    },
+    {
+      "mandator": "CAG",
+      "number": 857,
+      "displayName": "Rußdorf, Meinsd. Straße",
+      "latitude": 50.8509264,
+      "longitude": 12.730844300000001,
+      "id": "CAG-857"
+    },
+    {
+      "mandator": "CAG",
+      "number": 862,
+      "displayName": "Hoh.-E., Schwimmhalle",
+      "latitude": 50.7964997,
+      "longitude": 12.7068022,
+      "id": "CAG-862"
+    },
+    {
+      "mandator": "CAG",
+      "number": 863,
+      "displayName": "Hoh.-E., Logenstraße",
+      "latitude": 50.7977211,
+      "longitude": 12.7140369,
+      "id": "CAG-863"
+    },
+    {
+      "mandator": "CAG",
+      "number": 860,
+      "displayName": "Limb.-O., Polizeirevier",
+      "latitude": 50.8556097,
+      "longitude": 12.74415835,
+      "id": "CAG-860"
+    },
+    {
+      "mandator": "CAG",
+      "number": 861,
+      "displayName": "Kändler, Am Mühlgraben",
+      "latitude": 50.8520592,
+      "longitude": 12.78794905,
+      "id": "CAG-861"
+    },
+    {
+      "mandator": "CAG",
+      "number": 866,
+      "displayName": "Limb.-O, Gym. Hohenstein",
+      "latitude": 50.8548181,
+      "longitude": 12.7755275,
+      "id": "CAG-866"
+    },
+    {
+      "mandator": "CAG",
+      "number": 867,
+      "displayName": "Bräunsdorf, Am Pfarrholz",
+      "latitude": 50.8650008,
+      "longitude": 12.7173981,
+      "id": "CAG-867"
+    },
+    {
+      "mandator": "CAG",
+      "number": 864,
+      "displayName": "Hoh.-E., Pestalozzischul",
+      "latitude": 50.8014981,
+      "longitude": 12.7153714,
+      "id": "CAG-864"
+    },
+    {
+      "mandator": "CAG",
+      "number": 865,
+      "displayName": "Limb, Gym. Pleißaer Stra",
+      "latitude": 50.8547169,
+      "longitude": 12.7735289,
+      "id": "CAG-865"
+    },
+    {
+      "mandator": "CAG",
+      "number": 870,
+      "displayName": "Bräunsdorf, Wendeschleif",
+      "latitude": 50.8707833,
+      "longitude": 12.697685,
+      "id": "CAG-870"
+    },
+    {
+      "mandator": "CAG",
+      "number": 871,
+      "displayName": "Bräunsdorf, Schule",
+      "latitude": 50.871815549999994,
+      "longitude": 12.70259485,
+      "id": "CAG-871"
+    },
+    {
+      "mandator": "CAG",
+      "number": 868,
+      "displayName": "Bräunsdorf, ob. Dorfstra",
+      "latitude": 50.8676792,
+      "longitude": 12.7108856,
+      "id": "CAG-868"
+    },
+    {
+      "mandator": "CAG",
+      "number": 869,
+      "displayName": "Bräunsdorf, Kaufhalle",
+      "latitude": 50.8708347,
+      "longitude": 12.7103472,
+      "id": "CAG-869"
+    },
+    {
+      "mandator": "CAG",
+      "number": 843,
+      "displayName": "Gersdorf, Marktplatz",
+      "latitude": 50.75837455,
+      "longitude": 12.70825555,
+      "id": "CAG-843"
+    },
+    {
+      "mandator": "CAG",
+      "number": 842,
+      "displayName": "Gersdorf, Wehrsteig",
+      "latitude": 50.7525757,
+      "longitude": 12.708836699999999,
+      "id": "CAG-842"
+    },
+    {
+      "mandator": "CAG",
+      "number": 841,
+      "displayName": "Gersdorf, Kaisergrube",
+      "latitude": 50.7497003,
+      "longitude": 12.7108061,
+      "id": "CAG-841"
+    },
+    {
+      "mandator": "CAG",
+      "number": 840,
+      "displayName": "Gersdorf, Gärtnerei",
+      "latitude": 50.748973899999996,
+      "longitude": 12.71756845,
+      "id": "CAG-840"
+    },
+    {
+      "mandator": "CAG",
+      "number": 847,
+      "displayName": "Gersdorf, Gasthof Sonne",
+      "latitude": 50.78140765,
+      "longitude": 12.69836885,
+      "id": "CAG-847"
+    },
+    {
+      "mandator": "CAG",
+      "number": 846,
+      "displayName": "Gersdorf, Untere Schule",
+      "latitude": 50.7747011,
+      "longitude": 12.70240765,
+      "id": "CAG-846"
+    },
+    {
+      "mandator": "CAG",
+      "number": 845,
+      "displayName": "Gersdorf, Badstraße",
+      "latitude": 50.76744305,
+      "longitude": 12.706082250000001,
+      "id": "CAG-845"
+    },
+    {
+      "mandator": "CAG",
+      "number": 844,
+      "displayName": "Gersdorf, Gh Grünes Tal",
+      "latitude": 50.76148275,
+      "longitude": 12.7092028,
+      "id": "CAG-844"
+    },
+    {
+      "mandator": "CAG",
+      "number": 851,
+      "displayName": "Oberlungwitz, Humboldtsc",
+      "latitude": 50.7849635,
+      "longitude": 12.718894599999999,
+      "id": "CAG-851"
+    },
+    {
+      "mandator": "CAG",
+      "number": 850,
+      "displayName": "Oberlungwitz, Sonnenweg",
+      "latitude": 50.7836949,
+      "longitude": 12.712217200000001,
+      "id": "CAG-850"
+    },
+    {
+      "mandator": "CAG",
+      "number": 849,
+      "displayName": "Oberlungwitz, Neue Welt",
+      "latitude": 50.7831571,
+      "longitude": 12.7086399,
+      "id": "CAG-849"
+    },
+    {
+      "mandator": "CAG",
+      "number": 848,
+      "displayName": "Oberl, Abzw. Stollb. Str",
+      "latitude": 50.7823189,
+      "longitude": 12.701473750000002,
+      "id": "CAG-848"
+    },
+    {
+      "mandator": "CAG",
+      "number": 855,
+      "displayName": "Rußdorf, Gasthof Rußdorf",
+      "latitude": 50.8500475,
+      "longitude": 12.7194497,
+      "id": "CAG-855"
+    },
+    {
+      "mandator": "CAG",
+      "number": 854,
+      "displayName": "Rußdorf, Wendeschleife",
+      "latitude": 50.8496028,
+      "longitude": 12.7118986,
+      "id": "CAG-854"
+    },
+    {
+      "mandator": "CAG",
+      "number": 853,
+      "displayName": "Hoh.-E., Lungwitzer Str.",
+      "latitude": 50.7984069,
+      "longitude": 12.7146883,
+      "id": "CAG-853"
+    },
+    {
+      "mandator": "CAG",
+      "number": 852,
+      "displayName": "Oberlungwitz, Post",
+      "latitude": 50.786508600000005,
+      "longitude": 12.7236293,
+      "id": "CAG-852"
+    },
+    {
+      "mandator": "CAG",
+      "number": 888,
+      "displayName": "Pleißa,Pleißenb.Straße 1",
+      "latitude": 50.83093455,
+      "longitude": 12.7567668,
+      "id": "CAG-888"
+    },
+    {
+      "mandator": "CAG",
+      "number": 889,
+      "displayName": "Pleißa, Wendeschleife",
+      "latitude": 50.8296325,
+      "longitude": 12.7505664,
+      "id": "CAG-889"
+    },
+    {
+      "mandator": "CAG",
+      "number": 890,
+      "displayName": "Pleißa, Industriepark We",
+      "latitude": 50.822383599999995,
+      "longitude": 12.75479125,
+      "id": "CAG-890"
+    },
+    {
+      "mandator": "CAG",
+      "number": 891,
+      "displayName": "Wüstenbrand, Bahnhof",
+      "latitude": 50.8060025,
+      "longitude": 12.7565136,
+      "id": "CAG-891"
+    },
+    {
+      "mandator": "CAG",
+      "number": 892,
+      "displayName": "Wüstenbrand,Schubertstra",
+      "latitude": 50.80773,
+      "longitude": 12.7528114,
+      "id": "CAG-892"
+    },
+    {
+      "mandator": "CAG",
+      "number": 893,
+      "displayName": "Wüstenbrand,Lindenhofweg",
+      "latitude": 50.8075257,
+      "longitude": 12.7496839,
+      "id": "CAG-893"
+    },
+    {
+      "mandator": "CAG",
+      "number": 894,
+      "displayName": "An den Heroldteichen",
+      "latitude": 50.80598955,
+      "longitude": 12.742334150000001,
+      "id": "CAG-894"
+    },
+    {
+      "mandator": "CAG",
+      "number": 895,
+      "displayName": "Hoh.-E., Dresdner Straße",
+      "latitude": 50.80432209999999,
+      "longitude": 12.7326493,
+      "id": "CAG-895"
+    },
+    {
+      "mandator": "CAG",
+      "number": 896,
+      "displayName": "Hoh.-E., Oststraße",
+      "latitude": 50.801469049999994,
+      "longitude": 12.7259372,
+      "id": "CAG-896"
+    },
+    {
+      "mandator": "CAG",
+      "number": 897,
+      "displayName": "Hoh.-E., Wiesenstraße",
+      "latitude": 50.8012842,
+      "longitude": 12.720994999999998,
+      "id": "CAG-897"
+    },
+    {
+      "mandator": "CAG",
+      "number": 898,
+      "displayName": "Hoh.-E., Karl-May-Straße",
+      "latitude": 50.8005689,
+      "longitude": 12.7157006,
+      "id": "CAG-898"
+    },
+    {
+      "mandator": "CAG",
+      "number": 899,
+      "displayName": "Hoh.-E., Bahnhof",
+      "latitude": 50.79880888,
+      "longitude": 12.70667498,
+      "id": "CAG-899"
+    },
+    {
+      "mandator": "CAG",
+      "number": 902,
+      "displayName": "Horst-Vieth-Weg",
+      "latitude": 50.8658228,
+      "longitude": 12.8836414,
+      "id": "CAG-902"
+    },
+    {
+      "mandator": "CAG",
+      "number": 873,
+      "displayName": "Bräunsdorf, Rathaus",
+      "latitude": 50.8715142,
+      "longitude": 12.7092194,
+      "id": "CAG-873"
+    },
+    {
+      "mandator": "CAG",
+      "number": 872,
+      "displayName": "Bräunsdorf, Raiffeisenba",
+      "latitude": 50.8723153,
+      "longitude": 12.7060528,
+      "id": "CAG-872"
+    },
+    {
+      "mandator": "CAG",
+      "number": 875,
+      "displayName": "Limb.-O./Bräunsd. Straße",
+      "latitude": 50.86622095,
+      "longitude": 12.7299239,
+      "id": "CAG-875"
+    },
+    {
+      "mandator": "CAG",
+      "number": 874,
+      "displayName": "Bräunsdorf, Am Südhang",
+      "latitude": 50.8705206,
+      "longitude": 12.7149678,
+      "id": "CAG-874"
+    },
+    {
+      "mandator": "CAG",
+      "number": 877,
+      "displayName": "Limb.-O,G.-Hauptm.-Schu.",
+      "latitude": 50.862897950000004,
+      "longitude": 12.740132800000001,
+      "id": "CAG-877"
+    },
+    {
+      "mandator": "CAG",
+      "number": 876,
+      "displayName": "Limb.-O./Wolkenb. Straße",
+      "latitude": 50.864509049999995,
+      "longitude": 12.73578415,
+      "id": "CAG-876"
+    },
+    {
+      "mandator": "CAG",
+      "number": 879,
+      "displayName": "Limb.-O., Autohaus",
+      "latitude": 50.855843050000004,
+      "longitude": 12.755791649999999,
+      "id": "CAG-879"
+    },
+    {
+      "mandator": "CAG",
+      "number": 878,
+      "displayName": "Limb.-O, Frohnbachstraße",
+      "latitude": 50.859268150000005,
+      "longitude": 12.74358375,
+      "id": "CAG-878"
+    },
+    {
+      "mandator": "CAG",
+      "number": 881,
+      "displayName": "Friedhof Hohens. Straße",
+      "latitude": 50.850839449999995,
+      "longitude": 12.77512735,
+      "id": "CAG-881"
+    },
+    {
+      "mandator": "CAG",
+      "number": 880,
+      "displayName": "Limb.-O.,Turmpassage",
+      "latitude": 50.8576993,
+      "longitude": 12.7636957,
+      "id": "CAG-880"
+    },
+    {
+      "mandator": "CAG",
+      "number": 883,
+      "displayName": "Pleißa, Baugeschäft",
+      "latitude": 50.84267665,
+      "longitude": 12.77674455,
+      "id": "CAG-883"
+    },
+    {
+      "mandator": "CAG",
+      "number": 882,
+      "displayName": "Pleißa, Kindergarten",
+      "latitude": 50.84595655,
+      "longitude": 12.7772989,
+      "id": "CAG-882"
+    },
+    {
+      "mandator": "CAG",
+      "number": 885,
+      "displayName": "Pleißa, Rathaus",
+      "latitude": 50.838233349999996,
+      "longitude": 12.768958900000001,
+      "id": "CAG-885"
+    },
+    {
+      "mandator": "CAG",
+      "number": 884,
+      "displayName": "Pleißa, Post",
+      "latitude": 50.8413071,
+      "longitude": 12.7751975,
+      "id": "CAG-884"
+    },
+    {
+      "mandator": "CAG",
+      "number": 887,
+      "displayName": "Pleißa, Abzw. Feldsteig",
+      "latitude": 50.83317705,
+      "longitude": 12.763952249999999,
+      "id": "CAG-887"
+    },
+    {
+      "mandator": "CAG",
+      "number": 886,
+      "displayName": "Pleißa, Schule",
+      "latitude": 50.83642305,
+      "longitude": 12.76695015,
+      "id": "CAG-886"
+    },
+    {
+      "mandator": "CAG",
+      "number": 911,
+      "displayName": "Straßenbahnmuseum",
+      "latitude": 50.8227097,
+      "longitude": 12.8874039,
+      "id": "CAG-911"
+    },
+    {
+      "mandator": "CAG",
+      "number": 904,
+      "displayName": "Wüstenbrand, Rathaus",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-904"
+    },
+    {
+      "mandator": "CAG",
+      "number": 917,
+      "displayName": "Zschopauer-/Annenstraße",
+      "latitude": 50.8297247,
+      "longitude": 12.9265386,
+      "id": "CAG-917"
+    },
+    {
+      "mandator": "CAG",
+      "number": 739,
+      "displayName": "Langenberg, Schule",
+      "latitude": 50.8324364,
+      "longitude": 12.7061203,
+      "id": "CAG-739"
+    },
+    {
+      "mandator": "CAG",
+      "number": 738,
+      "displayName": "Meinsdorf, Wendeschleife",
+      "latitude": 50.8362481,
+      "longitude": 12.7280767,
+      "id": "CAG-738"
+    },
+    {
+      "mandator": "CAG",
+      "number": 737,
+      "displayName": "Rußdorf, Ortseingang",
+      "latitude": 50.8462342,
+      "longitude": 12.7336339,
+      "id": "CAG-737"
+    },
+    {
+      "mandator": "CAG",
+      "number": 736,
+      "displayName": "Hoh.-E., Badbergkurve",
+      "latitude": 50.8015847,
+      "longitude": 12.7033031,
+      "id": "CAG-736"
+    },
+    {
+      "mandator": "CAG",
+      "number": 743,
+      "displayName": "Ebertmühle",
+      "latitude": 50.87015805,
+      "longitude": 12.65791685,
+      "id": "CAG-743"
+    },
+    {
+      "mandator": "CAG",
+      "number": 742,
+      "displayName": "Goldene Aue",
+      "latitude": 50.8728022,
+      "longitude": 12.6518708,
+      "id": "CAG-742"
+    },
+    {
+      "mandator": "CAG",
+      "number": 741,
+      "displayName": "Falken, Post",
+      "latitude": 50.8382311,
+      "longitude": 12.6984783,
+      "id": "CAG-741"
+    },
+    {
+      "mandator": "CAG",
+      "number": 740,
+      "displayName": "Thomas-Münzer-Weg",
+      "latitude": 50.8347847,
+      "longitude": 12.7057067,
+      "id": "CAG-740"
+    },
+    {
+      "mandator": "CAG",
+      "number": 731,
+      "displayName": "Callenberg, Sportplatz",
+      "latitude": 50.84946655,
+      "longitude": 12.642273750000001,
+      "id": "CAG-731"
+    },
+    {
+      "mandator": "CAG",
+      "number": 730,
+      "displayName": "Abzweig Langenchursdorf",
+      "latitude": 50.8460635,
+      "longitude": 12.65773165,
+      "id": "CAG-730"
+    },
+    {
+      "mandator": "CAG",
+      "number": 729,
+      "displayName": "Langenberg, Erbgericht",
+      "latitude": 50.8314694,
+      "longitude": 12.7072611,
+      "id": "CAG-729"
+    },
+    {
+      "mandator": "CAG",
+      "number": 728,
+      "displayName": "Langenberg, Pappelallee",
+      "latitude": 50.8210461,
+      "longitude": 12.7063947,
+      "id": "CAG-728"
+    },
+    {
+      "mandator": "CAG",
+      "number": 735,
+      "displayName": "Hoh.-E. Talstr./Oberschu",
+      "latitude": 50.8024017,
+      "longitude": 12.6836761,
+      "id": "CAG-735"
+    },
+    {
+      "mandator": "CAG",
+      "number": 734,
+      "displayName": "Hoh.-E.,Talstr/Röhrenste",
+      "latitude": 50.804990950000004,
+      "longitude": 12.6790983,
+      "id": "CAG-734"
+    },
+    {
+      "mandator": "CAG",
+      "number": 733,
+      "displayName": "Gasthof Landgraben",
+      "latitude": 50.8021778,
+      "longitude": 12.7732957,
+      "id": "CAG-733"
+    },
+    {
+      "mandator": "CAG",
+      "number": 732,
+      "displayName": "Wüstenbrand, Kühlhaus",
+      "latitude": 50.804663500000004,
+      "longitude": 12.7631354,
+      "id": "CAG-732"
+    },
+    {
+      "mandator": "CAG",
+      "number": 722,
+      "displayName": "Abzweig Roter Graben",
+      "latitude": 50.8780842,
+      "longitude": 12.59414945,
+      "id": "CAG-722"
+    },
+    {
+      "mandator": "CAG",
+      "number": 723,
+      "displayName": "Waldenburg, Freibad",
+      "latitude": 50.8805331,
+      "longitude": 12.5859975,
+      "id": "CAG-723"
+    },
+    {
+      "mandator": "CAG",
+      "number": 721,
+      "displayName": "Eurogymnasium",
+      "latitude": 50.876251100000005,
+      "longitude": 12.5975065,
+      "id": "CAG-721"
+    },
+    {
+      "mandator": "CAG",
+      "number": 726,
+      "displayName": "Hoh.-E., Gasth. Windmühl",
+      "latitude": 50.8056667,
+      "longitude": 12.7055158,
+      "id": "CAG-726"
+    },
+    {
+      "mandator": "CAG",
+      "number": 727,
+      "displayName": "Gasthof Fichtental",
+      "latitude": 50.8168683,
+      "longitude": 12.7038875,
+      "id": "CAG-727"
+    },
+    {
+      "mandator": "CAG",
+      "number": 724,
+      "displayName": "Hoh.-E., Röhrensteig",
+      "latitude": 50.8026175,
+      "longitude": 12.7000306,
+      "id": "CAG-724"
+    },
+    {
+      "mandator": "CAG",
+      "number": 725,
+      "displayName": "Hoh.-E., Friedhof",
+      "latitude": 50.8043536,
+      "longitude": 12.7041467,
+      "id": "CAG-725"
+    },
+    {
+      "mandator": "CAG",
+      "number": 714,
+      "displayName": "Abzweig Nutzunger Straße",
+      "latitude": 50.7899339,
+      "longitude": 12.7460028,
+      "id": "CAG-714"
+    },
+    {
+      "mandator": "CAG",
+      "number": 715,
+      "displayName": "Siedlung des Friedens",
+      "latitude": 50.7957156,
+      "longitude": 12.7449867,
+      "id": "CAG-715"
+    },
+    {
+      "mandator": "CAG",
+      "number": 712,
+      "displayName": "Stadtgrenze",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-712"
+    },
+    {
+      "mandator": "CAG",
+      "number": 713,
+      "displayName": "Pestalozzischule",
+      "latitude": 50.7905128,
+      "longitude": 12.7485006,
+      "id": "CAG-713"
+    },
+    {
+      "mandator": "CAG",
+      "number": 716,
+      "displayName": "Röntgenstraße",
+      "latitude": 50.814667099999994,
+      "longitude": 12.8269832,
+      "id": "CAG-716"
+    },
+    {
+      "mandator": "CAG",
+      "number": 717,
+      "displayName": "Zugang zur Pelzmühle",
+      "latitude": 50.8183771,
+      "longitude": 12.82626445,
+      "id": "CAG-717"
+    },
+    {
+      "mandator": "CAG",
+      "number": 769,
+      "displayName": "Grumbacher Weg",
+      "latitude": 50.836226100000005,
+      "longitude": 12.64178375,
+      "id": "CAG-769"
+    },
+    {
+      "mandator": "CAG",
+      "number": 768,
+      "displayName": "Callenberg, Dorfmitte",
+      "latitude": 50.84592735,
+      "longitude": 12.63738765,
+      "id": "CAG-768"
+    },
+    {
+      "mandator": "CAG",
+      "number": 771,
+      "displayName": "Hoh.-E., Am Viertel",
+      "latitude": 50.81171235,
+      "longitude": 12.66527155,
+      "id": "CAG-771"
+    },
+    {
+      "mandator": "CAG",
+      "number": 770,
+      "displayName": "Reichenbach, Kreuzung",
+      "latitude": 50.826070833333326,
+      "longitude": 12.647391200000001,
+      "id": "CAG-770"
+    },
+    {
+      "mandator": "CAG",
+      "number": 773,
+      "displayName": "Hoh.-E., Queckenberg",
+      "latitude": 50.7863033,
+      "longitude": 12.685784600000002,
+      "id": "CAG-773"
+    },
+    {
+      "mandator": "CAG",
+      "number": 772,
+      "displayName": "Hoh.-E., Gh Heiterer Bli",
+      "latitude": 50.805569225000006,
+      "longitude": 12.67111,
+      "id": "CAG-772"
+    },
+    {
+      "mandator": "CAG",
+      "number": 775,
+      "displayName": "Abzw. Goldbachstraße",
+      "latitude": 50.7825831,
+      "longitude": 12.6929839,
+      "id": "CAG-775"
+    },
+    {
+      "mandator": "CAG",
+      "number": 761,
+      "displayName": "Grumbach, Post",
+      "latitude": 50.833534549999996,
+      "longitude": 12.631473199999999,
+      "id": "CAG-761"
+    },
+    {
+      "mandator": "CAG",
+      "number": 760,
+      "displayName": "Grumbach, Kirche",
+      "latitude": 50.830622649999995,
+      "longitude": 12.63179815,
+      "id": "CAG-760"
+    },
+    {
+      "mandator": "CAG",
+      "number": 763,
+      "displayName": "Waldenburg, Gasthof Hirs",
+      "latitude": 50.870977100000005,
+      "longitude": 12.6104853,
+      "id": "CAG-763"
+    },
+    {
+      "mandator": "CAG",
+      "number": 762,
+      "displayName": "Waldenburg, Markt",
+      "latitude": 50.8749156,
+      "longitude": 12.6023231,
+      "id": "CAG-762"
+    },
+    {
+      "mandator": "CAG",
+      "number": 765,
+      "displayName": "Abzweig Siedlung Naundor",
+      "latitude": 50.8578808,
+      "longitude": 12.6247686,
+      "id": "CAG-765"
+    },
+    {
+      "mandator": "CAG",
+      "number": 764,
+      "displayName": "Waldenburg, Bahnhofstr.",
+      "latitude": 50.86856815,
+      "longitude": 12.61254155,
+      "id": "CAG-764"
+    },
+    {
+      "mandator": "CAG",
+      "number": 767,
+      "displayName": "Callenberg, Am Rittergut",
+      "latitude": 50.850087875,
+      "longitude": 12.63586665,
+      "id": "CAG-767"
+    },
+    {
+      "mandator": "CAG",
+      "number": 766,
+      "displayName": "Abzweig Grünfeld",
+      "latitude": 50.8558481,
+      "longitude": 12.6278558,
+      "id": "CAG-766"
+    },
+    {
+      "mandator": "CAG",
+      "number": 752,
+      "displayName": "Hoh.-E., Gh Albertschlöß",
+      "latitude": 50.8005842,
+      "longitude": 12.7009108,
+      "id": "CAG-752"
+    },
+    {
+      "mandator": "CAG",
+      "number": 753,
+      "displayName": "Hoh.-E., Hüttengrundstra",
+      "latitude": 50.80071345,
+      "longitude": 12.69698025,
+      "id": "CAG-753"
+    },
+    {
+      "mandator": "CAG",
+      "number": 754,
+      "displayName": "Hoh.-E., F.-Heckert-Sied",
+      "latitude": 50.79988235,
+      "longitude": 12.6931536,
+      "id": "CAG-754"
+    },
+    {
+      "mandator": "CAG",
+      "number": 755,
+      "displayName": "Hoh.-E., Feuerwehr",
+      "latitude": 50.8007857,
+      "longitude": 12.68721915,
+      "id": "CAG-755"
+    },
+    {
+      "mandator": "CAG",
+      "number": 756,
+      "displayName": "Reichenbach, Wendeplatz",
+      "latitude": 50.8389706,
+      "longitude": 12.6650897,
+      "id": "CAG-756"
+    },
+    {
+      "mandator": "CAG",
+      "number": 757,
+      "displayName": "Reichenbach, Poststelle",
+      "latitude": 50.8368418,
+      "longitude": 12.65984835,
+      "id": "CAG-757"
+    },
+    {
+      "mandator": "CAG",
+      "number": 758,
+      "displayName": "Reichenbach, Bergstraße",
+      "latitude": 50.832821550000006,
+      "longitude": 12.65426195,
+      "id": "CAG-758"
+    },
+    {
+      "mandator": "CAG",
+      "number": 759,
+      "displayName": "Grumbach, Schmiede",
+      "latitude": 50.8272521,
+      "longitude": 12.63856525,
+      "id": "CAG-759"
+    },
+    {
+      "mandator": "CAG",
+      "number": 744,
+      "displayName": "Kindergarten",
+      "latitude": 50.866188050000005,
+      "longitude": 12.661100600000001,
+      "id": "CAG-744"
+    },
+    {
+      "mandator": "CAG",
+      "number": 745,
+      "displayName": "Raiffeisenmarkt",
+      "latitude": 50.86359335,
+      "longitude": 12.66469805,
+      "id": "CAG-745"
+    },
+    {
+      "mandator": "CAG",
+      "number": 746,
+      "displayName": "Langenchursd.,Schulstraß",
+      "latitude": 50.858855950000006,
+      "longitude": 12.6657236,
+      "id": "CAG-746"
+    },
+    {
+      "mandator": "CAG",
+      "number": 747,
+      "displayName": "Wolfsschlucht",
+      "latitude": 50.8540658,
+      "longitude": 12.6679308,
+      "id": "CAG-747"
+    },
+    {
+      "mandator": "CAG",
+      "number": 748,
+      "displayName": "Langench.,Am grü. Winkel",
+      "latitude": 50.85218305,
+      "longitude": 12.6765711,
+      "id": "CAG-748"
+    },
+    {
+      "mandator": "CAG",
+      "number": 749,
+      "displayName": "Langenchursdorf, Sägewer",
+      "latitude": 50.84844875,
+      "longitude": 12.68123905,
+      "id": "CAG-749"
+    },
+    {
+      "mandator": "CAG",
+      "number": 750,
+      "displayName": "Falken, Raiffeisenmarkt",
+      "latitude": 50.8418239,
+      "longitude": 12.6857368,
+      "id": "CAG-750"
+    },
+    {
+      "mandator": "CAG",
+      "number": 751,
+      "displayName": "Falken, Gemeindeverwaltu",
+      "latitude": 50.84119805,
+      "longitude": 12.69046265,
+      "id": "CAG-751"
+    },
+    {
+      "mandator": "CAG",
+      "number": 806,
+      "displayName": "Abzw. nach Kuhschnappel",
+      "latitude": 50.7909811,
+      "longitude": 12.6256508,
+      "id": "CAG-806"
+    },
+    {
+      "mandator": "CAG",
+      "number": 805,
+      "displayName": "August-Bebel-Straße",
+      "latitude": 50.7886633,
+      "longitude": 12.6178506,
+      "id": "CAG-805"
+    },
+    {
+      "mandator": "CAG",
+      "number": 804,
+      "displayName": "Achatschule",
+      "latitude": 50.7871833,
+      "longitude": 12.6193731,
+      "id": "CAG-804"
+    },
+    {
+      "mandator": "CAG",
+      "number": 803,
+      "displayName": "Gasthof Schwan",
+      "latitude": 50.7840325,
+      "longitude": 12.6192353,
+      "id": "CAG-803"
+    },
+    {
+      "mandator": "CAG",
+      "number": 802,
+      "displayName": "Platanenstraße",
+      "latitude": 50.7745635,
+      "longitude": 12.6254585,
+      "id": "CAG-802"
+    },
+    {
+      "mandator": "CAG",
+      "number": 801,
+      "displayName": "Platanenstraße/SPS",
+      "latitude": 50.781903299999996,
+      "longitude": 12.63236135,
+      "id": "CAG-801"
+    },
+    {
+      "mandator": "CAG",
+      "number": 800,
+      "displayName": "Eisenbahnbrücke",
+      "latitude": 50.7845992,
+      "longitude": 12.6311669,
+      "id": "CAG-800"
+    },
+    {
+      "mandator": "CAG",
+      "number": 799,
+      "displayName": "Reichenb.,Einfahrt Staus",
+      "latitude": 50.8192506,
+      "longitude": 12.6487517,
+      "id": "CAG-799"
+    },
+    {
+      "mandator": "CAG",
+      "number": 796,
+      "displayName": "Bernsdorf, Ortseingang",
+      "latitude": 50.755807649999994,
+      "longitude": 12.65732375,
+      "id": "CAG-796"
+    },
+    {
+      "mandator": "CAG",
+      "number": 795,
+      "displayName": "Bernsdorf, Orts-Nummer 3",
+      "latitude": 50.7628376,
+      "longitude": 12.6677876,
+      "id": "CAG-795"
+    },
+    {
+      "mandator": "CAG",
+      "number": 794,
+      "displayName": "Bernsdorf, Kindergarten",
+      "latitude": 50.76719665,
+      "longitude": 12.6648049,
+      "id": "CAG-794"
+    },
+    {
+      "mandator": "CAG",
+      "number": 793,
+      "displayName": "Bernsdorf, Schule",
+      "latitude": 50.7741436,
+      "longitude": 12.66025195,
+      "id": "CAG-793"
+    },
+    {
+      "mandator": "CAG",
+      "number": 792,
+      "displayName": "Bernsdorf, Feuerwehr",
+      "latitude": 50.778885849999995,
+      "longitude": 12.661254150000001,
+      "id": "CAG-792"
+    },
+    {
+      "mandator": "CAG",
+      "number": 790,
+      "displayName": "Abzweig nach Bernsdorf",
+      "latitude": 50.784939449999996,
+      "longitude": 12.66339765,
+      "id": "CAG-790"
+    },
+    {
+      "mandator": "CAG",
+      "number": 791,
+      "displayName": "Agrargenossenschaft",
+      "latitude": 50.781991,
+      "longitude": 12.66385875,
+      "id": "CAG-791"
+    },
+    {
+      "mandator": "CAG",
+      "number": 788,
+      "displayName": "Abzweig Queckenberg",
+      "latitude": 50.7841083,
+      "longitude": 12.67740165,
+      "id": "CAG-788"
+    },
+    {
+      "mandator": "CAG",
+      "number": 789,
+      "displayName": "Gemeindebücherei",
+      "latitude": 50.78413665,
+      "longitude": 12.6774711,
+      "id": "CAG-789"
+    },
+    {
+      "mandator": "CAG",
+      "number": 786,
+      "displayName": "Oberlungwitz, Goldbachst",
+      "latitude": 50.7833022,
+      "longitude": 12.693423899999999,
+      "id": "CAG-786"
+    },
+    {
+      "mandator": "CAG",
+      "number": 787,
+      "displayName": "Hermsdorf, Siedlung",
+      "latitude": 50.78329415,
+      "longitude": 12.685755799999999,
+      "id": "CAG-787"
+    },
+    {
+      "mandator": "CAG",
+      "number": 784,
+      "displayName": "Hoh.-E., Wagenhalle",
+      "latitude": 50.79528165,
+      "longitude": 12.7013486,
+      "id": "CAG-784"
+    },
+    {
+      "mandator": "CAG",
+      "number": 785,
+      "displayName": "Oberlungwitz, VSZ",
+      "latitude": 50.78874305,
+      "longitude": 12.69521335,
+      "id": "CAG-785"
+    },
+    {
+      "mandator": "CAG",
+      "number": 782,
+      "displayName": "Auersberg-Center",
+      "latitude": 50.7757603,
+      "longitude": 12.59425,
+      "id": "CAG-782"
+    },
+    {
+      "mandator": "CAG",
+      "number": 783,
+      "displayName": "Rüßdorf, Gh Goldener Ste",
+      "latitude": 50.7849932,
+      "longitude": 12.640685000000001,
+      "id": "CAG-783"
+    },
+    {
+      "mandator": "CAG",
+      "number": 781,
+      "displayName": "Miniwelt/Daetz-Centrum",
+      "latitude": 50.75988545,
+      "longitude": 12.642391499999999,
+      "id": "CAG-781"
+    },
+    {
+      "mandator": "CAG",
+      "number": 779,
+      "displayName": "Hoh.-E., Sachsenring-OS",
+      "latitude": 50.8026028,
+      "longitude": 12.6838364,
+      "id": "CAG-779"
+    },
+    {
+      "mandator": "CAG",
+      "number": 837,
+      "displayName": "Oelsnitz, Unt. Hauptstra",
+      "latitude": 50.73182525,
+      "longitude": 12.71269805,
+      "id": "CAG-837"
+    },
+    {
+      "mandator": "CAG",
+      "number": 836,
+      "displayName": "Oelsnitz, Windberg",
+      "latitude": 50.72710835,
+      "longitude": 12.710901549999999,
+      "id": "CAG-836"
+    },
+    {
+      "mandator": "CAG",
+      "number": 839,
+      "displayName": "Lugau, Oelsnitzer Straße",
+      "latitude": 50.744008050000005,
+      "longitude": 12.72096405,
+      "id": "CAG-839"
+    },
+    {
+      "mandator": "CAG",
+      "number": 838,
+      "displayName": "Oelsnitz, Siedlung",
+      "latitude": 50.73649155,
+      "longitude": 12.7139872,
+      "id": "CAG-838"
+    },
+    {
+      "mandator": "CAG",
+      "number": 833,
+      "displayName": "Oelsnitz,Pfl-/Neuw. Stra",
+      "latitude": 50.7133042,
+      "longitude": 12.7083286,
+      "id": "CAG-833"
+    },
+    {
+      "mandator": "CAG",
+      "number": 832,
+      "displayName": "Oelsnitz, Abzw. Zschocke",
+      "latitude": 50.7091339,
+      "longitude": 12.6905161,
+      "id": "CAG-832"
+    },
+    {
+      "mandator": "CAG",
+      "number": 835,
+      "displayName": "Oelsnitz, Warte",
+      "latitude": 50.72456165,
+      "longitude": 12.7092332,
+      "id": "CAG-835"
+    },
+    {
+      "mandator": "CAG",
+      "number": 834,
+      "displayName": "Oelsnitz, Rathaus",
+      "latitude": 50.722899299999995,
+      "longitude": 12.70040905,
+      "id": "CAG-834"
+    },
+    {
+      "mandator": "CAG",
+      "number": 829,
+      "displayName": "Oelsnitz, Grundschule",
+      "latitude": 50.719365,
+      "longitude": 12.6858897,
+      "id": "CAG-829"
+    },
+    {
+      "mandator": "CAG",
+      "number": 828,
+      "displayName": "Oberlungwitz, Autohaus",
+      "latitude": 50.7915607,
+      "longitude": 12.772147350000001,
+      "id": "CAG-828"
+    },
+    {
+      "mandator": "CAG",
+      "number": 831,
+      "displayName": "Oelsnitz, ehem. Erholung",
+      "latitude": 50.7113461,
+      "longitude": 12.6859567,
+      "id": "CAG-831"
+    },
+    {
+      "mandator": "CAG",
+      "number": 830,
+      "displayName": "Oelsnitz, Gertz",
+      "latitude": 50.7144225,
+      "longitude": 12.6841986,
+      "id": "CAG-830"
+    },
+    {
+      "mandator": "CAG",
+      "number": 825,
+      "displayName": "Oberlungwitz, Goethestra",
+      "latitude": 50.79043125,
+      "longitude": 12.740097200000001,
+      "id": "CAG-825"
+    },
+    {
+      "mandator": "CAG",
+      "number": 824,
+      "displayName": "Oberlungwitz., Rathaus",
+      "latitude": 50.7892104,
+      "longitude": 12.7339625,
+      "id": "CAG-824"
+    },
+    {
+      "mandator": "CAG",
+      "number": 827,
+      "displayName": "Oberlungwitz, Limb. Stra",
+      "latitude": 50.79225975,
+      "longitude": 12.753972099999999,
+      "id": "CAG-827"
+    },
+    {
+      "mandator": "CAG",
+      "number": 826,
+      "displayName": "Oberlungw., Galva.-Zent.",
+      "latitude": 50.79005085,
+      "longitude": 12.748792349999999,
+      "id": "CAG-826"
+    },
+    {
+      "mandator": "CAG",
+      "number": 820,
+      "displayName": "Lichtenstein, Che. Berg",
+      "latitude": 50.7557683,
+      "longitude": 12.6389475,
+      "id": "CAG-820"
+    },
+    {
+      "mandator": "CAG",
+      "number": 821,
+      "displayName": "Bernsdorf, Gasthof Hirsc",
+      "latitude": 50.7681004,
+      "longitude": 12.661976500000002,
+      "id": "CAG-821"
+    },
+    {
+      "mandator": "CAG",
+      "number": 822,
+      "displayName": "Gersdorf, Schachthaus",
+      "latitude": 50.7740421,
+      "longitude": 12.678226500000001,
+      "id": "CAG-822"
+    },
+    {
+      "mandator": "CAG",
+      "number": 823,
+      "displayName": "Oberlungwitz,Hirschg.-St",
+      "latitude": 50.788516,
+      "longitude": 12.72878875,
+      "id": "CAG-823"
+    },
+    {
+      "mandator": "CAG",
+      "number": 816,
+      "displayName": "Oberlungwitz Gh Grünes T",
+      "latitude": 50.791223450000004,
+      "longitude": 12.7606485,
+      "id": "CAG-816"
+    },
+    {
+      "mandator": "CAG",
+      "number": 817,
+      "displayName": "Photo-Diettrich",
+      "latitude": 50.7558178,
+      "longitude": 12.6373994,
+      "id": "CAG-817"
+    },
+    {
+      "mandator": "CAG",
+      "number": 818,
+      "displayName": "Lichtenstein, Bahnhof",
+      "latitude": 50.757364775,
+      "longitude": 12.627101374999999,
+      "id": "CAG-818"
+    },
+    {
+      "mandator": "CAG",
+      "number": 819,
+      "displayName": "Lichtenstein, Zwi. Straß",
+      "latitude": 50.75602445,
+      "longitude": 12.63007945,
+      "id": "CAG-819"
+    },
+    {
+      "mandator": "CAG",
+      "number": 812,
+      "displayName": "Lichtenstein, Am Auersbe",
+      "latitude": 50.76962455,
+      "longitude": 12.62534165,
+      "id": "CAG-812"
+    },
+    {
+      "mandator": "CAG",
+      "number": 813,
+      "displayName": "Lichtst., Rudolf-Br.-Str",
+      "latitude": 50.7603032,
+      "longitude": 12.62464485,
+      "id": "CAG-813"
+    },
+    {
+      "mandator": "CAG",
+      "number": 814,
+      "displayName": "Lichtenstein, Ringstraße",
+      "latitude": 50.7562503,
+      "longitude": 12.6228436,
+      "id": "CAG-814"
+    },
+    {
+      "mandator": "CAG",
+      "number": 815,
+      "displayName": "Heinrich-von-Kleist-Schu",
+      "latitude": 50.7573853,
+      "longitude": 12.6171992,
+      "id": "CAG-815"
+    },
+    {
+      "mandator": "CAG",
+      "number": 811,
+      "displayName": "Lichtenstein, Unionhof",
+      "latitude": 50.7624446,
+      "longitude": 12.627178350000001,
+      "id": "CAG-811"
+    },
+    {
+      "mandator": "CAG",
+      "number": 30,
+      "displayName": "Altendorfer Straße",
+      "latitude": 50.842605,
+      "longitude": 12.897055,
+      "id": "CAG-30"
+    },
+    {
+      "mandator": "CAG",
+      "number": 24,
+      "displayName": "Pappelhain",
+      "latitude": 50.822499225,
+      "longitude": 12.965405149999999,
+      "id": "CAG-24"
+    },
+    {
+      "mandator": "CAG",
+      "number": 27,
+      "displayName": "Rudolf-Liebold-Straße",
+      "latitude": 50.848593300000005,
+      "longitude": 12.944124799999999,
+      "id": "CAG-27"
+    },
+    {
+      "mandator": "CAG",
+      "number": 26,
+      "displayName": "Krenkelstraße",
+      "latitude": 50.80367375,
+      "longitude": 12.910254850000001,
+      "id": "CAG-26"
+    },
+    {
+      "mandator": "CAG",
+      "number": 37,
+      "displayName": "Gustav-Freytag-Straße",
+      "latitude": 50.82516526,
+      "longitude": 12.9204281,
+      "id": "CAG-37"
+    },
+    {
+      "mandator": "CAG",
+      "number": 36,
+      "displayName": "Treffurthstraße",
+      "latitude": 50.819551325,
+      "longitude": 12.91546615,
+      "id": "CAG-36"
+    },
+    {
+      "mandator": "CAG",
+      "number": 39,
+      "displayName": "Waisenstraße",
+      "latitude": 50.8349522,
+      "longitude": 12.9275058,
+      "id": "CAG-39"
+    },
+    {
+      "mandator": "CAG",
+      "number": 38,
+      "displayName": "Rabensteiner Straße",
+      "latitude": 50.8131675,
+      "longitude": 12.81796725,
+      "id": "CAG-38"
+    },
+    {
+      "mandator": "CAG",
+      "number": 33,
+      "displayName": "Uhlestraße",
+      "latitude": 50.806037,
+      "longitude": 12.911875775,
+      "id": "CAG-33"
+    },
+    {
+      "mandator": "CAG",
+      "number": 35,
+      "displayName": "Rößlerstraße",
+      "latitude": 50.816725979999994,
+      "longitude": 12.914078280000002,
+      "id": "CAG-35"
+    },
+    {
+      "mandator": "CAG",
+      "number": 34,
+      "displayName": "Erdmannsdorfer Straße",
+      "latitude": 50.811389725,
+      "longitude": 12.9120202,
+      "id": "CAG-34"
+    },
+    {
+      "mandator": "CAG",
+      "number": 12,
+      "displayName": "Heinrich-Lorenz-Straße",
+      "latitude": 50.81476445,
+      "longitude": 12.913012349999999,
+      "id": "CAG-12"
+    },
+    {
+      "mandator": "CAG",
+      "number": 13,
+      "displayName": "Rudolf-Drechsel-Straße",
+      "latitude": 50.778159450000004,
+      "longitude": 12.89909845,
+      "id": "CAG-13"
+    },
+    {
+      "mandator": "CAG",
+      "number": 14,
+      "displayName": "Reichsstraße",
+      "latitude": 50.828044025000004,
+      "longitude": 12.912954299999999,
+      "id": "CAG-14"
+    },
+    {
+      "mandator": "CAG",
+      "number": 15,
+      "displayName": "Falkeplatz/Mus. Gunzenha",
+      "latitude": 50.82965266666667,
+      "longitude": 12.916450833333334,
+      "id": "CAG-15"
+    },
+    {
+      "mandator": "CAG",
+      "number": 20,
+      "displayName": "Nürnberger Straße",
+      "latitude": 50.831738675,
+      "longitude": 12.950001875000002,
+      "id": "CAG-20"
+    },
+    {
+      "mandator": "CAG",
+      "number": 21,
+      "displayName": "Alfred-Brehm-Straße",
+      "latitude": 50.8603989,
+      "longitude": 12.8628567,
+      "id": "CAG-21"
+    },
+    {
+      "mandator": "CAG",
+      "number": 22,
+      "displayName": "Geibelstraße/Sachsenring",
+      "latitude": 50.8210586,
+      "longitude": 12.95705585,
+      "id": "CAG-22"
+    },
+    {
+      "mandator": "CAG",
+      "number": 23,
+      "displayName": "Arthur-Strobel-Straße",
+      "latitude": 50.827927859999996,
+      "longitude": 12.959430399999999,
+      "id": "CAG-23"
+    },
+    {
+      "mandator": "CAG",
+      "number": 16,
+      "displayName": "Stefan-Heym-Platz",
+      "latitude": 50.83317118,
+      "longitude": 12.92535762,
+      "id": "CAG-16"
+    },
+    {
+      "mandator": "CAG",
+      "number": 17,
+      "displayName": "Zieschestraße/Schauspiel",
+      "latitude": 50.83187945,
+      "longitude": 12.931774149999999,
+      "id": "CAG-17"
+    },
+    {
+      "mandator": "CAG",
+      "number": 18,
+      "displayName": "Tschaikowskistraße",
+      "latitude": 50.830756875000006,
+      "longitude": 12.9377948,
+      "id": "CAG-18"
+    },
+    {
+      "mandator": "CAG",
+      "number": 19,
+      "displayName": "Reineckerstraße",
+      "latitude": 50.831319459999996,
+      "longitude": 12.943606840000001,
+      "id": "CAG-19"
+    },
+    {
+      "mandator": "CAG",
+      "number": 63,
+      "displayName": "Schillerplatz",
+      "latitude": 50.8393767,
+      "longitude": 12.92696885,
+      "id": "CAG-63"
+    },
+    {
+      "mandator": "CAG",
+      "number": 62,
+      "displayName": "Hauptbahnhof, Bahnhofstr",
+      "latitude": 50.83771925,
+      "longitude": 12.929002633333335,
+      "id": "CAG-62"
+    },
+    {
+      "mandator": "CAG",
+      "number": 61,
+      "displayName": "Johann-Richter-Straße",
+      "latitude": 50.7913002,
+      "longitude": 12.878454999999999,
+      "id": "CAG-61"
+    },
+    {
+      "mandator": "CAG",
+      "number": 60,
+      "displayName": "Ernst-Wabra-Straße",
+      "latitude": 50.785889,
+      "longitude": 12.87918125,
+      "id": "CAG-60"
+    },
+    {
+      "mandator": "CAG",
+      "number": 59,
+      "displayName": "Hauptbahnhof",
+      "latitude": 50.840445275,
+      "longitude": 12.9298427,
+      "id": "CAG-59"
+    },
+    {
+      "mandator": "CAG",
+      "number": 58,
+      "displayName": "Am Feld",
+      "latitude": 50.7634083,
+      "longitude": 12.973737100000001,
+      "id": "CAG-58"
+    },
+    {
+      "mandator": "CAG",
+      "number": 57,
+      "displayName": "Lutherstraße",
+      "latitude": 50.82278281666667,
+      "longitude": 12.9304969,
+      "id": "CAG-57"
+    },
+    {
+      "mandator": "CAG",
+      "number": 56,
+      "displayName": "Gutenbergstraße",
+      "latitude": 50.820223649999996,
+      "longitude": 12.934798575,
+      "id": "CAG-56"
+    },
+    {
+      "mandator": "CAG",
+      "number": 71,
+      "displayName": "Richard-Hartmann-Platz",
+      "latitude": 50.83836055,
+      "longitude": 12.9113004,
+      "id": "CAG-71"
+    },
+    {
+      "mandator": "CAG",
+      "number": 70,
+      "displayName": "Leipziger Straße",
+      "latitude": 50.83872706666667,
+      "longitude": 12.906321666666665,
+      "id": "CAG-70"
+    },
+    {
+      "mandator": "CAG",
+      "number": 69,
+      "displayName": "Matthesstraße",
+      "latitude": 50.8390944,
+      "longitude": 12.9063036,
+      "id": "CAG-69"
+    },
+    {
+      "mandator": "CAG",
+      "number": 68,
+      "displayName": "Ludwigstraße",
+      "latitude": 50.843224750000005,
+      "longitude": 12.9058822,
+      "id": "CAG-68"
+    },
+    {
+      "mandator": "CAG",
+      "number": 67,
+      "displayName": "Küchwaldring",
+      "latitude": 50.8473496,
+      "longitude": 12.899833749999999,
+      "id": "CAG-67"
+    },
+    {
+      "mandator": "CAG",
+      "number": 66,
+      "displayName": "Wittgensdorfer Straße",
+      "latitude": 50.8503736,
+      "longitude": 12.892434999999999,
+      "id": "CAG-66"
+    },
+    {
+      "mandator": "CAG",
+      "number": 65,
+      "displayName": "Louis-Otto-Straße",
+      "latitude": 50.8520375,
+      "longitude": 12.887106800000002,
+      "id": "CAG-65"
+    },
+    {
+      "mandator": "CAG",
+      "number": 64,
+      "displayName": "Friedhof Reichenbrand",
+      "latitude": 50.81347805,
+      "longitude": 12.832644049999999,
+      "id": "CAG-64"
+    },
+    {
+      "mandator": "CAG",
+      "number": 46,
+      "displayName": "Bahnstraße",
+      "latitude": 50.810416000000004,
+      "longitude": 12.8714525,
+      "id": "CAG-46"
+    },
+    {
+      "mandator": "CAG",
+      "number": 47,
+      "displayName": "Glauchauer Straße",
+      "latitude": 50.84611235,
+      "longitude": 12.9027143,
+      "id": "CAG-47"
+    },
+    {
+      "mandator": "CAG",
+      "number": 44,
+      "displayName": "Bergstraße",
+      "latitude": 50.8441131,
+      "longitude": 12.9067694,
+      "id": "CAG-44"
+    },
+    {
+      "mandator": "CAG",
+      "number": 45,
+      "displayName": "Stelzendorfer Gutsweg",
+      "latitude": 50.8036929,
+      "longitude": 12.865496700000001,
+      "id": "CAG-45"
+    },
+    {
+      "mandator": "CAG",
+      "number": 42,
+      "displayName": "Heiterer Blick",
+      "latitude": 50.800927725,
+      "longitude": 12.884449875,
+      "id": "CAG-42"
+    },
+    {
+      "mandator": "CAG",
+      "number": 43,
+      "displayName": "Friedrich-Viertel-Straße",
+      "latitude": 50.7886797,
+      "longitude": 12.87594225,
+      "id": "CAG-43"
+    },
+    {
+      "mandator": "CAG",
+      "number": 40,
+      "displayName": "Stelzendorfer Straße",
+      "latitude": 50.819002600000005,
+      "longitude": 12.870280766666667,
+      "id": "CAG-40"
+    },
+    {
+      "mandator": "CAG",
+      "number": 41,
+      "displayName": "Klinikum Küchwald",
+      "latitude": 50.846652750000004,
+      "longitude": 12.8940407,
+      "id": "CAG-41"
+    },
+    {
+      "mandator": "CAG",
+      "number": 54,
+      "displayName": "Augsburger Straße",
+      "latitude": 50.8149673,
+      "longitude": 12.944539575,
+      "id": "CAG-54"
+    },
+    {
+      "mandator": "CAG",
+      "number": 52,
+      "displayName": "Marktsteig",
+      "latitude": 50.8144208,
+      "longitude": 12.943359300000001,
+      "id": "CAG-52"
+    },
+    {
+      "mandator": "CAG",
+      "number": 50,
+      "displayName": "Robert-Siewert-Straße",
+      "latitude": 50.79765028,
+      "longitude": 12.896715339999997,
+      "id": "CAG-50"
+    },
+    {
+      "mandator": "CAG",
+      "number": 51,
+      "displayName": "Dittersdorfer Straße",
+      "latitude": 50.7973911,
+      "longitude": 12.9027228,
+      "id": "CAG-51"
+    },
+    {
+      "mandator": "CAG",
+      "number": 48,
+      "displayName": "Jagdschänkenstraße",
+      "latitude": 50.801092049999994,
+      "longitude": 12.851307649999999,
+      "id": "CAG-48"
+    },
+    {
+      "mandator": "CAG",
+      "number": 49,
+      "displayName": "VITA-Center",
+      "latitude": 50.7949428,
+      "longitude": 12.890471425,
+      "id": "CAG-49"
+    },
+    {
+      "mandator": "CAG",
+      "number": 3,
+      "displayName": "An der Wiesenmühle",
+      "latitude": 50.8122644,
+      "longitude": 12.8096194,
+      "id": "CAG-3"
+    },
+    {
+      "mandator": "CAG",
+      "number": 2,
+      "displayName": "Geibelstraße",
+      "latitude": 50.8296661,
+      "longitude": 12.9561206,
+      "id": "CAG-2"
+    },
+    {
+      "mandator": "CAG",
+      "number": 7,
+      "displayName": "Luisenplatz",
+      "latitude": 50.842891800000004,
+      "longitude": 12.901793049999998,
+      "id": "CAG-7"
+    },
+    {
+      "mandator": "CAG",
+      "number": 6,
+      "displayName": "Bornaer Straße 95",
+      "latitude": 50.8605517,
+      "longitude": 12.8917003,
+      "id": "CAG-6"
+    },
+    {
+      "mandator": "CAG",
+      "number": 5,
+      "displayName": "Bornaer Straße 86",
+      "latitude": 50.8605989,
+      "longitude": 12.8918119,
+      "id": "CAG-5"
+    },
+    {
+      "mandator": "CAG",
+      "number": 4,
+      "displayName": "Theaterplatz",
+      "latitude": 50.83738784,
+      "longitude": 12.925906359999999,
+      "id": "CAG-4"
+    },
+    {
+      "mandator": "CAG",
+      "number": 164,
+      "displayName": "Kopernikusstraße",
+      "latitude": 50.8174896,
+      "longitude": 12.84871345,
+      "id": "CAG-164"
+    },
+    {
+      "mandator": "CAG",
+      "number": 165,
+      "displayName": "Schönau",
+      "latitude": 50.8207269,
+      "longitude": 12.875679957142856,
+      "id": "CAG-165"
+    },
+    {
+      "mandator": "CAG",
+      "number": 166,
+      "displayName": "Brauerei Reichenbrand",
+      "latitude": 50.8142453,
+      "longitude": 12.8358793,
+      "id": "CAG-166"
+    },
+    {
+      "mandator": "CAG",
+      "number": 167,
+      "displayName": "Reichenbrand",
+      "latitude": 50.8139011,
+      "longitude": 12.8317461,
+      "id": "CAG-167"
+    },
+    {
+      "mandator": "CAG",
+      "number": 160,
+      "displayName": "Klinik Bethanien",
+      "latitude": 50.8397754,
+      "longitude": 12.9638821,
+      "id": "CAG-160"
+    },
+    {
+      "mandator": "CAG",
+      "number": 162,
+      "displayName": "Friedhofstraße",
+      "latitude": 50.8194661,
+      "longitude": 12.8632286,
+      "id": "CAG-162"
+    },
+    {
+      "mandator": "CAG",
+      "number": 163,
+      "displayName": "Niederwiesa, Schulzentru",
+      "latitude": 50.86799,
+      "longitude": 13.0204672,
+      "id": "CAG-163"
+    },
+    {
+      "mandator": "CAG",
+      "number": 156,
+      "displayName": "Stadion Gellertstraße",
+      "latitude": 50.84123945,
+      "longitude": 12.9439293,
+      "id": "CAG-156"
+    },
+    {
+      "mandator": "CAG",
+      "number": 157,
+      "displayName": "Hofer Straße",
+      "latitude": 50.8403471,
+      "longitude": 12.94802095,
+      "id": "CAG-157"
+    },
+    {
+      "mandator": "CAG",
+      "number": 158,
+      "displayName": "Regensburger Straße",
+      "latitude": 50.839131949999995,
+      "longitude": 12.95366275,
+      "id": "CAG-158"
+    },
+    {
+      "mandator": "CAG",
+      "number": 159,
+      "displayName": "Zeisigwaldstraße",
+      "latitude": 50.837739549999995,
+      "longitude": 12.9597224,
+      "id": "CAG-159"
+    },
+    {
+      "mandator": "CAG",
+      "number": 152,
+      "displayName": "Innere Klosterstraße",
+      "latitude": 50.83477095000001,
+      "longitude": 12.9174293,
+      "id": "CAG-152"
+    },
+    {
+      "mandator": "CAG",
+      "number": 153,
+      "displayName": "Omnibusbahnhof",
+      "latitude": 50.84053769,
+      "longitude": 12.927080720000001,
+      "id": "CAG-153"
+    },
+    {
+      "mandator": "CAG",
+      "number": 154,
+      "displayName": "Zöllnerstraße",
+      "latitude": 50.84429535,
+      "longitude": 12.9299082,
+      "id": "CAG-154"
+    },
+    {
+      "mandator": "CAG",
+      "number": 155,
+      "displayName": "Reinhardtstraße",
+      "latitude": 50.84258805,
+      "longitude": 12.94031875,
+      "id": "CAG-155"
+    },
+    {
+      "mandator": "CAG",
+      "number": 149,
+      "displayName": "Franz-Mehring-Straße",
+      "latitude": 50.83672985,
+      "longitude": 12.89483585,
+      "id": "CAG-149"
+    },
+    {
+      "mandator": "CAG",
+      "number": 148,
+      "displayName": "Erzbergerstraße",
+      "latitude": 50.83587655,
+      "longitude": 12.8911804,
+      "id": "CAG-148"
+    },
+    {
+      "mandator": "CAG",
+      "number": 150,
+      "displayName": "Keglerheim",
+      "latitude": 50.76438415,
+      "longitude": 12.944862100000002,
+      "id": "CAG-150"
+    },
+    {
+      "mandator": "CAG",
+      "number": 145,
+      "displayName": "Waldenburger Straße",
+      "latitude": 50.83275845,
+      "longitude": 12.87456525,
+      "id": "CAG-145"
+    },
+    {
+      "mandator": "CAG",
+      "number": 144,
+      "displayName": "Kalkstraße",
+      "latitude": 50.833293600000005,
+      "longitude": 12.87093665,
+      "id": "CAG-144"
+    },
+    {
+      "mandator": "CAG",
+      "number": 147,
+      "displayName": "Zinzendorfstraße",
+      "latitude": 50.83397445,
+      "longitude": 12.8839997,
+      "id": "CAG-147"
+    },
+    {
+      "mandator": "CAG",
+      "number": 146,
+      "displayName": "Rudolf-Krahl-Straße",
+      "latitude": 50.8336471,
+      "longitude": 12.8804193,
+      "id": "CAG-146"
+    },
+    {
+      "mandator": "CAG",
+      "number": 141,
+      "displayName": "Heidelberger Straße",
+      "latitude": 50.85600275,
+      "longitude": 12.876230150000001,
+      "id": "CAG-141"
+    },
+    {
+      "mandator": "CAG",
+      "number": 143,
+      "displayName": "Rottluff",
+      "latitude": 50.8342788,
+      "longitude": 12.8687577,
+      "id": "CAG-143"
+    },
+    {
+      "mandator": "CAG",
+      "number": 142,
+      "displayName": "Borna",
+      "latitude": 50.852916,
+      "longitude": 12.8844426,
+      "id": "CAG-142"
+    },
+    {
+      "mandator": "CAG",
+      "number": 138,
+      "displayName": "Yorckgebiet",
+      "latitude": 50.83283583333334,
+      "longitude": 12.9662296,
+      "id": "CAG-138"
+    },
+    {
+      "mandator": "CAG",
+      "number": 198,
+      "displayName": "Tuchschererstraße",
+      "latitude": 50.804395150000005,
+      "longitude": 12.856117950000002,
+      "id": "CAG-198"
+    },
+    {
+      "mandator": "CAG",
+      "number": 199,
+      "displayName": "Wilhelm-Firl-Straße",
+      "latitude": 50.794939633333335,
+      "longitude": 12.900300933333334,
+      "id": "CAG-199"
+    },
+    {
+      "mandator": "CAG",
+      "number": 196,
+      "displayName": "Reichenbrander Straße",
+      "latitude": 50.81370156666666,
+      "longitude": 12.809785533333333,
+      "id": "CAG-196"
+    },
+    {
+      "mandator": "CAG",
+      "number": 194,
+      "displayName": "Flemmingstraße",
+      "latitude": 50.84136266666667,
+      "longitude": 12.874730666666666,
+      "id": "CAG-194"
+    },
+    {
+      "mandator": "CAG",
+      "number": 192,
+      "displayName": "Frauen- und Kinderklinik",
+      "latitude": 50.84302405,
+      "longitude": 12.8840447,
+      "id": "CAG-192"
+    },
+    {
+      "mandator": "CAG",
+      "number": 193,
+      "displayName": "RHZ für Blinde",
+      "latitude": 50.841807349999996,
+      "longitude": 12.877344149999999,
+      "id": "CAG-193"
+    },
+    {
+      "mandator": "CAG",
+      "number": 190,
+      "displayName": "Wattstraße",
+      "latitude": 50.8398332,
+      "longitude": 12.896257599999998,
+      "id": "CAG-190"
+    },
+    {
+      "mandator": "CAG",
+      "number": 191,
+      "displayName": "Talanger",
+      "latitude": 50.83955445,
+      "longitude": 12.8880486,
+      "id": "CAG-191"
+    },
+    {
+      "mandator": "CAG",
+      "number": 188,
+      "displayName": "Gerhart-Hauptmann-Platz",
+      "latitude": 50.8308536,
+      "longitude": 12.9023454,
+      "id": "CAG-188"
+    },
+    {
+      "mandator": "CAG",
+      "number": 189,
+      "displayName": "Leonhardtstraße",
+      "latitude": 50.8378679,
+      "longitude": 12.9003603,
+      "id": "CAG-189"
+    },
+    {
+      "mandator": "CAG",
+      "number": 186,
+      "displayName": "Uhlandstraße",
+      "latitude": 50.8365039,
+      "longitude": 12.93533975,
+      "id": "CAG-186"
+    },
+    {
+      "mandator": "CAG",
+      "number": 187,
+      "displayName": "Marianne-Brandt-Straße",
+      "latitude": 50.8261978125,
+      "longitude": 12.9058256375,
+      "id": "CAG-187"
+    },
+    {
+      "mandator": "CAG",
+      "number": 184,
+      "displayName": "Münchner Straße",
+      "latitude": 50.8345089,
+      "longitude": 12.95302625,
+      "id": "CAG-184"
+    },
+    {
+      "mandator": "CAG",
+      "number": 185,
+      "displayName": "Würzburger Straße",
+      "latitude": 50.835301,
+      "longitude": 12.944634,
+      "id": "CAG-185"
+    },
+    {
+      "mandator": "CAG",
+      "number": 182,
+      "displayName": "Ulmenstraße",
+      "latitude": 50.8314071,
+      "longitude": 12.896362750000002,
+      "id": "CAG-182"
+    },
+    {
+      "mandator": "CAG",
+      "number": 181,
+      "displayName": "Barbarossastraße",
+      "latitude": 50.832210700000005,
+      "longitude": 12.90190475,
+      "id": "CAG-181"
+    },
+    {
+      "mandator": "CAG",
+      "number": 180,
+      "displayName": "Kanzlerstraße",
+      "latitude": 50.83283915,
+      "longitude": 12.9064268,
+      "id": "CAG-180"
+    },
+    {
+      "mandator": "CAG",
+      "number": 178,
+      "displayName": "Niederwiesa, Kirchstraße",
+      "latitude": 50.86227805,
+      "longitude": 13.0139368,
+      "id": "CAG-178"
+    },
+    {
+      "mandator": "CAG",
+      "number": 177,
+      "displayName": "Georgbrücke",
+      "latitude": 50.841505999999995,
+      "longitude": 12.922506874999998,
+      "id": "CAG-177"
+    },
+    {
+      "mandator": "CAG",
+      "number": 176,
+      "displayName": "Müllerstraße",
+      "latitude": 50.844865825,
+      "longitude": 12.924291825000001,
+      "id": "CAG-176"
+    },
+    {
+      "mandator": "CAG",
+      "number": 175,
+      "displayName": "Zöllnerplatz",
+      "latitude": 50.84737676666666,
+      "longitude": 12.927518433333333,
+      "id": "CAG-175"
+    },
+    {
+      "mandator": "CAG",
+      "number": 174,
+      "displayName": "Emilienstraße",
+      "latitude": 50.85097993333333,
+      "longitude": 12.929013633333334,
+      "id": "CAG-174"
+    },
+    {
+      "mandator": "CAG",
+      "number": 173,
+      "displayName": "Hochhaus Furth",
+      "latitude": 50.8564332,
+      "longitude": 12.9294125,
+      "id": "CAG-173"
+    },
+    {
+      "mandator": "CAG",
+      "number": 172,
+      "displayName": "Chemnitztal",
+      "latitude": 50.8615239,
+      "longitude": 12.92134695,
+      "id": "CAG-172"
+    },
+    {
+      "mandator": "CAG",
+      "number": 170,
+      "displayName": "Rosental",
+      "latitude": 50.86543445,
+      "longitude": 12.91872585,
+      "id": "CAG-170"
+    },
+    {
+      "mandator": "CAG",
+      "number": 169,
+      "displayName": "Kaßbergauffahrt",
+      "latitude": 50.83399323333333,
+      "longitude": 12.913867133333333,
+      "id": "CAG-169"
+    },
+    {
+      "mandator": "CAG",
+      "number": 168,
+      "displayName": "Abzweig Eibenberg",
+      "latitude": 50.76294095,
+      "longitude": 12.94191845,
+      "id": "CAG-168"
+    },
+    {
+      "mandator": "CAG",
+      "number": 96,
+      "displayName": "Klaffenbacher Straße",
+      "latitude": 50.7746394,
+      "longitude": 12.9245717,
+      "id": "CAG-96"
+    },
+    {
+      "mandator": "CAG",
+      "number": 97,
+      "displayName": "Albert-Schenk-Straße",
+      "latitude": 50.7731583,
+      "longitude": 12.918195,
+      "id": "CAG-97"
+    },
+    {
+      "mandator": "CAG",
+      "number": 98,
+      "displayName": "Am Pfarrwald",
+      "latitude": 50.7736536,
+      "longitude": 12.9064414,
+      "id": "CAG-98"
+    },
+    {
+      "mandator": "CAG",
+      "number": 99,
+      "displayName": "Mühle Klaffenbach",
+      "latitude": 50.7712682,
+      "longitude": 12.9031818,
+      "id": "CAG-99"
+    },
+    {
+      "mandator": "CAG",
+      "number": 100,
+      "displayName": "Adorfer Straße",
+      "latitude": 50.765896350000006,
+      "longitude": 12.90628945,
+      "id": "CAG-100"
+    },
+    {
+      "mandator": "CAG",
+      "number": 102,
+      "displayName": "Rödelwaldstraße",
+      "latitude": 50.7632889,
+      "longitude": 12.909534749999999,
+      "id": "CAG-102"
+    },
+    {
+      "mandator": "CAG",
+      "number": 103,
+      "displayName": "Klaffenbacher Hauptstr 1",
+      "latitude": 50.7582144,
+      "longitude": 12.9163406,
+      "id": "CAG-103"
+    },
+    {
+      "mandator": "CAG",
+      "number": 88,
+      "displayName": "Lichtenauer Straße",
+      "latitude": 50.86791563333333,
+      "longitude": 12.961119566666667,
+      "id": "CAG-88"
+    },
+    {
+      "mandator": "CAG",
+      "number": 89,
+      "displayName": "Ebersdorf",
+      "latitude": 50.8707218,
+      "longitude": 12.95665555,
+      "id": "CAG-89"
+    },
+    {
+      "mandator": "CAG",
+      "number": 92,
+      "displayName": "Riemenschneiderstraße",
+      "latitude": 50.7862708,
+      "longitude": 12.9257731,
+      "id": "CAG-92"
+    },
+    {
+      "mandator": "CAG",
+      "number": 94,
+      "displayName": "Annaberger Straße 443",
+      "latitude": 50.7817031,
+      "longitude": 12.925105,
+      "id": "CAG-94"
+    },
+    {
+      "mandator": "CAG",
+      "number": 95,
+      "displayName": "Alte Harth",
+      "latitude": 50.7780069,
+      "longitude": 12.9260644,
+      "id": "CAG-95"
+    },
+    {
+      "mandator": "CAG",
+      "number": 81,
+      "displayName": "Forststraße",
+      "latitude": 50.845914,
+      "longitude": 12.941414700000001,
+      "id": "CAG-81"
+    },
+    {
+      "mandator": "CAG",
+      "number": 80,
+      "displayName": "Hohe Brücke",
+      "latitude": 50.8372522,
+      "longitude": 12.916487100000001,
+      "id": "CAG-80"
+    },
+    {
+      "mandator": "CAG",
+      "number": 83,
+      "displayName": "Helmholtzstraße",
+      "latitude": 50.853809850000005,
+      "longitude": 12.94742205,
+      "id": "CAG-83"
+    },
+    {
+      "mandator": "CAG",
+      "number": 82,
+      "displayName": "Margaretenstraße",
+      "latitude": 50.851476250000005,
+      "longitude": 12.9456753,
+      "id": "CAG-82"
+    },
+    {
+      "mandator": "CAG",
+      "number": 85,
+      "displayName": "Bahnhof Hilbersdorf",
+      "latitude": 50.862874266666665,
+      "longitude": 12.953399533333332,
+      "id": "CAG-85"
+    },
+    {
+      "mandator": "CAG",
+      "number": 84,
+      "displayName": "Trinitatisstraße",
+      "latitude": 50.85672665,
+      "longitude": 12.950748449999999,
+      "id": "CAG-84"
+    },
+    {
+      "mandator": "CAG",
+      "number": 87,
+      "displayName": "Am Schnellen Markt",
+      "latitude": 50.865361,
+      "longitude": 12.95830695,
+      "id": "CAG-87"
+    },
+    {
+      "mandator": "CAG",
+      "number": 86,
+      "displayName": "Landgraben",
+      "latitude": 50.7939974,
+      "longitude": 12.7848597,
+      "id": "CAG-86"
+    },
+    {
+      "mandator": "CAG",
+      "number": 73,
+      "displayName": "Getreidemarkt",
+      "latitude": 50.8324364,
+      "longitude": 12.9155314,
+      "id": "CAG-73"
+    },
+    {
+      "mandator": "CAG",
+      "number": 75,
+      "displayName": "Roter Turm",
+      "latitude": 50.83444297142857,
+      "longitude": 12.923049371428572,
+      "id": "CAG-75"
+    },
+    {
+      "mandator": "CAG",
+      "number": 74,
+      "displayName": "Graefestraße",
+      "latitude": 50.8147333,
+      "longitude": 12.8707725,
+      "id": "CAG-74"
+    },
+    {
+      "mandator": "CAG",
+      "number": 77,
+      "displayName": "Friedrich-Hähnel-Straße",
+      "latitude": 50.8049886,
+      "longitude": 12.89780635,
+      "id": "CAG-77"
+    },
+    {
+      "mandator": "CAG",
+      "number": 76,
+      "displayName": "Virchowstraße",
+      "latitude": 50.8132028,
+      "longitude": 12.8709233,
+      "id": "CAG-76"
+    },
+    {
+      "mandator": "CAG",
+      "number": 79,
+      "displayName": "Lessingstraße",
+      "latitude": 50.840565549999994,
+      "longitude": 12.935680399999999,
+      "id": "CAG-79"
+    },
+    {
+      "mandator": "CAG",
+      "number": 78,
+      "displayName": "Fürstenstraße",
+      "latitude": 50.83727555,
+      "longitude": 12.93412025,
+      "id": "CAG-78"
+    },
+    {
+      "mandator": "CAG",
+      "number": 131,
+      "displayName": "Zentralhaltestelle",
+      "latitude": 50.83159596666668,
+      "longitude": 12.922535166666668,
+      "id": "CAG-131"
+    },
+    {
+      "mandator": "CAG",
+      "number": 128,
+      "displayName": "Sommerbad Einsiedel",
+      "latitude": 50.76644195,
+      "longitude": 12.9586115,
+      "id": "CAG-128"
+    },
+    {
+      "mandator": "CAG",
+      "number": 129,
+      "displayName": "Mauersbergerstraße West",
+      "latitude": 50.807268050000005,
+      "longitude": 12.851927100000001,
+      "id": "CAG-129"
+    },
+    {
+      "mandator": "CAG",
+      "number": 134,
+      "displayName": "Euba",
+      "latitude": 50.8493303,
+      "longitude": 13.00761305,
+      "id": "CAG-134"
+    },
+    {
+      "mandator": "CAG",
+      "number": 135,
+      "displayName": "Abzweig Berbisdorf",
+      "latitude": 50.7683282,
+      "longitude": 12.96891295,
+      "id": "CAG-135"
+    },
+    {
+      "mandator": "CAG",
+      "number": 133,
+      "displayName": "Rabenstein, Grünaer Stra",
+      "latitude": 50.8298044,
+      "longitude": 12.8184964,
+      "id": "CAG-133"
+    },
+    {
+      "mandator": "CAG",
+      "number": 123,
+      "displayName": "Am Plan",
+      "latitude": 50.7703143,
+      "longitude": 12.973800399999998,
+      "id": "CAG-123"
+    },
+    {
+      "mandator": "CAG",
+      "number": 126,
+      "displayName": "Rosenstraße",
+      "latitude": 50.76656,
+      "longitude": 12.973375449999999,
+      "id": "CAG-126"
+    },
+    {
+      "mandator": "CAG",
+      "number": 127,
+      "displayName": "Clemens-Winkler-Straße",
+      "latitude": 50.8133656,
+      "longitude": 12.8632906,
+      "id": "CAG-127"
+    },
+    {
+      "mandator": "CAG",
+      "number": 124,
+      "displayName": "Hilbersdorfer Straße",
+      "latitude": 50.851614999999995,
+      "longitude": 12.939321249999999,
+      "id": "CAG-124"
+    },
+    {
+      "mandator": "CAG",
+      "number": 115,
+      "displayName": "Sterzelstraße",
+      "latitude": 50.8230043,
+      "longitude": 12.84488975,
+      "id": "CAG-115"
+    },
+    {
+      "mandator": "CAG",
+      "number": 114,
+      "displayName": "August-Bebel-Platz",
+      "latitude": 50.768230966666664,
+      "longitude": 12.973466199999999,
+      "id": "CAG-114"
+    },
+    {
+      "mandator": "CAG",
+      "number": 113,
+      "displayName": "Rathaus Einsiedel",
+      "latitude": 50.77366345,
+      "longitude": 12.973992800000001,
+      "id": "CAG-113"
+    },
+    {
+      "mandator": "CAG",
+      "number": 112,
+      "displayName": "Kindergarten Einsiedel",
+      "latitude": 50.7775782,
+      "longitude": 12.9709003,
+      "id": "CAG-112"
+    },
+    {
+      "mandator": "CAG",
+      "number": 119,
+      "displayName": "Marktkauf",
+      "latitude": 50.8652108,
+      "longitude": 12.8682203,
+      "id": "CAG-119"
+    },
+    {
+      "mandator": "CAG",
+      "number": 107,
+      "displayName": "Gornauer Straße",
+      "latitude": 50.79386335,
+      "longitude": 12.94318415,
+      "id": "CAG-107"
+    },
+    {
+      "mandator": "CAG",
+      "number": 106,
+      "displayName": "Bahnhof Reichenhain",
+      "latitude": 50.7944789,
+      "longitude": 12.935243966666667,
+      "id": "CAG-106"
+    },
+    {
+      "mandator": "CAG",
+      "number": 105,
+      "displayName": "Klaffenbach",
+      "latitude": 50.7542839,
+      "longitude": 12.923525,
+      "id": "CAG-105"
+    },
+    {
+      "mandator": "CAG",
+      "number": 104,
+      "displayName": "Klaffenb. Hauptstraße 12",
+      "latitude": 50.7587,
+      "longitude": 12.9162122,
+      "id": "CAG-104"
+    },
+    {
+      "mandator": "CAG",
+      "number": 111,
+      "displayName": "Funkstraße",
+      "latitude": 50.7806375,
+      "longitude": 12.9726782,
+      "id": "CAG-111"
+    },
+    {
+      "mandator": "CAG",
+      "number": 110,
+      "displayName": "Kurt-Franke-Straße",
+      "latitude": 50.7848075,
+      "longitude": 12.962467799999999,
+      "id": "CAG-110"
+    },
+    {
+      "mandator": "CAG",
+      "number": 109,
+      "displayName": "Am Gutsberg",
+      "latitude": 50.7854872,
+      "longitude": 12.9553325,
+      "id": "CAG-109"
+    },
+    {
+      "mandator": "CAG",
+      "number": 108,
+      "displayName": "Am Steinberg",
+      "latitude": 50.786905399999995,
+      "longitude": 12.95168405,
+      "id": "CAG-108"
+    },
+    {
+      "mandator": "CAG",
+      "number": 296,
+      "displayName": "Felsendome",
+      "latitude": 50.8344857,
+      "longitude": 12.8435565,
+      "id": "CAG-296"
+    },
+    {
+      "mandator": "CAG",
+      "number": 297,
+      "displayName": "Gerstenbergerstraße",
+      "latitude": 50.83559765,
+      "longitude": 12.8525411,
+      "id": "CAG-297"
+    },
+    {
+      "mandator": "CAG",
+      "number": 298,
+      "displayName": "Wiesengrund",
+      "latitude": 50.83556485,
+      "longitude": 12.8584536,
+      "id": "CAG-298"
+    },
+    {
+      "mandator": "CAG",
+      "number": 299,
+      "displayName": "Haltepunkt Klaffenbach",
+      "latitude": 50.7713118,
+      "longitude": 12.901482099999999,
+      "id": "CAG-299"
+    },
+    {
+      "mandator": "CAG",
+      "number": 300,
+      "displayName": "Guerickestraße/Messe Che",
+      "latitude": 50.82133425,
+      "longitude": 12.882378724999999,
+      "id": "CAG-300"
+    },
+    {
+      "mandator": "CAG",
+      "number": 301,
+      "displayName": "Kirche Kleinolbersdorf",
+      "latitude": 50.8009746,
+      "longitude": 13.016625399999999,
+      "id": "CAG-301"
+    },
+    {
+      "mandator": "CAG",
+      "number": 302,
+      "displayName": "Löbenhainer Straße",
+      "latitude": 50.8622718,
+      "longitude": 12.812153200000001,
+      "id": "CAG-302"
+    },
+    {
+      "mandator": "CAG",
+      "number": 303,
+      "displayName": "Gasthof Kleinolbersdorf",
+      "latitude": 50.800714,
+      "longitude": 13.02006735,
+      "id": "CAG-303"
+    },
+    {
+      "mandator": "CAG",
+      "number": 304,
+      "displayName": "Morgenleite",
+      "latitude": 50.79515987777778,
+      "longitude": 12.882250800000001,
+      "id": "CAG-304"
+    },
+    {
+      "mandator": "CAG",
+      "number": 305,
+      "displayName": "Aktienstraße",
+      "latitude": 50.80327405,
+      "longitude": 12.8059807,
+      "id": "CAG-305"
+    },
+    {
+      "mandator": "CAG",
+      "number": 308,
+      "displayName": "Ebersdorfer Höhe",
+      "latitude": 50.8702622,
+      "longitude": 12.965547099999998,
+      "id": "CAG-308"
+    },
+    {
+      "mandator": "CAG",
+      "number": 309,
+      "displayName": "Gasthaus Zur Post",
+      "latitude": 50.87385915,
+      "longitude": 12.968553100000001,
+      "id": "CAG-309"
+    },
+    {
+      "mandator": "CAG",
+      "number": 310,
+      "displayName": "Stiftskirche Ebersdorf",
+      "latitude": 50.8760768,
+      "longitude": 12.9728529,
+      "id": "CAG-310"
+    },
+    {
+      "mandator": "CAG",
+      "number": 311,
+      "displayName": "Diesterwegschule",
+      "latitude": 50.8192946,
+      "longitude": 12.9551653,
+      "id": "CAG-311"
+    },
+    {
+      "mandator": "CAG",
+      "number": 313,
+      "displayName": "Mittweidaer Straße 62",
+      "latitude": 50.8823417,
+      "longitude": 12.9789297,
+      "id": "CAG-313"
+    },
+    {
+      "mandator": "CAG",
+      "number": 312,
+      "displayName": "Braunsdorfer Straße",
+      "latitude": 50.87840945,
+      "longitude": 12.97540975,
+      "id": "CAG-312"
+    },
+    {
+      "mandator": "CAG",
+      "number": 315,
+      "displayName": "Mittweidaer Straße 137",
+      "latitude": 50.8847961,
+      "longitude": 12.9822283,
+      "id": "CAG-315"
+    },
+    {
+      "mandator": "CAG",
+      "number": 314,
+      "displayName": "Mittweidaer Straße 115",
+      "latitude": 50.8823319,
+      "longitude": 12.9789069,
+      "id": "CAG-314"
+    },
+    {
+      "mandator": "CAG",
+      "number": 317,
+      "displayName": "Mittweidaer Straße 145",
+      "latitude": 50.8855733,
+      "longitude": 12.9831508,
+      "id": "CAG-317"
+    },
+    {
+      "mandator": "CAG",
+      "number": 316,
+      "displayName": "Mittweidaer Straße 66a",
+      "latitude": 50.8859778,
+      "longitude": 12.9835928,
+      "id": "CAG-316"
+    },
+    {
+      "mandator": "CAG",
+      "number": 319,
+      "displayName": "Teichstraße",
+      "latitude": 50.80987945,
+      "longitude": 12.77286985,
+      "id": "CAG-319"
+    },
+    {
+      "mandator": "CAG",
+      "number": 318,
+      "displayName": "Ebersdorf, Brettmühle",
+      "latitude": 50.8868164,
+      "longitude": 12.9862969,
+      "id": "CAG-318"
+    },
+    {
+      "mandator": "CAG",
+      "number": 321,
+      "displayName": "Kreherstraße",
+      "latitude": 50.82192415,
+      "longitude": 12.9534326,
+      "id": "CAG-321"
+    },
+    {
+      "mandator": "CAG",
+      "number": 323,
+      "displayName": "Andreasstraße",
+      "latitude": 50.82244045,
+      "longitude": 12.939217249999999,
+      "id": "CAG-323"
+    },
+    {
+      "mandator": "CAG",
+      "number": 322,
+      "displayName": "Grüner Winkel",
+      "latitude": 50.821731,
+      "longitude": 12.94525905,
+      "id": "CAG-322"
+    },
+    {
+      "mandator": "CAG",
+      "number": 325,
+      "displayName": "Zschopauer Straße",
+      "latitude": 50.824148050000005,
+      "longitude": 12.933011650000001,
+      "id": "CAG-325"
+    },
+    {
+      "mandator": "CAG",
+      "number": 324,
+      "displayName": "Müllergasse",
+      "latitude": 50.79751265,
+      "longitude": 12.794445150000001,
+      "id": "CAG-324"
+    },
+    {
+      "mandator": "CAG",
+      "number": 327,
+      "displayName": "Dorfstraße Mittelbach",
+      "latitude": 50.79581695,
+      "longitude": 12.792310149999999,
+      "id": "CAG-327"
+    },
+    {
+      "mandator": "CAG",
+      "number": 326,
+      "displayName": "Bernsbachplatz",
+      "latitude": 50.825032650000004,
+      "longitude": 12.926888675,
+      "id": "CAG-326"
+    },
+    {
+      "mandator": "CAG",
+      "number": 266,
+      "displayName": "Fleischergasse",
+      "latitude": 50.791085,
+      "longitude": 12.8937631,
+      "id": "CAG-266"
+    },
+    {
+      "mandator": "CAG",
+      "number": 267,
+      "displayName": "Röhrsd. Allee/Wildparkst",
+      "latitude": 50.8669722,
+      "longitude": 12.8588603,
+      "id": "CAG-267"
+    },
+    {
+      "mandator": "CAG",
+      "number": 264,
+      "displayName": "B174/Hermersdorfer Straß",
+      "latitude": 50.7969718,
+      "longitude": 12.9797421,
+      "id": "CAG-264"
+    },
+    {
+      "mandator": "CAG",
+      "number": 265,
+      "displayName": "Dietrich-Bonhoeffer-Kirc",
+      "latitude": 50.7921747,
+      "longitude": 12.8988778,
+      "id": "CAG-265"
+    },
+    {
+      "mandator": "CAG",
+      "number": 270,
+      "displayName": "Siemens",
+      "latitude": 50.8709946,
+      "longitude": 12.84250155,
+      "id": "CAG-270"
+    },
+    {
+      "mandator": "CAG",
+      "number": 271,
+      "displayName": "Wildparkstraße/B95",
+      "latitude": 50.86257,
+      "longitude": 12.8571075,
+      "id": "CAG-271"
+    },
+    {
+      "mandator": "CAG",
+      "number": 268,
+      "displayName": "Shakespearestraße",
+      "latitude": 50.79289625,
+      "longitude": 12.987574200000001,
+      "id": "CAG-268"
+    },
+    {
+      "mandator": "CAG",
+      "number": 269,
+      "displayName": "Röhrsdorfer Allee/Nordst",
+      "latitude": 50.86729,
+      "longitude": 12.85416375,
+      "id": "CAG-269"
+    },
+    {
+      "mandator": "CAG",
+      "number": 274,
+      "displayName": "Adelsberg-/Cervantesstra",
+      "latitude": 50.818110149999995,
+      "longitude": 12.97782115,
+      "id": "CAG-274"
+    },
+    {
+      "mandator": "CAG",
+      "number": 275,
+      "displayName": "Casparistraße",
+      "latitude": 50.8236003,
+      "longitude": 12.94225945,
+      "id": "CAG-275"
+    },
+    {
+      "mandator": "CAG",
+      "number": 272,
+      "displayName": "Sandgrubenweg",
+      "latitude": 50.824678750000004,
+      "longitude": 12.971619050000001,
+      "id": "CAG-272"
+    },
+    {
+      "mandator": "CAG",
+      "number": 273,
+      "displayName": "Adelsbergstr/W-Klippel-S",
+      "latitude": 50.822181400000005,
+      "longitude": 12.975299450000001,
+      "id": "CAG-273"
+    },
+    {
+      "mandator": "CAG",
+      "number": 278,
+      "displayName": "Gartenstadt",
+      "latitude": 50.79583845,
+      "longitude": 12.996688500000001,
+      "id": "CAG-278"
+    },
+    {
+      "mandator": "CAG",
+      "number": 279,
+      "displayName": "Schule Klaffenbach",
+      "latitude": 50.76147455,
+      "longitude": 12.9138478,
+      "id": "CAG-279"
+    },
+    {
+      "mandator": "CAG",
+      "number": 276,
+      "displayName": "Schule Altchemnitz",
+      "latitude": 50.79889216,
+      "longitude": 12.91309938,
+      "id": "CAG-276"
+    },
+    {
+      "mandator": "CAG",
+      "number": 277,
+      "displayName": "Schneeberger Straße",
+      "latitude": 50.794219774999995,
+      "longitude": 12.9220577,
+      "id": "CAG-277"
+    },
+    {
+      "mandator": "CAG",
+      "number": 283,
+      "displayName": "Albert-Jentzsch-Straße",
+      "latitude": 50.8176614,
+      "longitude": 12.9587636,
+      "id": "CAG-283"
+    },
+    {
+      "mandator": "CAG",
+      "number": 282,
+      "displayName": "Johannes-Ebert-Straße",
+      "latitude": 50.7996828,
+      "longitude": 13.00737375,
+      "id": "CAG-282"
+    },
+    {
+      "mandator": "CAG",
+      "number": 281,
+      "displayName": "Schillerstraße",
+      "latitude": 50.7974721,
+      "longitude": 13.001512349999999,
+      "id": "CAG-281"
+    },
+    {
+      "mandator": "CAG",
+      "number": 287,
+      "displayName": "Ehrlichstraße",
+      "latitude": 50.806715,
+      "longitude": 12.8678439,
+      "id": "CAG-287"
+    },
+    {
+      "mandator": "CAG",
+      "number": 286,
+      "displayName": "Bf.Neukirchen-Klaffenb.",
+      "latitude": 50.7709525,
+      "longitude": 12.8933342,
+      "id": "CAG-286"
+    },
+    {
+      "mandator": "CAG",
+      "number": 285,
+      "displayName": "Pasteurstraße",
+      "latitude": 50.81003375,
+      "longitude": 12.866955449999999,
+      "id": "CAG-285"
+    },
+    {
+      "mandator": "CAG",
+      "number": 284,
+      "displayName": "Neefestraße/Südring",
+      "latitude": 50.8119856,
+      "longitude": 12.8740383,
+      "id": "CAG-284"
+    },
+    {
+      "mandator": "CAG",
+      "number": 291,
+      "displayName": "DRK-Krankenhaus",
+      "latitude": 50.8221111,
+      "longitude": 12.82561515,
+      "id": "CAG-291"
+    },
+    {
+      "mandator": "CAG",
+      "number": 290,
+      "displayName": "Rabenstein, Tierpark",
+      "latitude": 50.819204299999996,
+      "longitude": 12.82736045,
+      "id": "CAG-290"
+    },
+    {
+      "mandator": "CAG",
+      "number": 289,
+      "displayName": "Pelzmühlenstraße",
+      "latitude": 50.82216125,
+      "longitude": 12.83706685,
+      "id": "CAG-289"
+    },
+    {
+      "mandator": "CAG",
+      "number": 288,
+      "displayName": "Bahnhof Siegmar",
+      "latitude": 50.81666515,
+      "longitude": 12.8415815,
+      "id": "CAG-288"
+    },
+    {
+      "mandator": "CAG",
+      "number": 295,
+      "displayName": "Hans-Benz-Straße",
+      "latitude": 50.8334222,
+      "longitude": 12.838325000000001,
+      "id": "CAG-295"
+    },
+    {
+      "mandator": "CAG",
+      "number": 294,
+      "displayName": "Georgenkirchweg",
+      "latitude": 50.82921805,
+      "longitude": 12.83440985,
+      "id": "CAG-294"
+    },
+    {
+      "mandator": "CAG",
+      "number": 293,
+      "displayName": "Riedstraße",
+      "latitude": 50.8283628,
+      "longitude": 12.82653835,
+      "id": "CAG-293"
+    },
+    {
+      "mandator": "CAG",
+      "number": 292,
+      "displayName": "RabensteinCenter",
+      "latitude": 50.82627406666666,
+      "longitude": 12.831718966666665,
+      "id": "CAG-292"
+    },
+    {
+      "mandator": "CAG",
+      "number": 236,
+      "displayName": "Kleiner Weg",
+      "latitude": 50.8135246,
+      "longitude": 12.98150595,
+      "id": "CAG-236"
+    },
+    {
+      "mandator": "CAG",
+      "number": 237,
+      "displayName": "Adelsberg",
+      "latitude": 50.8126747,
+      "longitude": 12.9885008,
+      "id": "CAG-237"
+    },
+    {
+      "mandator": "CAG",
+      "number": 239,
+      "displayName": "Felsenkeller",
+      "latitude": 50.810492249999996,
+      "longitude": 12.9882308,
+      "id": "CAG-239"
+    },
+    {
+      "mandator": "CAG",
+      "number": 232,
+      "displayName": "Zschop. Straße/Sachsenri",
+      "latitude": 50.81648166666667,
+      "longitude": 12.949846266666666,
+      "id": "CAG-232"
+    },
+    {
+      "mandator": "CAG",
+      "number": 233,
+      "displayName": "Zschopauer/Cervantesstra",
+      "latitude": 50.811623749999995,
+      "longitude": 12.96148445,
+      "id": "CAG-233"
+    },
+    {
+      "mandator": "CAG",
+      "number": 234,
+      "displayName": "Georgistraße",
+      "latitude": 50.809318399999995,
+      "longitude": 12.96633152,
+      "id": "CAG-234"
+    },
+    {
+      "mandator": "CAG",
+      "number": 235,
+      "displayName": "Dreiserstraße",
+      "latitude": 50.81142515,
+      "longitude": 12.9729225,
+      "id": "CAG-235"
+    },
+    {
+      "mandator": "CAG",
+      "number": 244,
+      "displayName": "Wenzel-Verner-Straße",
+      "latitude": 50.80789915,
+      "longitude": 12.8979243,
+      "id": "CAG-244"
+    },
+    {
+      "mandator": "CAG",
+      "number": 245,
+      "displayName": "Steinweg",
+      "latitude": 50.853187899999995,
+      "longitude": 12.9572997,
+      "id": "CAG-245"
+    },
+    {
+      "mandator": "CAG",
+      "number": 246,
+      "displayName": "Am Harthwald",
+      "latitude": 50.7895536,
+      "longitude": 12.90512,
+      "id": "CAG-246"
+    },
+    {
+      "mandator": "CAG",
+      "number": 247,
+      "displayName": "Arno-Schreiter-Straße",
+      "latitude": 50.7880764,
+      "longitude": 12.901944,
+      "id": "CAG-247"
+    },
+    {
+      "mandator": "CAG",
+      "number": 240,
+      "displayName": "Kleinolbersdorfer Straße",
+      "latitude": 50.80566445,
+      "longitude": 12.98609905,
+      "id": "CAG-240"
+    },
+    {
+      "mandator": "CAG",
+      "number": 241,
+      "displayName": "Hermersdofer Straße",
+      "latitude": 50.801901799999996,
+      "longitude": 12.985039149999999,
+      "id": "CAG-241"
+    },
+    {
+      "mandator": "CAG",
+      "number": 242,
+      "displayName": "Schösserholz",
+      "latitude": 50.8015906,
+      "longitude": 12.9914994,
+      "id": "CAG-242"
+    },
+    {
+      "mandator": "CAG",
+      "number": 243,
+      "displayName": "Schule Wittgensdorf",
+      "latitude": 50.8804858,
+      "longitude": 12.87028765,
+      "id": "CAG-243"
+    },
+    {
+      "mandator": "CAG",
+      "number": 253,
+      "displayName": "Biederstraße",
+      "latitude": 50.7914657,
+      "longitude": 12.89404735,
+      "id": "CAG-253"
+    },
+    {
+      "mandator": "CAG",
+      "number": 252,
+      "displayName": "Max-Türpe-Straße",
+      "latitude": 50.79259705,
+      "longitude": 12.884573750000001,
+      "id": "CAG-252"
+    },
+    {
+      "mandator": "CAG",
+      "number": 255,
+      "displayName": "Markersdorfer Straße",
+      "latitude": 50.796360740000004,
+      "longitude": 12.90782194,
+      "id": "CAG-255"
+    },
+    {
+      "mandator": "CAG",
+      "number": 254,
+      "displayName": "Meinersdorfer Straße",
+      "latitude": 50.7929528,
+      "longitude": 12.9008603,
+      "id": "CAG-254"
+    },
+    {
+      "mandator": "CAG",
+      "number": 249,
+      "displayName": "Fritz-Fritzsche-Straße",
+      "latitude": 50.7858868,
+      "longitude": 12.89051775,
+      "id": "CAG-249"
+    },
+    {
+      "mandator": "CAG",
+      "number": 248,
+      "displayName": "Max-Müller-Straße",
+      "latitude": 50.78749125,
+      "longitude": 12.89745555,
+      "id": "CAG-248"
+    },
+    {
+      "mandator": "CAG",
+      "number": 251,
+      "displayName": "Marie-Tilch-Straße",
+      "latitude": 50.78347415,
+      "longitude": 12.878539,
+      "id": "CAG-251"
+    },
+    {
+      "mandator": "CAG",
+      "number": 250,
+      "displayName": "Johannes-Dick-Straße",
+      "latitude": 50.78382445,
+      "longitude": 12.88485845,
+      "id": "CAG-250"
+    },
+    {
+      "mandator": "CAG",
+      "number": 261,
+      "displayName": "Mitschurinstraße",
+      "latitude": 50.80905905,
+      "longitude": 12.824077899999999,
+      "id": "CAG-261"
+    },
+    {
+      "mandator": "CAG",
+      "number": 260,
+      "displayName": "Wilhelm-Busch-Straße",
+      "latitude": 50.80534845,
+      "longitude": 12.97200805,
+      "id": "CAG-260"
+    },
+    {
+      "mandator": "CAG",
+      "number": 263,
+      "displayName": "Ikarus",
+      "latitude": 50.8088327,
+      "longitude": 12.892858333333331,
+      "id": "CAG-263"
+    },
+    {
+      "mandator": "CAG",
+      "number": 262,
+      "displayName": "Hp Wittgensdorf Mitte",
+      "latitude": 50.8750408,
+      "longitude": 12.8706928,
+      "id": "CAG-262"
+    },
+    {
+      "mandator": "CAG",
+      "number": 257,
+      "displayName": "Am Wartburghof",
+      "latitude": 50.81484235,
+      "longitude": 12.93498475,
+      "id": "CAG-257"
+    },
+    {
+      "mandator": "CAG",
+      "number": 256,
+      "displayName": "Helbersdorf",
+      "latitude": 50.8012499,
+      "longitude": 12.898645,
+      "id": "CAG-256"
+    },
+    {
+      "mandator": "CAG",
+      "number": 259,
+      "displayName": "Paul-Bertz-Straße",
+      "latitude": 50.80294875,
+      "longitude": 12.894602500000001,
+      "id": "CAG-259"
+    },
+    {
+      "mandator": "CAG",
+      "number": 258,
+      "displayName": "Neukirchen, Abzwg. Adorf",
+      "latitude": 50.77319,
+      "longitude": 12.87957835,
+      "id": "CAG-258"
+    },
+    {
+      "mandator": "CAG",
+      "number": 204,
+      "displayName": "Sächs. Eisenbahnmuseum",
+      "latitude": 50.859919149999996,
+      "longitude": 12.95270225,
+      "id": "CAG-204"
+    },
+    {
+      "mandator": "CAG",
+      "number": 203,
+      "displayName": "Am Küchwald",
+      "latitude": 50.8533558,
+      "longitude": 12.9013167,
+      "id": "CAG-203"
+    },
+    {
+      "mandator": "CAG",
+      "number": 214,
+      "displayName": "Sportforum",
+      "latitude": 50.80685211428571,
+      "longitude": 12.937054785714286,
+      "id": "CAG-214"
+    },
+    {
+      "mandator": "CAG",
+      "number": 215,
+      "displayName": "Städtischer Friedhof",
+      "latitude": 50.81094275,
+      "longitude": 12.93396805,
+      "id": "CAG-215"
+    },
+    {
+      "mandator": "CAG",
+      "number": 212,
+      "displayName": "Kirche Reichenbrand",
+      "latitude": 50.8123178,
+      "longitude": 12.8295411,
+      "id": "CAG-212"
+    },
+    {
+      "mandator": "CAG",
+      "number": 213,
+      "displayName": "Jägerschlößchenstraße",
+      "latitude": 50.801350549999995,
+      "longitude": 12.941099300000001,
+      "id": "CAG-213"
+    },
+    {
+      "mandator": "CAG",
+      "number": 210,
+      "displayName": "Reichenhain",
+      "latitude": 50.7999592,
+      "longitude": 12.9526597,
+      "id": "CAG-210"
+    },
+    {
+      "mandator": "CAG",
+      "number": 208,
+      "displayName": "Weststraße",
+      "latitude": 50.830398349999996,
+      "longitude": 12.889914399999999,
+      "id": "CAG-208"
+    },
+    {
+      "mandator": "CAG",
+      "number": 209,
+      "displayName": "Ernst-Heilmann-Straße",
+      "latitude": 50.83165625,
+      "longitude": 12.88340165,
+      "id": "CAG-209"
+    },
+    {
+      "mandator": "CAG",
+      "number": 223,
+      "displayName": "Friedrich-Naumann-Straße",
+      "latitude": 50.851253774999996,
+      "longitude": 12.943599175,
+      "id": "CAG-223"
+    },
+    {
+      "mandator": "CAG",
+      "number": 222,
+      "displayName": "Christian-Wehner-Straße",
+      "latitude": 50.850676875000005,
+      "longitude": 12.933590274999998,
+      "id": "CAG-222"
+    },
+    {
+      "mandator": "CAG",
+      "number": 220,
+      "displayName": "Neukirchen-Klaffenbach",
+      "latitude": 50.7710658,
+      "longitude": 12.8932561,
+      "id": "CAG-220"
+    },
+    {
+      "mandator": "CAG",
+      "number": 219,
+      "displayName": "Südbahnhof",
+      "latitude": 50.824563133333335,
+      "longitude": 12.925246399999999,
+      "id": "CAG-219"
+    },
+    {
+      "mandator": "CAG",
+      "number": 218,
+      "displayName": "Ebertstraße",
+      "latitude": 50.8191144,
+      "longitude": 12.9284222,
+      "id": "CAG-218"
+    },
+    {
+      "mandator": "CAG",
+      "number": 217,
+      "displayName": "TU Reichenhainer Straße",
+      "latitude": 50.81709135,
+      "longitude": 12.92940235,
+      "id": "CAG-217"
+    },
+    {
+      "mandator": "CAG",
+      "number": 216,
+      "displayName": "TU Campus",
+      "latitude": 50.81382375,
+      "longitude": 12.930761,
+      "id": "CAG-216"
+    },
+    {
+      "mandator": "CAG",
+      "number": 230,
+      "displayName": "Clausstraße",
+      "latitude": 50.8185101,
+      "longitude": 12.9449757,
+      "id": "CAG-230"
+    },
+    {
+      "mandator": "CAG",
+      "number": 229,
+      "displayName": "Turnstraße",
+      "latitude": 50.82412195,
+      "longitude": 12.93149155,
+      "id": "CAG-229"
+    },
+    {
+      "mandator": "CAG",
+      "number": 228,
+      "displayName": "Annenstraße",
+      "latitude": 50.82864191666666,
+      "longitude": 12.923642816666666,
+      "id": "CAG-228"
+    },
+    {
+      "mandator": "CAG",
+      "number": 227,
+      "displayName": "Am Lehngericht",
+      "latitude": 50.7629647,
+      "longitude": 12.9381389,
+      "id": "CAG-227"
+    },
+    {
+      "mandator": "CAG",
+      "number": 225,
+      "displayName": "Dresdner Straße",
+      "latitude": 50.8550303,
+      "longitude": 12.9644964,
+      "id": "CAG-225"
+    },
+    {
+      "mandator": "CAG",
+      "number": 224,
+      "displayName": "Klinikum Dresdner Straße",
+      "latitude": 50.85192455,
+      "longitude": 12.95507,
+      "id": "CAG-224"
+    },
+    {
+      "mandator": "CAG",
+      "number": 432,
+      "displayName": "Beutenberg",
+      "latitude": 50.8474311,
+      "longitude": 12.9839381,
+      "id": "CAG-432"
+    },
+    {
+      "mandator": "CAG",
+      "number": 434,
+      "displayName": "Rosenhof",
+      "latitude": 50.8305406,
+      "longitude": 12.9167222,
+      "id": "CAG-434"
+    },
+    {
+      "mandator": "CAG",
+      "number": 437,
+      "displayName": "Humboldtstraße",
+      "latitude": 50.83819055,
+      "longitude": 12.94109875,
+      "id": "CAG-437"
+    },
+    {
+      "mandator": "CAG",
+      "number": 436,
+      "displayName": "Eibenberg",
+      "latitude": 50.7531633,
+      "longitude": 12.9473767,
+      "id": "CAG-436"
+    },
+    {
+      "mandator": "CAG",
+      "number": 438,
+      "displayName": "eins energie",
+      "latitude": 50.83339222,
+      "longitude": 12.92714828,
+      "id": "CAG-438"
+    },
+    {
+      "mandator": "CAG",
+      "number": 425,
+      "displayName": "Augustusburger Straße",
+      "latitude": 50.8251642,
+      "longitude": 12.9830496,
+      "id": "CAG-425"
+    },
+    {
+      "mandator": "CAG",
+      "number": 424,
+      "displayName": "Ortseingang Mittelbach",
+      "latitude": 50.80599095,
+      "longitude": 12.80818125,
+      "id": "CAG-424"
+    },
+    {
+      "mandator": "CAG",
+      "number": 427,
+      "displayName": "Scheerenweg",
+      "latitude": 50.8280378,
+      "longitude": 12.9874342,
+      "id": "CAG-427"
+    },
+    {
+      "mandator": "CAG",
+      "number": 426,
+      "displayName": "Kleinhofweg",
+      "latitude": 50.8269928,
+      "longitude": 12.9859028,
+      "id": "CAG-426"
+    },
+    {
+      "mandator": "CAG",
+      "number": 429,
+      "displayName": "Anton-Günther-Siedlung",
+      "latitude": 50.83838095,
+      "longitude": 12.989669750000001,
+      "id": "CAG-429"
+    },
+    {
+      "mandator": "CAG",
+      "number": 428,
+      "displayName": "Kuckucksdelle",
+      "latitude": 50.83357875,
+      "longitude": 12.990874049999999,
+      "id": "CAG-428"
+    },
+    {
+      "mandator": "CAG",
+      "number": 431,
+      "displayName": "Am Beutenberg",
+      "latitude": 50.84644,
+      "longitude": 12.9859121,
+      "id": "CAG-431"
+    },
+    {
+      "mandator": "CAG",
+      "number": 430,
+      "displayName": "Beutenbergstraße",
+      "latitude": 50.8438017,
+      "longitude": 12.98658,
+      "id": "CAG-430"
+    },
+    {
+      "mandator": "CAG",
+      "number": 448,
+      "displayName": "Rathaus Wittgensdorf",
+      "latitude": 50.8818368,
+      "longitude": 12.8695667,
+      "id": "CAG-448"
+    },
+    {
+      "mandator": "CAG",
+      "number": 449,
+      "displayName": "Am Knie",
+      "latitude": 50.88035275,
+      "longitude": 12.9553865,
+      "id": "CAG-449"
+    },
+    {
+      "mandator": "CAG",
+      "number": 451,
+      "displayName": "Palmstraße",
+      "latitude": 50.842876499999996,
+      "longitude": 12.937708533333334,
+      "id": "CAG-451"
+    },
+    {
+      "mandator": "CAG",
+      "number": 452,
+      "displayName": "Beyerstraße",
+      "latitude": 50.8385389,
+      "longitude": 12.900089300000001,
+      "id": "CAG-452"
+    },
+    {
+      "mandator": "CAG",
+      "number": 454,
+      "displayName": "Rohr- und Kaltwalzwerk",
+      "latitude": 50.80131055,
+      "longitude": 12.94656795,
+      "id": "CAG-454"
+    },
+    {
+      "mandator": "CAG",
+      "number": 440,
+      "displayName": "Humboldtplatz",
+      "latitude": 50.8347694,
+      "longitude": 12.9486917,
+      "id": "CAG-440"
+    },
+    {
+      "mandator": "CAG",
+      "number": 441,
+      "displayName": "Chemnitzer/Hohenst. Stra",
+      "latitude": 50.85534885,
+      "longitude": 12.776951799999999,
+      "id": "CAG-441"
+    },
+    {
+      "mandator": "CAG",
+      "number": 444,
+      "displayName": "Straße d.Nat./Freie Pres",
+      "latitude": 50.83483290000001,
+      "longitude": 12.92458695,
+      "id": "CAG-444"
+    },
+    {
+      "mandator": "CAG",
+      "number": 445,
+      "displayName": "Kaßbergstraße",
+      "latitude": 50.8334774,
+      "longitude": 12.9105811,
+      "id": "CAG-445"
+    },
+    {
+      "mandator": "CAG",
+      "number": 446,
+      "displayName": "Zur Sternmühle",
+      "latitude": 50.798179700000006,
+      "longitude": 13.03161265,
+      "id": "CAG-446"
+    },
+    {
+      "mandator": "CAG",
+      "number": 447,
+      "displayName": "Limbach-Oberfrohna Ratha",
+      "latitude": 50.85837545,
+      "longitude": 12.76941845,
+      "id": "CAG-447"
+    },
+    {
+      "mandator": "CAG",
+      "number": 403,
+      "displayName": "Händelstraße",
+      "latitude": 50.8127292,
+      "longitude": 12.9027946,
+      "id": "CAG-403"
+    },
+    {
+      "mandator": "CAG",
+      "number": 402,
+      "displayName": "Kauffahrtei",
+      "latitude": 50.81485945,
+      "longitude": 12.9066686,
+      "id": "CAG-402"
+    },
+    {
+      "mandator": "CAG",
+      "number": 401,
+      "displayName": "Waplerstraße",
+      "latitude": 50.8161946,
+      "longitude": 12.911708650000001,
+      "id": "CAG-401"
+    },
+    {
+      "mandator": "CAG",
+      "number": 400,
+      "displayName": "Altchemnitzer Straße",
+      "latitude": 50.81725875,
+      "longitude": 12.91798415,
+      "id": "CAG-400"
+    },
+    {
+      "mandator": "CAG",
+      "number": 407,
+      "displayName": "Dorfstraße",
+      "latitude": 50.871687599999994,
+      "longitude": 12.910283333333334,
+      "id": "CAG-407"
+    },
+    {
+      "mandator": "CAG",
+      "number": 406,
+      "displayName": "Einsiedler Straße",
+      "latitude": 50.7535982,
+      "longitude": 12.95225585,
+      "id": "CAG-406"
+    },
+    {
+      "mandator": "CAG",
+      "number": 395,
+      "displayName": "Oberrabenstein",
+      "latitude": 50.841095249999995,
+      "longitude": 12.8149029,
+      "id": "CAG-395"
+    },
+    {
+      "mandator": "CAG",
+      "number": 394,
+      "displayName": "Weigandstraße",
+      "latitude": 50.830175,
+      "longitude": 12.82252085,
+      "id": "CAG-394"
+    },
+    {
+      "mandator": "CAG",
+      "number": 393,
+      "displayName": "Bf. Mitte/Niklasberg",
+      "latitude": 50.827189149999995,
+      "longitude": 12.91449555,
+      "id": "CAG-393"
+    },
+    {
+      "mandator": "CAG",
+      "number": 392,
+      "displayName": "Goetheplatz",
+      "latitude": 50.8212146,
+      "longitude": 12.906387,
+      "id": "CAG-392"
+    },
+    {
+      "mandator": "CAG",
+      "number": 399,
+      "displayName": "Bruno-Salzer-Straße",
+      "latitude": 50.819781500000005,
+      "longitude": 12.92353375,
+      "id": "CAG-399"
+    },
+    {
+      "mandator": "CAG",
+      "number": 398,
+      "displayName": "Lothringer Straße",
+      "latitude": 50.8222531,
+      "longitude": 12.9248086,
+      "id": "CAG-398"
+    },
+    {
+      "mandator": "CAG",
+      "number": 397,
+      "displayName": "Stadlerplatz",
+      "latitude": 50.8215419,
+      "longitude": 12.9269286,
+      "id": "CAG-397"
+    },
+    {
+      "mandator": "CAG",
+      "number": 396,
+      "displayName": "Stelzendorf",
+      "latitude": 50.797681399999995,
+      "longitude": 12.8616739,
+      "id": "CAG-396"
+    },
+    {
+      "mandator": "CAG",
+      "number": 418,
+      "displayName": "Eibenberger Straße",
+      "latitude": 50.7621693,
+      "longitude": 12.9679197,
+      "id": "CAG-418"
+    },
+    {
+      "mandator": "CAG",
+      "number": 417,
+      "displayName": "Hp Kinderwaldstätte",
+      "latitude": 50.88193865,
+      "longitude": 12.95209015,
+      "id": "CAG-417"
+    },
+    {
+      "mandator": "CAG",
+      "number": 423,
+      "displayName": "Horststraße",
+      "latitude": 50.8175253,
+      "longitude": 12.895973049999998,
+      "id": "CAG-423"
+    },
+    {
+      "mandator": "CAG",
+      "number": 420,
+      "displayName": "Am Feldschlößchen",
+      "latitude": 50.8221918,
+      "longitude": 12.88767425,
+      "id": "CAG-420"
+    },
+    {
+      "mandator": "CAG",
+      "number": 421,
+      "displayName": "Heimgarten",
+      "latitude": 50.81744,
+      "longitude": 12.9517789,
+      "id": "CAG-421"
+    },
+    {
+      "mandator": "CAG",
+      "number": 410,
+      "displayName": "Genossenschaftsplatz",
+      "latitude": 50.8787582,
+      "longitude": 12.926176250000001,
+      "id": "CAG-410"
+    },
+    {
+      "mandator": "CAG",
+      "number": 411,
+      "displayName": "Schmidt-Rottluff-Straße",
+      "latitude": 50.88042845,
+      "longitude": 12.930829450000001,
+      "id": "CAG-411"
+    },
+    {
+      "mandator": "CAG",
+      "number": 408,
+      "displayName": "Am Berg",
+      "latitude": 50.87215445,
+      "longitude": 12.91447205,
+      "id": "CAG-408"
+    },
+    {
+      "mandator": "CAG",
+      "number": 409,
+      "displayName": "Gürtelstraße",
+      "latitude": 50.87521685,
+      "longitude": 12.92028665,
+      "id": "CAG-409"
+    },
+    {
+      "mandator": "CAG",
+      "number": 414,
+      "displayName": "Liebermannstraße",
+      "latitude": 50.88520735,
+      "longitude": 12.9395167,
+      "id": "CAG-414"
+    },
+    {
+      "mandator": "CAG",
+      "number": 415,
+      "displayName": "Lichtenauer Weg",
+      "latitude": 50.88317,
+      "longitude": 12.94652655,
+      "id": "CAG-415"
+    },
+    {
+      "mandator": "CAG",
+      "number": 412,
+      "displayName": "Kiefernweg",
+      "latitude": 50.88379155,
+      "longitude": 12.9329068,
+      "id": "CAG-412"
+    },
+    {
+      "mandator": "CAG",
+      "number": 413,
+      "displayName": "Corinthstraße",
+      "latitude": 50.8854697,
+      "longitude": 12.9342239,
+      "id": "CAG-413"
+    },
+    {
+      "mandator": "CAG",
+      "number": 373,
+      "displayName": "Am Erlenwald",
+      "latitude": 50.7868882,
+      "longitude": 12.99446735,
+      "id": "CAG-373"
+    },
+    {
+      "mandator": "CAG",
+      "number": 372,
+      "displayName": "An der Walzenmühle",
+      "latitude": 50.791019000000006,
+      "longitude": 12.94785875,
+      "id": "CAG-372"
+    },
+    {
+      "mandator": "CAG",
+      "number": 375,
+      "displayName": "Waldrand",
+      "latitude": 50.85265760000001,
+      "longitude": 12.897031833333335,
+      "id": "CAG-375"
+    },
+    {
+      "mandator": "CAG",
+      "number": 374,
+      "displayName": "Eisstadion",
+      "latitude": 50.85123835,
+      "longitude": 12.894089600000001,
+      "id": "CAG-374"
+    },
+    {
+      "mandator": "CAG",
+      "number": 368,
+      "displayName": "Kändler, Schulstraße",
+      "latitude": 50.85602045,
+      "longitude": 12.7940531,
+      "id": "CAG-368"
+    },
+    {
+      "mandator": "CAG",
+      "number": 370,
+      "displayName": "Ferdinandstraße 130",
+      "latitude": 50.7988957,
+      "longitude": 13.02846525,
+      "id": "CAG-370"
+    },
+    {
+      "mandator": "CAG",
+      "number": 365,
+      "displayName": "Ottostraße",
+      "latitude": 50.84760155,
+      "longitude": 12.931858349999999,
+      "id": "CAG-365"
+    },
+    {
+      "mandator": "CAG",
+      "number": 364,
+      "displayName": "Yorckstraße",
+      "latitude": 50.83606695,
+      "longitude": 12.95580625,
+      "id": "CAG-364"
+    },
+    {
+      "mandator": "CAG",
+      "number": 367,
+      "displayName": "Rathaus Mittelbach",
+      "latitude": 50.79974165,
+      "longitude": 12.80014275,
+      "id": "CAG-367"
+    },
+    {
+      "mandator": "CAG",
+      "number": 366,
+      "displayName": "Glösa",
+      "latitude": 50.86739186666667,
+      "longitude": 12.912756100000001,
+      "id": "CAG-366"
+    },
+    {
+      "mandator": "CAG",
+      "number": 361,
+      "displayName": "Rotdorn",
+      "latitude": 50.8260875,
+      "longitude": 12.9555867,
+      "id": "CAG-361"
+    },
+    {
+      "mandator": "CAG",
+      "number": 360,
+      "displayName": "Ernst-Enge-Straße",
+      "latitude": 50.8243582,
+      "longitude": 12.9584046,
+      "id": "CAG-360"
+    },
+    {
+      "mandator": "CAG",
+      "number": 363,
+      "displayName": "Bleicherstraße",
+      "latitude": 50.8103961,
+      "longitude": 12.77783115,
+      "id": "CAG-363"
+    },
+    {
+      "mandator": "CAG",
+      "number": 362,
+      "displayName": "Gablenzplatz",
+      "latitude": 50.83113063333334,
+      "longitude": 12.953872433333336,
+      "id": "CAG-362"
+    },
+    {
+      "mandator": "CAG",
+      "number": 389,
+      "displayName": "Am Flughafen",
+      "latitude": 50.81093821666666,
+      "longitude": 12.8950229,
+      "id": "CAG-389"
+    },
+    {
+      "mandator": "CAG",
+      "number": 390,
+      "displayName": "Irkutsker Straße",
+      "latitude": 50.813683475000005,
+      "longitude": 12.89759175,
+      "id": "CAG-390"
+    },
+    {
+      "mandator": "CAG",
+      "number": 391,
+      "displayName": "Haydnstraße",
+      "latitude": 50.816969799999995,
+      "longitude": 12.9016463,
+      "id": "CAG-391"
+    },
+    {
+      "mandator": "CAG",
+      "number": 384,
+      "displayName": "Sandstraße",
+      "latitude": 50.86412195,
+      "longitude": 12.901732899999999,
+      "id": "CAG-384"
+    },
+    {
+      "mandator": "CAG",
+      "number": 387,
+      "displayName": "Goldener Hahn",
+      "latitude": 50.7820064,
+      "longitude": 12.99354515,
+      "id": "CAG-387"
+    },
+    {
+      "mandator": "CAG",
+      "number": 380,
+      "displayName": "Kornweg",
+      "latitude": 50.870895149999996,
+      "longitude": 12.875081349999999,
+      "id": "CAG-380"
+    },
+    {
+      "mandator": "CAG",
+      "number": 381,
+      "displayName": "An der Schmiede",
+      "latitude": 50.860100200000005,
+      "longitude": 12.891045199999999,
+      "id": "CAG-381"
+    },
+    {
+      "mandator": "CAG",
+      "number": 382,
+      "displayName": "Bornaer Straße 110",
+      "latitude": 50.862695,
+      "longitude": 12.8960225,
+      "id": "CAG-382"
+    },
+    {
+      "mandator": "CAG",
+      "number": 383,
+      "displayName": "Bornaer Straße 137",
+      "latitude": 50.8627225,
+      "longitude": 12.8961278,
+      "id": "CAG-383"
+    },
+    {
+      "mandator": "CAG",
+      "number": 376,
+      "displayName": "Wittgensdorfer Straße 52",
+      "latitude": 50.85704095,
+      "longitude": 12.89501,
+      "id": "CAG-376"
+    },
+    {
+      "mandator": "CAG",
+      "number": 377,
+      "displayName": "Haltepunkt Borna",
+      "latitude": 50.8591586,
+      "longitude": 12.8926218,
+      "id": "CAG-377"
+    },
+    {
+      "mandator": "CAG",
+      "number": 378,
+      "displayName": "Körperbehindertenschule",
+      "latitude": 50.86403453333333,
+      "longitude": 12.886403333333334,
+      "id": "CAG-378"
+    },
+    {
+      "mandator": "CAG",
+      "number": 379,
+      "displayName": "Chemnitzer Straße/Ostrin",
+      "latitude": 50.85429125,
+      "longitude": 12.78258615,
+      "id": "CAG-379"
+    },
+    {
+      "mandator": "CAG",
+      "number": 343,
+      "displayName": "Dürerstraße",
+      "latitude": 50.825784999999996,
+      "longitude": 12.94141445,
+      "id": "CAG-343"
+    },
+    {
+      "mandator": "CAG",
+      "number": 342,
+      "displayName": "Omnibusbetriebshof",
+      "latitude": 50.80716973333333,
+      "longitude": 12.927060883333333,
+      "id": "CAG-342"
+    },
+    {
+      "mandator": "CAG",
+      "number": 341,
+      "displayName": "Hermann-Pöge-Straße",
+      "latitude": 50.80529405,
+      "longitude": 12.9209808,
+      "id": "CAG-341"
+    },
+    {
+      "mandator": "CAG",
+      "number": 340,
+      "displayName": "Carl-von-Bach-Straße",
+      "latitude": 50.80393455,
+      "longitude": 12.8516007,
+      "id": "CAG-340"
+    },
+    {
+      "mandator": "CAG",
+      "number": 339,
+      "displayName": "Hohensteiner Straße",
+      "latitude": 50.8128332,
+      "longitude": 12.822454449999999,
+      "id": "CAG-339"
+    },
+    {
+      "mandator": "CAG",
+      "number": 336,
+      "displayName": "Heinersdorf",
+      "latitude": 50.8730342,
+      "longitude": 12.8953553,
+      "id": "CAG-336"
+    },
+    {
+      "mandator": "CAG",
+      "number": 335,
+      "displayName": "Damaschkestraße",
+      "latitude": 50.869388900000004,
+      "longitude": 12.89920345,
+      "id": "CAG-335"
+    },
+    {
+      "mandator": "CAG",
+      "number": 334,
+      "displayName": "Bornaer/Blankenburgstraß",
+      "latitude": 50.8664447,
+      "longitude": 12.904833525,
+      "id": "CAG-334"
+    },
+    {
+      "mandator": "CAG",
+      "number": 333,
+      "displayName": "Industriemuseum",
+      "latitude": 50.82503366666666,
+      "longitude": 12.901380466666666,
+      "id": "CAG-333"
+    },
+    {
+      "mandator": "CAG",
+      "number": 332,
+      "displayName": "In der Delle",
+      "latitude": 50.85925875,
+      "longitude": 12.91281385,
+      "id": "CAG-332"
+    },
+    {
+      "mandator": "CAG",
+      "number": 331,
+      "displayName": "Kändler, An den Teichen",
+      "latitude": 50.8593121,
+      "longitude": 12.79979155,
+      "id": "CAG-331"
+    },
+    {
+      "mandator": "CAG",
+      "number": 330,
+      "displayName": "Kändler, Goetheweg",
+      "latitude": 50.86050085,
+      "longitude": 12.804234749999999,
+      "id": "CAG-330"
+    },
+    {
+      "mandator": "CAG",
+      "number": 329,
+      "displayName": "Nordstraße",
+      "latitude": 50.845974749999996,
+      "longitude": 12.919885149999999,
+      "id": "CAG-329"
+    },
+    {
+      "mandator": "CAG",
+      "number": 328,
+      "displayName": "Bräuteichweg",
+      "latitude": 50.87933665,
+      "longitude": 12.86359775,
+      "id": "CAG-328"
+    },
+    {
+      "mandator": "CAG",
+      "number": 358,
+      "displayName": "Chemnitzer Straße",
+      "latitude": 50.78232156666667,
+      "longitude": 12.897314199999999,
+      "id": "CAG-358"
+    },
+    {
+      "mandator": "CAG",
+      "number": 356,
+      "displayName": "Rathaus Grüna",
+      "latitude": 50.81060626666667,
+      "longitude": 12.783929733333332,
+      "id": "CAG-356"
+    },
+    {
+      "mandator": "CAG",
+      "number": 357,
+      "displayName": "Am Stadtpark",
+      "latitude": 50.801959999999994,
+      "longitude": 12.9034503,
+      "id": "CAG-357"
+    },
+    {
+      "mandator": "CAG",
+      "number": 354,
+      "displayName": "Am Winkel",
+      "latitude": 50.784467533333334,
+      "longitude": 13.0017304,
+      "id": "CAG-354"
+    },
+    {
+      "mandator": "CAG",
+      "number": 355,
+      "displayName": "Pleißaer Straße",
+      "latitude": 50.812042399999996,
+      "longitude": 12.79299865,
+      "id": "CAG-355"
+    },
+    {
+      "mandator": "CAG",
+      "number": 352,
+      "displayName": "Rathaus Altenhain",
+      "latitude": 50.7863301,
+      "longitude": 13.0073092,
+      "id": "CAG-352"
+    },
+    {
+      "mandator": "CAG",
+      "number": 353,
+      "displayName": "Poststraße",
+      "latitude": 50.8125443,
+      "longitude": 12.7986233,
+      "id": "CAG-353"
+    },
+    {
+      "mandator": "CAG",
+      "number": 350,
+      "displayName": "Altenhain",
+      "latitude": 50.789446100000006,
+      "longitude": 13.012201099999999,
+      "id": "CAG-350"
+    },
+    {
+      "mandator": "CAG",
+      "number": 348,
+      "displayName": "Rosa-Luxemburg-Straße",
+      "latitude": 50.81278915,
+      "longitude": 12.9570768,
+      "id": "CAG-348"
+    },
+    {
+      "mandator": "CAG",
+      "number": 349,
+      "displayName": "Liselotte-Herrmann-Straß",
+      "latitude": 50.8156414,
+      "longitude": 12.9547144,
+      "id": "CAG-349"
+    },
+    {
+      "mandator": "CAG",
+      "number": 346,
+      "displayName": "Mauersbergerstraße",
+      "latitude": 50.8055964,
+      "longitude": 12.84882115,
+      "id": "CAG-346"
+    },
+    {
+      "mandator": "CAG",
+      "number": 347,
+      "displayName": "Wartburgstraße",
+      "latitude": 50.817449525,
+      "longitude": 12.939946525,
+      "id": "CAG-347"
+    },
+    {
+      "mandator": "CAG",
+      "number": 344,
+      "displayName": "Grenzgraben",
+      "latitude": 50.81098725,
+      "longitude": 12.93996165,
+      "id": "CAG-344"
+    },
+    {
+      "mandator": "CAG",
+      "number": 570,
+      "displayName": "Moritzhof",
+      "latitude": 50.82964915,
+      "longitude": 12.919851099999999,
+      "id": "CAG-570"
+    },
+    {
+      "mandator": "CAG",
+      "number": 575,
+      "displayName": "Bernsdorf",
+      "latitude": 50.81035323333333,
+      "longitude": 12.950992833333332,
+      "id": "CAG-575"
+    },
+    {
+      "mandator": "CAG",
+      "number": 574,
+      "displayName": "Hutholz",
+      "latitude": 50.78325324285714,
+      "longitude": 12.876651599999999,
+      "id": "CAG-574"
+    },
+    {
+      "mandator": "CAG",
+      "number": 572,
+      "displayName": "Grüna",
+      "latitude": 50.8094936,
+      "longitude": 12.7691692,
+      "id": "CAG-572"
+    },
+    {
+      "mandator": "CAG",
+      "number": 578,
+      "displayName": "Altchemnitz",
+      "latitude": 50.79074476666667,
+      "longitude": 12.925947816666664,
+      "id": "CAG-578"
+    },
+    {
+      "mandator": "CAG",
+      "number": 577,
+      "displayName": "Chemnitz Friedrichstraße",
+      "latitude": 50.7728808,
+      "longitude": 12.9192019,
+      "id": "CAG-577"
+    },
+    {
+      "mandator": "CAG",
+      "number": 576,
+      "displayName": "Gablenz",
+      "latitude": 50.82013832,
+      "longitude": 12.96433928,
+      "id": "CAG-576"
+    },
+    {
+      "mandator": "CAG",
+      "number": 583,
+      "displayName": "Schloßberg",
+      "latitude": 50.84603175,
+      "longitude": 12.91441815,
+      "id": "CAG-583"
+    },
+    {
+      "mandator": "CAG",
+      "number": 580,
+      "displayName": "Gasthof Draisdorf",
+      "latitude": 50.8818003,
+      "longitude": 12.8996878,
+      "id": "CAG-580"
+    },
+    {
+      "mandator": "CAG",
+      "number": 537,
+      "displayName": "Platnerstraße",
+      "latitude": 50.81977585,
+      "longitude": 12.89441165,
+      "id": "CAG-537"
+    },
+    {
+      "mandator": "CAG",
+      "number": 539,
+      "displayName": "Hauptstraße 115",
+      "latitude": 50.8427986,
+      "longitude": 13.0187431,
+      "id": "CAG-539"
+    },
+    {
+      "mandator": "CAG",
+      "number": 538,
+      "displayName": "Hauptstraße 110a",
+      "latitude": 50.8431817,
+      "longitude": 13.0180858,
+      "id": "CAG-538"
+    },
+    {
+      "mandator": "CAG",
+      "number": 541,
+      "displayName": "Abzw. Kleinolbersdorf",
+      "latitude": 50.7929071,
+      "longitude": 12.9860765,
+      "id": "CAG-541"
+    },
+    {
+      "mandator": "CAG",
+      "number": 540,
+      "displayName": "Kochstraße",
+      "latitude": 50.83508625,
+      "longitude": 12.8872793,
+      "id": "CAG-540"
+    },
+    {
+      "mandator": "CAG",
+      "number": 543,
+      "displayName": "Betriebshof Adelsberg",
+      "latitude": 50.81983348333333,
+      "longitude": 12.970348433333335,
+      "id": "CAG-543"
+    },
+    {
+      "mandator": "CAG",
+      "number": 542,
+      "displayName": "Albert-Köhler-Straße",
+      "latitude": 50.7921686,
+      "longitude": 12.89216045,
+      "id": "CAG-542"
+    },
+    {
+      "mandator": "CAG",
+      "number": 545,
+      "displayName": "Glockenstraße",
+      "latitude": 50.8355555,
+      "longitude": 12.930624233333333,
+      "id": "CAG-545"
+    },
+    {
+      "mandator": "CAG",
+      "number": 520,
+      "displayName": "Bergeshöh",
+      "latitude": 50.8456621,
+      "longitude": 13.01461625,
+      "id": "CAG-520"
+    },
+    {
+      "mandator": "CAG",
+      "number": 522,
+      "displayName": "Stadthalle",
+      "latitude": 50.835903900000005,
+      "longitude": 12.9223575,
+      "id": "CAG-522"
+    },
+    {
+      "mandator": "CAG",
+      "number": 523,
+      "displayName": "Klingerstraße",
+      "latitude": 50.8209689,
+      "longitude": 12.842468199999999,
+      "id": "CAG-523"
+    },
+    {
+      "mandator": "CAG",
+      "number": 524,
+      "displayName": "Küchwald",
+      "latitude": 50.8561017,
+      "longitude": 12.90704,
+      "id": "CAG-524"
+    },
+    {
+      "mandator": "CAG",
+      "number": 526,
+      "displayName": "An der Luthereiche",
+      "latitude": 50.7932408,
+      "longitude": 12.868161650000001,
+      "id": "CAG-526"
+    },
+    {
+      "mandator": "CAG",
+      "number": 527,
+      "displayName": "Limbach-Oberfrohna Weste",
+      "latitude": 50.8590328,
+      "longitude": 12.7500183,
+      "id": "CAG-527"
+    },
+    {
+      "mandator": "CAG",
+      "number": 530,
+      "displayName": "Mauersbergerstraße Ost",
+      "latitude": 50.81046015,
+      "longitude": 12.85545085,
+      "id": "CAG-530"
+    },
+    {
+      "mandator": "CAG",
+      "number": 531,
+      "displayName": "Otto-Schmerbach-Straße",
+      "latitude": 50.810444849999996,
+      "longitude": 12.849177749999999,
+      "id": "CAG-531"
+    },
+    {
+      "mandator": "CAG",
+      "number": 532,
+      "displayName": "Alt Chemnitz Center",
+      "latitude": 50.796323900000004,
+      "longitude": 12.917938625,
+      "id": "CAG-532"
+    },
+    {
+      "mandator": "CAG",
+      "number": 533,
+      "displayName": "IKEA",
+      "latitude": 50.8023669,
+      "longitude": 12.8608719,
+      "id": "CAG-533"
+    },
+    {
+      "mandator": "CAG",
+      "number": 534,
+      "displayName": "Waldeck",
+      "latitude": 50.877666000000005,
+      "longitude": 12.95546935,
+      "id": "CAG-534"
+    },
+    {
+      "mandator": "CAG",
+      "number": 510,
+      "displayName": "Gasthof Wildpark",
+      "latitude": 50.86282735,
+      "longitude": 12.854391549999999,
+      "id": "CAG-510"
+    },
+    {
+      "mandator": "CAG",
+      "number": 509,
+      "displayName": "Keplerstraße",
+      "latitude": 50.8220403,
+      "longitude": 12.84664235,
+      "id": "CAG-509"
+    },
+    {
+      "mandator": "CAG",
+      "number": 508,
+      "displayName": "Neubauernweg",
+      "latitude": 50.81502665,
+      "longitude": 12.879604,
+      "id": "CAG-508"
+    },
+    {
+      "mandator": "CAG",
+      "number": 507,
+      "displayName": "Solaris",
+      "latitude": 50.819169599999995,
+      "longitude": 12.89026905,
+      "id": "CAG-507"
+    },
+    {
+      "mandator": "CAG",
+      "number": 505,
+      "displayName": "Querstraße",
+      "latitude": 50.8638778,
+      "longitude": 12.8564758,
+      "id": "CAG-505"
+    },
+    {
+      "mandator": "CAG",
+      "number": 504,
+      "displayName": "Neefepark Süd",
+      "latitude": 50.8042086,
+      "longitude": 12.8624842,
+      "id": "CAG-504"
+    },
+    {
+      "mandator": "CAG",
+      "number": 519,
+      "displayName": "Neuk,Wasserschl. Klaffen",
+      "latitude": 50.771253200000004,
+      "longitude": 12.888592899999999,
+      "id": "CAG-519"
+    },
+    {
+      "mandator": "CAG",
+      "number": 518,
+      "displayName": "Schwanauer Straße",
+      "latitude": 50.8381703,
+      "longitude": 13.02530985,
+      "id": "CAG-518"
+    },
+    {
+      "mandator": "CAG",
+      "number": 517,
+      "displayName": "Am Lehngut",
+      "latitude": 50.83370655,
+      "longitude": 13.0217654,
+      "id": "CAG-517"
+    },
+    {
+      "mandator": "CAG",
+      "number": 515,
+      "displayName": "Eubaer/W.-Klippel-Straße",
+      "latitude": 50.83284140000001,
+      "longitude": 12.989645150000001,
+      "id": "CAG-515"
+    },
+    {
+      "mandator": "CAG",
+      "number": 514,
+      "displayName": "Heideschänke",
+      "latitude": 50.8325804,
+      "longitude": 12.98422695,
+      "id": "CAG-514"
+    },
+    {
+      "mandator": "CAG",
+      "number": 513,
+      "displayName": "Jungborn",
+      "latitude": 50.832114849999996,
+      "longitude": 12.97585585,
+      "id": "CAG-513"
+    },
+    {
+      "mandator": "CAG",
+      "number": 512,
+      "displayName": "Eubaer Straße",
+      "latitude": 50.8289029,
+      "longitude": 12.96235695,
+      "id": "CAG-512"
+    },
+    {
+      "mandator": "CAG",
+      "number": 495,
+      "displayName": "TU Erfenschlager Straße",
+      "latitude": 50.794901475,
+      "longitude": 12.9424629,
+      "id": "CAG-495"
+    },
+    {
+      "mandator": "CAG",
+      "number": 492,
+      "displayName": "Wasserschänkenstraße",
+      "latitude": 50.86457805,
+      "longitude": 12.8202165,
+      "id": "CAG-492"
+    },
+    {
+      "mandator": "CAG",
+      "number": 493,
+      "displayName": "Limbach, Pestalozzistraß",
+      "latitude": 50.8612475,
+      "longitude": 12.7539992,
+      "id": "CAG-493"
+    },
+    {
+      "mandator": "CAG",
+      "number": 490,
+      "displayName": "Knieweg",
+      "latitude": 50.7934846,
+      "longitude": 12.904114450000002,
+      "id": "CAG-490"
+    },
+    {
+      "mandator": "CAG",
+      "number": 491,
+      "displayName": "Thomas-Mann-Platz",
+      "latitude": 50.8447214,
+      "longitude": 12.937511966666667,
+      "id": "CAG-491"
+    },
+    {
+      "mandator": "CAG",
+      "number": 488,
+      "displayName": "Sechsruthen",
+      "latitude": 50.8749989,
+      "longitude": 12.9066672,
+      "id": "CAG-488"
+    },
+    {
+      "mandator": "CAG",
+      "number": 502,
+      "displayName": "Limbach Lutherkirche",
+      "latitude": 50.8627222,
+      "longitude": 12.7465414,
+      "id": "CAG-502"
+    },
+    {
+      "mandator": "CAG",
+      "number": 503,
+      "displayName": "Neefepark Nord",
+      "latitude": 50.8065664,
+      "longitude": 12.8611983,
+      "id": "CAG-503"
+    },
+    {
+      "mandator": "CAG",
+      "number": 500,
+      "displayName": "Clara-Z.-Str./Schauspiel",
+      "latitude": 50.82744975,
+      "longitude": 12.92817125,
+      "id": "CAG-500"
+    },
+    {
+      "mandator": "CAG",
+      "number": 501,
+      "displayName": "Kaufmannstraße",
+      "latitude": 50.82021915,
+      "longitude": 12.84789655,
+      "id": "CAG-501"
+    },
+    {
+      "mandator": "CAG",
+      "number": 498,
+      "displayName": "Am Bahrebach",
+      "latitude": 50.8680871,
+      "longitude": 12.87888455,
+      "id": "CAG-498"
+    },
+    {
+      "mandator": "CAG",
+      "number": 499,
+      "displayName": "Hainstraße/Am Pappelhain",
+      "latitude": 50.8660161,
+      "longitude": 12.7479819,
+      "id": "CAG-499"
+    },
+    {
+      "mandator": "CAG",
+      "number": 497,
+      "displayName": "Peniger Straße/Am Tor",
+      "latitude": 50.8646639,
+      "longitude": 12.75386,
+      "id": "CAG-497"
+    },
+    {
+      "mandator": "CAG",
+      "number": 476,
+      "displayName": "Am Stadtbad",
+      "latitude": 50.83798555,
+      "longitude": 12.92133915,
+      "id": "CAG-476"
+    },
+    {
+      "mandator": "CAG",
+      "number": 478,
+      "displayName": "Bernsdorfer Straße",
+      "latitude": 50.800331799999995,
+      "longitude": 12.94718985,
+      "id": "CAG-478"
+    },
+    {
+      "mandator": "CAG",
+      "number": 473,
+      "displayName": "Zietenstraße",
+      "latitude": 50.83569515,
+      "longitude": 12.9404203,
+      "id": "CAG-473"
+    },
+    {
+      "mandator": "CAG",
+      "number": 474,
+      "displayName": "Dammweg",
+      "latitude": 50.8592094,
+      "longitude": 12.92472445,
+      "id": "CAG-474"
+    },
+    {
+      "mandator": "CAG",
+      "number": 485,
+      "displayName": "Scheffelstraße",
+      "latitude": 50.80254925,
+      "longitude": 12.911582083333334,
+      "id": "CAG-485"
+    },
+    {
+      "mandator": "CAG",
+      "number": 487,
+      "displayName": "Kändler, Feldweg",
+      "latitude": 50.8542443,
+      "longitude": 12.7890904,
+      "id": "CAG-487"
+    },
+    {
+      "mandator": "CAG",
+      "number": 481,
+      "displayName": "Neue Straße",
+      "latitude": 50.8116579,
+      "longitude": 12.84156765,
+      "id": "CAG-481"
+    },
+    {
+      "mandator": "CAG",
+      "number": 480,
+      "displayName": "Höckericht",
+      "latitude": 50.818829449999996,
+      "longitude": 12.8553575,
+      "id": "CAG-480"
+    },
+    {
+      "mandator": "CAG",
+      "number": 483,
+      "displayName": "Am Glücksberg",
+      "latitude": 50.854606950000004,
+      "longitude": 12.9191125,
+      "id": "CAG-483"
+    },
+    {
+      "mandator": "CAG",
+      "number": 482,
+      "displayName": "Schönherrpark",
+      "latitude": 50.84973735,
+      "longitude": 12.921191100000001,
+      "id": "CAG-482"
+    },
+    {
+      "mandator": "CAG",
+      "number": 460,
+      "displayName": "S.-Allende-Straße",
+      "latitude": 50.805783649999995,
+      "longitude": 12.889661766666665,
+      "id": "CAG-460"
+    },
+    {
+      "mandator": "CAG",
+      "number": 461,
+      "displayName": "Blankenburgstraße 85",
+      "latitude": 50.86166365,
+      "longitude": 12.90944985,
+      "id": "CAG-461"
+    },
+    {
+      "mandator": "CAG",
+      "number": 462,
+      "displayName": "Knappschaft/Wismut GmbH",
+      "latitude": 50.8081703,
+      "longitude": 12.84268455,
+      "id": "CAG-462"
+    },
+    {
+      "mandator": "CAG",
+      "number": 456,
+      "displayName": "Südring",
+      "latitude": 50.803760350000005,
+      "longitude": 12.88700775,
+      "id": "CAG-456"
+    },
+    {
+      "mandator": "CAG",
+      "number": 458,
+      "displayName": "Limbach-Oberfrohna Gaswe",
+      "latitude": 50.8596475,
+      "longitude": 12.759296800000001,
+      "id": "CAG-458"
+    },
+    {
+      "mandator": "CAG",
+      "number": 468,
+      "displayName": "Lützowstraße",
+      "latitude": 50.82228805,
+      "longitude": 12.8922897,
+      "id": "CAG-468"
+    },
+    {
+      "mandator": "CAG",
+      "number": 469,
+      "displayName": "Hans-Ziegler-Straße",
+      "latitude": 50.82198485,
+      "longitude": 12.959750549999999,
+      "id": "CAG-469"
+    },
+    {
+      "mandator": "CAG",
+      "number": 470,
+      "displayName": "Scharnhorststraße",
+      "latitude": 50.8333854,
+      "longitude": 12.95908085,
+      "id": "CAG-470"
+    },
+    {
+      "mandator": "CAG",
+      "number": 466,
+      "displayName": "Chemnitz Center",
+      "latitude": 50.86320305,
+      "longitude": 12.8666727,
+      "id": "CAG-466"
+    },
+    {
+      "mandator": "CAG",
+      "number": 467,
+      "displayName": "Kappler Drehe",
+      "latitude": 50.82363695,
+      "longitude": 12.8970177,
+      "id": "CAG-467"
+    },
+    {
+      "mandator": "CAG",
+      "number": 706,
+      "displayName": "Zwickau, Friedrichsruh",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-706"
+    },
+    {
+      "mandator": "CAG",
+      "number": 707,
+      "displayName": "Zwickau, Colombstraße",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-707"
+    },
+    {
+      "mandator": "CAG",
+      "number": 704,
+      "displayName": "Zwickau, Zentrum",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-704"
+    },
+    {
+      "mandator": "CAG",
+      "number": 705,
+      "displayName": "Zwickau, Brückenberg",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-705"
+    },
+    {
+      "mandator": "CAG",
+      "number": 710,
+      "displayName": "Feuerwehrplatz",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-710"
+    },
+    {
+      "mandator": "CAG",
+      "number": 711,
+      "displayName": "Funkenburg",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-711"
+    },
+    {
+      "mandator": "CAG",
+      "number": 708,
+      "displayName": "Lippoldsruhe",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-708"
+    },
+    {
+      "mandator": "CAG",
+      "number": 709,
+      "displayName": "ehem. Hotel Linde",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-709"
+    },
+    {
+      "mandator": "CAG",
+      "number": 699,
+      "displayName": "Thomas-Müntzer-Höhe",
+      "latitude": 50.83266345,
+      "longitude": 12.81879055,
+      "id": "CAG-699"
+    },
+    {
+      "mandator": "CAG",
+      "number": 697,
+      "displayName": "Brauerei Einsiedel",
+      "latitude": 50.7649065,
+      "longitude": 12.9749486,
+      "id": "CAG-697"
+    },
+    {
+      "mandator": "CAG",
+      "number": 702,
+      "displayName": "Zwickau Zentralhaltestel",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-702"
+    },
+    {
+      "mandator": "CAG",
+      "number": 703,
+      "displayName": "Zwickau, Schillerstraße",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-703"
+    },
+    {
+      "mandator": "CAG",
+      "number": 700,
+      "displayName": "Langenberg, EH Alte Schu",
+      "latitude": 50.8332478,
+      "longitude": 12.7080681,
+      "id": "CAG-700"
+    },
+    {
+      "mandator": "CAG",
+      "number": 701,
+      "displayName": "Zwickau, Hauptbahnhof",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "id": "CAG-701"
+    },
+    {
+      "mandator": "CAG",
+      "number": 695,
+      "displayName": "xxx",
+      "latitude": 50.7829131,
+      "longitude": 12.8764594,
+      "id": "CAG-695"
+    },
+    {
+      "mandator": "CAG",
+      "number": 680,
+      "displayName": "Janssen-Fabrik",
+      "latitude": 50.8389639,
+      "longitude": 12.9164819,
+      "id": "CAG-680"
+    },
+    {
+      "mandator": "CAG",
+      "number": 672,
+      "displayName": "Katharina-von-Bora-Straß",
+      "latitude": 50.806167200000004,
+      "longitude": 12.949341650000001,
+      "id": "CAG-672"
+    },
+    {
+      "mandator": "CAG",
+      "number": 673,
+      "displayName": "Waldschlößchenstraße",
+      "latitude": 50.85024555,
+      "longitude": 12.9513086,
+      "id": "CAG-673"
+    },
+    {
+      "mandator": "CAG",
+      "number": 674,
+      "displayName": "Am Stollen",
+      "latitude": 50.79900875,
+      "longitude": 12.94495985,
+      "id": "CAG-674"
+    },
+    {
+      "mandator": "CAG",
+      "number": 675,
+      "displayName": "Reichenhainer Mühlberg",
+      "latitude": 50.796713749999995,
+      "longitude": 12.94575805,
+      "id": "CAG-675"
+    },
+    {
+      "mandator": "CAG",
+      "number": 677,
+      "displayName": "Rudolfstraße",
+      "latitude": 50.82641945,
+      "longitude": 12.937966150000001,
+      "id": "CAG-677"
+    },
+    {
+      "mandator": "CAG",
+      "number": 678,
+      "displayName": "Bernhardstraße",
+      "latitude": 50.82971095,
+      "longitude": 12.95514625,
+      "id": "CAG-678"
+    },
+    {
+      "mandator": "CAG",
+      "number": 679,
+      "displayName": "Pappelstraße",
+      "latitude": 50.815312399999996,
+      "longitude": 12.9526472,
+      "id": "CAG-679"
+    },
+    {
+      "mandator": "CAG",
+      "number": 664,
+      "displayName": "Messe Chemnitz",
+      "latitude": 50.8166207,
+      "longitude": 12.88234015,
+      "id": "CAG-664"
+    },
+    {
+      "mandator": "CAG",
+      "number": 665,
+      "displayName": "Klinikum Flemmingstraße",
+      "latitude": 50.8442156,
+      "longitude": 12.8859644,
+      "id": "CAG-665"
+    },
+    {
+      "mandator": "CAG",
+      "number": 666,
+      "displayName": "Further Straße",
+      "latitude": 50.8472997,
+      "longitude": 12.9249142,
+      "id": "CAG-666"
+    },
+    {
+      "mandator": "CAG",
+      "number": 668,
+      "displayName": "Albert-Schweitzer-Straße",
+      "latitude": 50.83639015,
+      "longitude": 12.87700775,
+      "id": "CAG-668"
+    },
+    {
+      "mandator": "CAG",
+      "number": 669,
+      "displayName": "Berganger",
+      "latitude": 50.8394261,
+      "longitude": 12.8756626,
+      "id": "CAG-669"
+    },
+    {
+      "mandator": "CAG",
+      "number": 670,
+      "displayName": "Schloßviertel",
+      "latitude": 50.845106099999995,
+      "longitude": 12.91874055,
+      "id": "CAG-670"
+    },
+    {
+      "mandator": "CAG",
+      "number": 671,
+      "displayName": "Henriettenstraße",
+      "latitude": 50.835060999999996,
+      "longitude": 12.900994050000001,
+      "id": "CAG-671"
+    },
+    {
+      "mandator": "CAG",
+      "number": 657,
+      "displayName": "Pfaffenhain",
+      "latitude": 50.750153749999996,
+      "longitude": 12.823092599999999,
+      "id": "CAG-657"
+    },
+    {
+      "mandator": "CAG",
+      "number": 656,
+      "displayName": "Jahnsdorf (Erzgeb)",
+      "latitude": 50.7548983,
+      "longitude": 12.8574439,
+      "id": "CAG-656"
+    },
+    {
+      "mandator": "CAG",
+      "number": 659,
+      "displayName": "Niederdorf",
+      "latitude": 50.7280489,
+      "longitude": 12.7823328,
+      "id": "CAG-659"
+    },
+    {
+      "mandator": "CAG",
+      "number": 661,
+      "displayName": "Stollberg (Sachs)",
+      "latitude": 50.7094475,
+      "longitude": 12.7737769,
+      "id": "CAG-661"
+    },
+    {
+      "mandator": "CAG",
+      "number": 660,
+      "displayName": "Stollberg Schlachthofstr",
+      "latitude": 50.7141842,
+      "longitude": 12.7787939,
+      "id": "CAG-660"
+    },
+    {
+      "mandator": "CAG",
+      "number": 663,
+      "displayName": "Köthensdorfer Straße",
+      "latitude": 50.8568379,
+      "longitude": 12.8846617,
+      "id": "CAG-663"
+    },
+    {
+      "mandator": "CAG",
+      "number": 662,
+      "displayName": "Kirche Adelsberg",
+      "latitude": 50.814515549999996,
+      "longitude": 12.986192899999999,
+      "id": "CAG-662"
+    },
+    {
+      "mandator": "CAG",
+      "number": 651,
+      "displayName": "Chemnitz-Harthau",
+      "latitude": 50.7768358,
+      "longitude": 12.9241189,
+      "id": "CAG-651"
+    },
+    {
+      "mandator": "CAG",
+      "number": 650,
+      "displayName": "Ch., Riemenschneiderstr.",
+      "latitude": 50.7853136,
+      "longitude": 12.9254317,
+      "id": "CAG-650"
+    },
+    {
+      "mandator": "CAG",
+      "number": 653,
+      "displayName": "Neukirchen-Klaffenbach",
+      "latitude": 50.7710269,
+      "longitude": 12.8935981,
+      "id": "CAG-653"
+    },
+    {
+      "mandator": "CAG",
+      "number": 652,
+      "displayName": "Klaffenbach Haltepunkt",
+      "latitude": 50.7723128,
+      "longitude": 12.9035683,
+      "id": "CAG-652"
+    },
+    {
+      "mandator": "CAG",
+      "number": 655,
+      "displayName": "Adorf (Erzgeb)",
+      "latitude": 50.7638192,
+      "longitude": 12.8735861,
+      "id": "CAG-655"
+    },
+    {
+      "mandator": "CAG",
+      "number": 642,
+      "displayName": "An den Alten Lehden",
+      "latitude": 50.8193933,
+      "longitude": 12.8303772,
+      "id": "CAG-642"
+    },
+    {
+      "mandator": "CAG",
+      "number": 643,
+      "displayName": "Am Ried",
+      "latitude": 50.82739375,
+      "longitude": 12.8265058,
+      "id": "CAG-643"
+    },
+    {
+      "mandator": "CAG",
+      "number": 640,
+      "displayName": "Hechlerstraße",
+      "latitude": 50.844498200000004,
+      "longitude": 12.912075699999999,
+      "id": "CAG-640"
+    },
+    {
+      "mandator": "CAG",
+      "number": 641,
+      "displayName": "pentahotel",
+      "latitude": 50.8473994,
+      "longitude": 12.9165044,
+      "id": "CAG-641"
+    },
+    {
+      "mandator": "CAG",
+      "number": 638,
+      "displayName": "Alfred-Neubert-Straße",
+      "latitude": 50.78586195,
+      "longitude": 12.89512805,
+      "id": "CAG-638"
+    },
+    {
+      "mandator": "CAG",
+      "number": 639,
+      "displayName": "Parkstraße",
+      "latitude": 50.8235229,
+      "longitude": 12.9107246,
+      "id": "CAG-639"
+    },
+    {
+      "mandator": "CAG",
+      "number": 637,
+      "displayName": "Niederwiesa, Rathaus",
+      "latitude": 50.863827900000004,
+      "longitude": 13.0224221,
+      "id": "CAG-637"
+    },
+    {
+      "mandator": "CAG",
+      "number": 634,
+      "displayName": "Steinbruchsweg",
+      "latitude": 50.880366949999996,
+      "longitude": 12.8393482,
+      "id": "CAG-634"
+    },
+    {
+      "mandator": "CAG",
+      "number": 635,
+      "displayName": "Alte Herrenhaider Straße",
+      "latitude": 50.8821329,
+      "longitude": 12.8320264,
+      "id": "CAG-635"
+    },
+    {
+      "mandator": "CAG",
+      "number": 632,
+      "displayName": "Obere Hauptstraße 99",
+      "latitude": 50.88144015,
+      "longitude": 12.8531129,
+      "id": "CAG-632"
+    },
+    {
+      "mandator": "CAG",
+      "number": 633,
+      "displayName": "Oberer Bahnhof Wittgensd",
+      "latitude": 50.8801242,
+      "longitude": 12.84369375,
+      "id": "CAG-633"
+    },
+    {
+      "mandator": "CAG",
+      "number": 631,
+      "displayName": "Nordplatz",
+      "latitude": 50.879955249999995,
+      "longitude": 12.8584318,
+      "id": "CAG-631"
+    },
+    {
+      "mandator": "CAG",
+      "number": 630,
+      "displayName": "Obere Hauptstraße 72",
+      "latitude": 50.8793967,
+      "longitude": 12.8610357,
+      "id": "CAG-630"
+    },
+    {
+      "mandator": "CAG",
+      "number": 629,
+      "displayName": "Lothringer/Elsasser Stra",
+      "latitude": 50.8217681,
+      "longitude": 12.9230594,
+      "id": "CAG-629"
+    },
+    {
+      "mandator": "CAG",
+      "number": 628,
+      "displayName": "Herzogshöhe",
+      "latitude": 50.8870618,
+      "longitude": 12.87672015,
+      "id": "CAG-628"
+    },
+    {
+      "mandator": "CAG",
+      "number": 627,
+      "displayName": "Marktsteig Wittgensdorf",
+      "latitude": 50.8901753,
+      "longitude": 12.882698600000001,
+      "id": "CAG-627"
+    },
+    {
+      "mandator": "CAG",
+      "number": 626,
+      "displayName": "Unterer Bf. Wittgensdorf",
+      "latitude": 50.8908375,
+      "longitude": 12.888565849999999,
+      "id": "CAG-626"
+    },
+    {
+      "mandator": "CAG",
+      "number": 625,
+      "displayName": "Ortseingang Wittgensdorf",
+      "latitude": 50.8933872,
+      "longitude": 12.8917256,
+      "id": "CAG-625"
+    },
+    {
+      "mandator": "CAG",
+      "number": 624,
+      "displayName": "Ortseingang Draisdorf",
+      "latitude": 50.8832714,
+      "longitude": 12.8974817,
+      "id": "CAG-624"
+    },
+    {
+      "mandator": "CAG",
+      "number": 621,
+      "displayName": "Niederwiesa, Ortseingang",
+      "latitude": 50.857371349999994,
+      "longitude": 13.009741250000001,
+      "id": "CAG-621"
+    },
+    {
+      "mandator": "CAG",
+      "number": 619,
+      "displayName": "Wittgensdorfer Höhe",
+      "latitude": 50.87907985,
+      "longitude": 12.82534805,
+      "id": "CAG-619"
+    },
+    {
+      "mandator": "CAG",
+      "number": 618,
+      "displayName": "Würschnitztalstraße",
+      "latitude": 50.7736453,
+      "longitude": 12.9065169,
+      "id": "CAG-618"
+    },
+    {
+      "mandator": "CAG",
+      "number": 617,
+      "displayName": "Post Röhrsdorf",
+      "latitude": 50.861282349999996,
+      "longitude": 12.838122649999999,
+      "id": "CAG-617"
+    },
+    {
+      "mandator": "CAG",
+      "number": 616,
+      "displayName": "Am Regenbogenhaus",
+      "latitude": 50.88105915,
+      "longitude": 12.8671633,
+      "id": "CAG-616"
+    },
+    {
+      "mandator": "CAG",
+      "number": 608,
+      "displayName": "Rosenplatz",
+      "latitude": 50.8409708,
+      "longitude": 13.02315405,
+      "id": "CAG-608"
+    },
+    {
+      "mandator": "CAG",
+      "number": 607,
+      "displayName": "Helbersdorfer Straße",
+      "latitude": 50.8026461,
+      "longitude": 12.8980397,
+      "id": "CAG-607"
+    },
+    {
+      "mandator": "CAG",
+      "number": 601,
+      "displayName": "Neuk./Zentrale Haltestel",
+      "latitude": 50.778583499999996,
+      "longitude": 12.868806,
+      "id": "CAG-601"
+    },
+    {
+      "mandator": "CAG",
+      "number": 602,
+      "displayName": "Neukirchen, Oberschule",
+      "latitude": 50.77696415,
+      "longitude": 12.8740046,
+      "id": "CAG-602"
+    },
+    {
+      "mandator": "CAG",
+      "number": 603,
+      "displayName": "Neuk.,Gasth.Schloßschänk",
+      "latitude": 50.77143625,
+      "longitude": 12.8844058,
+      "id": "CAG-603"
+    },
+    {
+      "mandator": "CAG",
+      "number": 599,
+      "displayName": "Moritzstraße",
+      "latitude": 50.83111055,
+      "longitude": 12.9240417,
+      "id": "CAG-599"
+    },
+    {
+      "mandator": "CAG",
+      "number": 593,
+      "displayName": "Gemeindepark Röhrsdorf",
+      "latitude": 50.86150765,
+      "longitude": 12.834355949999999,
+      "id": "CAG-593"
+    },
+    {
+      "mandator": "CAG",
+      "number": 592,
+      "displayName": "Heinrich-Heine-Straße",
+      "latitude": 50.86108695,
+      "longitude": 12.8426697,
+      "id": "CAG-592"
+    },
+    {
+      "mandator": "CAG",
+      "number": 595,
+      "displayName": "Jack-London-Straße",
+      "latitude": 50.8645478,
+      "longitude": 12.82402685,
+      "id": "CAG-595"
+    },
+    {
+      "mandator": "CAG",
+      "number": 594,
+      "displayName": "Sebastian-Bach-Gasse",
+      "latitude": 50.862585949999996,
+      "longitude": 12.82961455,
+      "id": "CAG-594"
+    },
+    {
+      "mandator": "CAG",
+      "number": 589,
+      "displayName": "Richard-Wagner-Straße",
+      "latitude": 50.82056085,
+      "longitude": 12.89727985,
+      "id": "CAG-589"
+    },
+    {
+      "mandator": "CAG",
+      "number": 591,
+      "displayName": "Genossenschaftsweg",
+      "latitude": 50.861944300000005,
+      "longitude": 12.8499753,
+      "id": "CAG-591"
+    },
+    {
+      "mandator": "CAG",
+      "number": 587,
+      "displayName": "Lohrstraße",
+      "latitude": 50.8477978,
+      "longitude": 12.9256392,
+      "id": "CAG-587"
+    },
+    {
+      "mandator": "CAG",
+      "number": 586,
+      "displayName": "Hauboldstraße",
+      "latitude": 50.848185,
+      "longitude": 12.9236533,
+      "id": "CAG-586"
+    }
+  ]
+}
