@@ -69,6 +69,12 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "ge
             var myLatLng = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
             map.setCenter(myLatLng);
             map.setZoom(15);
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Position',
+                animation: google.maps.Animation.DROP
+            });
         });
 
         $http.get('resources/stops.json').success(function(data) {
