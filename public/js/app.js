@@ -45,7 +45,6 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "ge
         $http.get('departures/' + $scope.selectedStation.id).success(function(data) {
             try{
                 station = angular.fromJson(data);
-                console.log(station);
             }catch(err){
                 console.log(data);
             }
@@ -53,7 +52,6 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "ge
             $scope.selectedStation.stops = station.stops;
             $scope.selectedStation.loading = false;
             $scope.map.setOptions({draggable: true});
-            console.log($scope.selectedStation);
         });
     }
 
