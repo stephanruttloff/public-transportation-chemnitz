@@ -2,23 +2,23 @@
 <b>{{selectedStation.displayName}}</b>
 <md-progress-circular ng-show="selectedStation.loading" md-mode="indeterminate" style="margin-left:auto;margin-right:auto;"></md-progress-circular>
 <table ng-hide="selectedStation.loading">
-	<tr>
-		<th colspan="2">Linie</th>
-		<th>Richtung</th>
-		<th>Abfahrt</th>
-	</tr>
-	<tr ng-repeat="stop in selectedStation.stops">
-		<td align="center">
-			<span ng-if="stop.serviceType=='TRAM'">
-				&#128651;
-			</span>
-			<span ng-if="stop.serviceType=='BUS'">
-				&#128652;
-			</span>
-		</td>
-		<td align="center"><b>{{stop.line}}</b></td>
-		<td align="left">{{stop.destination}}</td>
-		<td align="center"><timer max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer></td>
-	</tr>
+    <tr>
+        <th colspan="2">Linie</th>
+        <th>Richtung</th>
+        <th>Abfahrt</th>
+    </tr>
+    <tr ng-repeat="stop in selectedStation.stops">
+        <td align="center">
+            <span ng-if="stop.serviceType=='TRAM'">
+                &#128651;
+            </span>
+            <span ng-if="stop.serviceType=='BUS'">
+                &#128652;
+            </span>
+        </td>
+        <td align="center"><b>{{stop.line}}</b></td>
+        <td align="left">{{stop.destination}}</td>
+        <td align="center"><timer max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer></td>
+    </tr>
 </table>
 </div>
