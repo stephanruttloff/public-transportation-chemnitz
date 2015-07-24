@@ -7,7 +7,7 @@ var app = express()
 
 app.get('/departures/:stationId', GetDepartures)
 
-app.use(serveStatic('./public', {'index': ['default.html', 'default.htm']}))
+app.use(serveStatic('./public', {'index': ['index.html', 'index.htm']}))
 app.listen(80)
 
 function GetDepartures(req, res)
