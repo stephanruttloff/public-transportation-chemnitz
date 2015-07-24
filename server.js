@@ -6,8 +6,8 @@ var app = express()
 
 app.get('/departures/:stationId', GetDepartures)
 
-app.use(serveStatic('./public', {'index': ['index.html', 'index.htm']}))
-app.listen(80)
+app.use(serveStatic(__dirname + '/public', {'index': ['index.html', 'index.htm']}))
+app.listen(process.argv[2])
 
 function GetDepartures(req, res)
 {
