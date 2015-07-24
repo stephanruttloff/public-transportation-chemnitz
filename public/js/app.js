@@ -1,5 +1,5 @@
 var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer"]);
-app.controller("main", [ "$scope", "$http", "$sce", "$compile", "geolocation", "moment", function($scope, $http, $sce, $compile, geolocation, moment) {
+app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "geolocation", "moment", function($scope, $http, $sce, $compile, $interval, geolocation, moment) {
 
     $scope.bottom = {
         title: "",
@@ -12,45 +12,57 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "geolocation", "
         height: 100
     }
 
+    $scope.selectedStation = {
+        loading: true
+    }
+
     $scope.attachEventListener = function(marker, station)
     {
         marker.station = station;
         google.maps.event.addListener(marker, 'mousedown', function() {
+            $scope.map.setOptions({draggable: false});
             $scope.$apply(function(){
-                var header = "<b>" + marker.station.displayName + "</b><br>";
-                var loading = $compile("<md-progress-circular md-mode='indeterminate' style='margin-left:auto;margin-right:auto;'></md-progress-circular>")($scope)[0].outerHTML;
-                var content = header + loading;
+                if($scope.map.infowindow.getContent() === "")
+                {
+                    var content = $compile("<div ng-include=\"'partials/infowindow.html'\"></div>")($scope)[0];
+                    $scope.map.infowindow.setContent(content);
+                }
                 $scope.map.infowindow.open($scope.map, marker);
-                $scope.map.infowindow.setContent(content);
 
-                $http.get('departures/' + marker.station.id).success(function(data) {
-                    var d = angular.fromJson(data);
-                    var now = new moment(d.now);
-                    var table = "<table><tr><th>Linie</th><th>Richtung</th><th>Abfahrt</th></tr>";
-                    for(var i = 0; i < d.stops.length; i++)
-                    {
-                        table += "<tr>"
+                $scope.selectedStation.loading = true;
+                $scope.selectedStation  = marker.station;
 
-                        var diff = new moment(d.stops[i].actualDeparture).diff(now, 'Minutes');
-                        table += "<td>" + d.stops[i].line + "</td>";
-                        table += "<td>" + d.stops[i].destination + "</td>";
-                        table += "<td text-align='right'><timer max-time-unit=\"'minute'\" end-time='" + d.stops[i].actualDeparture + "'>{{mminutes}}:{{sseconds}}</timer></td>";
-                        //table += "<td>" + diff + "</td>";
+                $scope.refreshStationData();
 
-                        table += "</tr>"
-                    }
-                    table += "</table>";
-                    var content = "<div>" + header + table + "</div>"
-                    content = $compile(content)($scope);
-                    $scope.map.infowindow.setContent(content[0]);
-                });
+                if(!angular.isDefined($scope.refreshInterval))
+                    $scope.refreshInterval = $interval($scope.refreshStationData, 60000);
             })
+        });
+    }
+
+    $scope.refreshStationData = function()
+    {
+        $http.get('departures/' + $scope.selectedStation.id).success(function(data) {
+            try{
+                station = angular.fromJson(data);
+            }catch(err){
+                console.log(data);
+            }
+            $scope.selectedStation.now = station.now;
+            $scope.selectedStation.stops = station.stops;
+            $scope.selectedStation.loading = false;
+            $scope.map.setOptions({draggable: true});
         });
     }
 
     $scope.$on('mapInitialized', function(event, map) {
         map.infowindow = new google.maps.InfoWindow({
             content: ""
+        });
+
+        google.maps.event.addListener(map.infowindow,'closeclick',function(){
+            if(angular.isDefined($scope.refreshInterval))
+                $interval.cancel($scope.refreshInterval);
         });
 
         geolocation.getLocation().then(function(data){
