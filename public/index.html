@@ -31,20 +31,8 @@
     </style>
   </head>
   <body ng-controller="main">
-  	<div style="height:{{top.height}}%;">
+  	<div style="height:100%;">
     	<map style="min-height:100%;height:100%;width:100%;" center="50.831707,12.922202" zoom="14"></map>
-    </div>
-    <div style="height:{{bottom.height}}%;overflow:hidden;" ng-show="bottom.show">
-    	<md-card style="max-height:100%;">
-	      <!--<img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">-->
-	      <md-card-content style="height:50%" style="background-color:white;">
-	        <h2 class="md-title">{{bottom.title}}</h2>
-	        <p ng-bind-html="bottom.content"></p>
-	      </md-card-content>
-	      <div class="md-actions" layout="row" layout-align="end center" style="background-color:white;">
-	        <md-button>Close</md-button>
-	      </div>
-	    </md-card>
     </div>
   </body>
 </html>

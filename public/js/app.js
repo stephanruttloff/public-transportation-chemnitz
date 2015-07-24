@@ -1,17 +1,6 @@
 var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer"]);
 app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "geolocation", "moment", function($scope, $http, $sce, $compile, $interval, geolocation, moment) {
 
-    $scope.bottom = {
-        title: "",
-        content: "",
-        show: false,
-        height: 0
-    }
-
-    $scope.top = {
-        height: 100
-    }
-
     $scope.selectedStation = {
         loading: true
     }
