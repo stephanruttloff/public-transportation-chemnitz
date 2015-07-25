@@ -8,7 +8,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "ge
     $scope.attachEventListener = function(marker, station)
     {
         marker.station = station;
-        google.maps.event.addListener(marker, 'mousedown', function() {
+        google.maps.event.addListener(marker, 'mouseup', function() {
             $scope.map.setOptions({draggable: false});
             $scope.$apply(function(){
                 if($scope.map.infowindow.getContent() === "")
