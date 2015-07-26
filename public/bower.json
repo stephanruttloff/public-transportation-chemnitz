@@ -1,0 +1,29 @@
+{
+  "name": "CVAG",
+  "version": "0.0.1",
+  "authors": [
+    "Stephan Ruttloff <stephan@ruttloff.org>"
+  ],
+  "description": "Real-time CVAG departure map",
+  "main": "js/app.js",
+  "keywords": [
+    "CVAG"
+  ],
+  "license": "WTFPL",
+  "homepage": "http://ruttloff.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "master",
+    "angular-moment": "~0.10.1",
+    "angular-timer": "~1.3.3",
+    "angularjs-geolocation": "~0.1.1",
+    "moment": "~2.10.5",
+    "ngmap": "~1.9.1"
+  }
+}
