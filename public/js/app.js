@@ -1,5 +1,8 @@
 var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer"]);
-app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "geolocation", "moment", function($scope, $http, $sce, $compile, $interval, geolocation, moment) {
+app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "geolocation", "moment",
+                function($scope, $http, $sce, $compile, $interval, $timeout, geolocation, moment) {
+
+    $scope.reactToMarker = true;
 
     $scope.selectedStation = {
         loading: true
@@ -9,25 +12,30 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "ge
     {
         marker.station = station;
         google.maps.event.addListener(marker, 'mouseup', function() {
-            $scope.map.setOptions({draggable: false});
-            $scope.$apply(function(){
-                if($scope.map.infowindow.getContent() === "")
-                {
-                    var content = $compile("<div ng-include=\"'partials/infowindow.html'\"></div>")($scope)[0];
-                    $scope.map.infowindow.setContent(content);
-                }
-                $scope.map.infowindow.open($scope.map, marker);
+            if($scope.reactToMarker)
+            {
+                console.log($scope.reactToMarker);
 
-                $scope.selectedStation.loading = true;
-                $scope.selectedStation  = marker.station;
+                $scope.map.setOptions({draggable: false});
+                $scope.$apply(function(){
+                    if($scope.map.infowindow.getContent() === "")
+                    {
+                        var content = $compile("<div ng-include=\"'partials/infowindow.html'\"></div>")($scope)[0];
+                        $scope.map.infowindow.setContent(content);
+                    }
+                    $scope.map.infowindow.open($scope.map, marker);
 
-                $scope.refreshStationData();
+                    $scope.selectedStation.loading = true;
+                    $scope.selectedStation  = marker.station;
 
-                if(!angular.isDefined($scope.refreshInterval))
-                    $scope.refreshInterval = $interval($scope.refreshStationData, 60000);
-            })
+                    $scope.refreshStationData();
+
+                    if(!angular.isDefined($scope.refreshInterval))
+                        $scope.refreshInterval = $interval($scope.refreshStationData, 60000);
+                });
+            };
         });
-    }
+    };
 
     $scope.refreshStationData = function()
     {
@@ -44,7 +52,30 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "ge
         });
     }
 
+    $scope.doReactToMarker = function()
+    {
+        $scope.reactToMarker = true;
+        console.log('enabled marker');
+    }
+
     $scope.$on('mapInitialized', function(event, map) {
+        console.log('map init');
+
+        google.maps.event.addListener(map, 'zoom_changed', function() {
+            $scope.reactToMarker = false;
+            $timeout($scope.doReactToMarker, 500);
+            console.log('disabled marker');
+        })
+
+        google.maps.event.addListener(map, 'dragstart', function() {
+            $scope.reactToMarker = false;
+            console.log('disabled marker');
+        })
+
+        google.maps.event.addListener(map, 'dragend', function() {
+            $timeout($scope.doReactToMarker, 500);
+        })
+
         map.infowindow = new google.maps.InfoWindow({
             content: ""
         });
