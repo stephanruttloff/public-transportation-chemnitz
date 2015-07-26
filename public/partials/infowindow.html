@@ -1,24 +1,29 @@
 <div>
-<b>{{selectedStation.displayName}}</b>
-<md-progress-circular ng-show="selectedStation.loading" md-mode="indeterminate" style="margin-left:auto;margin-right:auto;"></md-progress-circular>
-<table ng-hide="selectedStation.loading">
-    <tr>
-        <th colspan="2">Linie</th>
-        <th>Richtung</th>
-        <th>Abfahrt</th>
-    </tr>
-    <tr ng-repeat="stop in selectedStation.stops">
-        <td align="center">
-            <span ng-if="stop.serviceType=='TRAM'">
-                &#128651;
-            </span>
-            <span ng-if="stop.serviceType=='BUS'">
-                &#128652;
-            </span>
-        </td>
-        <td align="center"><b>{{stop.line}}</b></td>
-        <td align="left">{{stop.destination}}</td>
-        <td align="center"><timer max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer></td>
-    </tr>
-</table>
+    <md-progress-circular ng-show="selectedStation.loading" md-mode="indeterminate" style="margin-left:auto;margin-right:auto;"></md-progress-circular>
+    <table ng-hide="selectedStation.loading">
+        <tr>
+            <th colspan="4" align="left">{{selectedStation.displayName}}</th>
+        </tr>
+        <tr>
+            <th colspan="2">Linie</th>
+            <th colspan="2">Richtung</th>
+            <th>Abfahrt</th>
+        </tr>
+        <tr ng-repeat="stop in selectedStation.stops">
+            <td align="center">
+                <span ng-if="stop.serviceType=='TRAM'">
+                    &#128651;
+                </span>
+                <span ng-if="stop.serviceType=='BUS'">
+                    &#128652;
+                </span>
+            </td>
+            <td align="center"><b>{{stop.line}}</b></td>
+            <td align="left">{{stop.destination}}</td>
+            <td ng-click="fav(selectedStation.id, stop.line, stop.destination)">
+                <md-icon md-svg-src="{{isFav(selectedStation.id, stop.line, stop.destination) && '/img/ic_favorite_black_24px.svg' || '/img/ic_favorite_border_black_24px.svg'}}" aria-label="fav" width="10" height="10"></md-icon>
+            </td>
+            <td align="center"><timer max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer></td>
+        </tr>
+    </table>
 </div>

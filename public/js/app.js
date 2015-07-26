@@ -1,6 +1,15 @@
-var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer"]);
-app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "geolocation", "moment",
-                function($scope, $http, $sce, $compile, $interval, $timeout, geolocation, moment) {
+var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer", "ngCookies"]);
+app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "$cookieStore", "geolocation", "moment",
+                function($scope, $http, $sce, $compile, $interval, $timeout, $cookieStore, geolocation, moment) {
+
+    $scope.favs = $cookieStore.get('favs');
+    if(angular.isUndefined($scope.favs))
+        $scope.favs = [];
+    console.log($scope.favs);
+
+    $scope.menu = {
+        open: false
+    }
 
     $scope.reactToMarker = true;
 
@@ -9,6 +18,43 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
     }
 
     $scope.mapInitDone = false;
+
+    $scope.onMenuClick = function()
+    {
+        $scope.menu.open = !$scope.menu.open;
+    }
+
+    $scope.onFavClick = function()
+    {
+        console.log($scope.favs);
+    }
+
+    $scope.getIndexOf = function(array, object)
+    {
+        for(var i = 0; i < array.length; i++)
+            if(array[i] == object) return i;
+        return -1;
+    }
+
+    $scope.getFavKey = function(stationId, line, destination)
+    {
+        return stationId + "|" + line + "|" + destination;
+    }
+
+    $scope.isFav = function(stationId, line, destination)
+    {
+        return $scope.getIndexOf($scope.favs, $scope.getFavKey(stationId, line, destination)) >= 0;
+    }
+
+    $scope.fav = function(stationId, line, destination)
+    {
+        var i = $scope.getIndexOf($scope.favs, $scope.getFavKey(stationId, line, destination));
+        if(i < 0)
+            $scope.favs.push($scope.getFavKey(stationId, line, destination))
+        else
+            $scope.favs.splice(i, 1);
+        $cookieStore.put('favs', $scope.favs);
+    }
 
     $scope.attachEventListener = function(marker, station)
     {
@@ -99,6 +145,8 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
 
             map.fitBounds(bounds);
         });
+        var menu = /** @type {HTMLInputElement} */(document.getElementById('pac-menu'));
+        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(menu);
 
         google.maps.event.addListener(map, 'bounds_changed', function() {
             var bounds = map.getBounds();
