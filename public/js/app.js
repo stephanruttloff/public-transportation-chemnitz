@@ -55,21 +55,16 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
     $scope.doReactToMarker = function()
     {
         $scope.reactToMarker = true;
-        console.log('enabled marker');
     }
 
     $scope.$on('mapInitialized', function(event, map) {
-        console.log('map init');
-
         google.maps.event.addListener(map, 'zoom_changed', function() {
             $scope.reactToMarker = false;
             $timeout($scope.doReactToMarker, 500);
-            console.log('disabled marker');
         })
 
         google.maps.event.addListener(map, 'dragstart', function() {
             $scope.reactToMarker = false;
-            console.log('disabled marker');
         })
 
         google.maps.event.addListener(map, 'dragend', function() {
