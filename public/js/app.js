@@ -1,11 +1,11 @@
 var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer", "ngCookies"]);
-app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "$cookieStore", "geolocation", "moment",
-                function($scope, $http, $sce, $compile, $interval, $timeout, $cookieStore, geolocation, moment) {
+app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "$cookieStore", "geolocation", "moment", "$mdSidenav",
+                function($scope, $http, $sce, $compile, $interval, $timeout, $cookieStore, geolocation, moment, $mdSidenav) {
 
     $scope.favs = $cookieStore.get('favs');
     if(angular.isUndefined($scope.favs))
         $scope.favs = [];
-    console.log($scope.favs);
+    $scope.favViewModel = [];
 
     $scope.menu = {
         open: false
@@ -26,7 +26,27 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
 
     $scope.onFavClick = function()
     {
-        console.log($scope.favs);
+        $mdSidenav('right').toggle();
+    }
+
+    $scope.getFavData = function()
+    {
+        if($scope.favViewModel.length == $scope.favs)
+            return $scope.favViewModel;
+        else
+        {
+            $scope.favViewModel.length = 0;
+            for(var i = 0; i < $scope.favs.length; i++)
+            {
+                var fav = $scope.decodeFavKey($scope.favs[i]);
+                $scope.favViewModel.push({
+                    stationId: fav.stationId,
+                    line: fav.line,
+                    destination: fav.destination
+                })
+            }
+            return $scope.favViewModel;
+        }
     }
 
     $scope.getIndexOf = function(array, object)
@@ -39,6 +59,16 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
     $scope.getFavKey = function(stationId, line, destination)
     {
         return stationId + "|" + line + "|" + destination;
+    }
+
+    $scope.decodeFavKey = function(favKey)
+    {
+        var parts = favKey.split("|");
+        return {
+            stationId: parts[0],
+            line: parts[1],
+            destination: parts[2]
+        }
     }
 
     $scope.isFav = function(stationId, line, destination)
@@ -54,6 +84,8 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         else
             $scope.favs.splice(i, 1);
         $cookieStore.put('favs', $scope.favs);
+        $scope.getFavData();
+        console.log($scope.favViewModel);
     }
 
     $scope.attachEventListener = function(marker, station)
@@ -204,5 +236,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         });
 
         $scope.mapInitDone = true;
+
+        $scope.getFavData();
     });
 }]);
