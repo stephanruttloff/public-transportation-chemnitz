@@ -8,6 +8,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-preprocess');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-myth');
 
     grunt.initConfig({
 
@@ -18,13 +19,24 @@ module.exports = function(grunt) {
             }
         },
 
+        myth: {
+            options: {
+                sourcemap: true
+            },
+            app: {
+                files: {
+                    'src/css/style.polyfill.css': 'src/css/style.css'
+                }
+            }
+        },
+
         cssmin: {
             bower:{
                 src: 'src/css/bower.css',
                 dest: 'public/css/bower.min.css'
             },
             app:{
-                src: 'src/css/style.css',
+                src: 'src/css/style.polyfill.css',
                 dest: 'public/css/style.min.css'
             }
         },
@@ -82,8 +94,8 @@ module.exports = function(grunt) {
         },
 
         clean: {
-            css: ['public/css/*.css', '!public/css/*.min.css'],
-            js: ['public/js/*.js', '!public/js/*.min.js'],
+            css: ['public/css/*.css', '!public/css/*.min.css', 'src/css/*.min.css', 'src/css/*.polyfill.css'],
+            js: ['public/js/*.js', '!public/js/*.min.js', 'src/js/*.min.js'],
             bower: ['src/css/bower.*'],
             release: ['public/*']
         },
@@ -171,6 +183,7 @@ module.exports = function(grunt) {
     grunt.registerTask('default', [
         'clean:release',
         'bower_concat',
+        'myth',
         'cssmin',
         'uglify',
         'copy',
@@ -182,6 +195,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', [
         'clean:release',
         'bower_concat',
+        'myth',
         'cssmin',
         'uglify',
         'copy',

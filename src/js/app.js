@@ -17,8 +17,6 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         loading: true
     }
 
-    $scope.mapInitDone = false;
-
     $scope.onMenuClick = function()
     {
         $scope.menu.open = !$scope.menu.open;
@@ -232,8 +230,6 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
                 $scope.attachEventListener(marker, stations[i]);
             }
         });
-
-        $scope.mapInitDone = true;
 
         $scope.getFavData();
     });

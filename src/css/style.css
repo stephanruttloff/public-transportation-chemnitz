@@ -1,10 +1,40 @@
 body {
+    height: 100%;
     padding: 0;
     margin: 0;
 }
-html, body {
-    height: 100%;
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }
+
+.box .row {
+  flex: 0 1 30px;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.box .row.footer {
+  flex: 0 1 40px;
+}
+
+#map {
+    flex: 1;
+    height: 100% !important;
+    min-height: 100% !important;
+    width: 100%;
+    position: absolute;
+}
+
 tr:nth-child(even) {
     background-color: #DFDFDF;
 }
@@ -30,6 +60,7 @@ tr:nth-child(even) {
     margin-bottom: auto;
     margin-left:16px;
     margin-right:16px;
+    padding-left: 16px;
     vertical-align: middle;
 }
 
