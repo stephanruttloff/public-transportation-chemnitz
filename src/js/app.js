@@ -17,14 +17,9 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         loading: true
     }
 
-    $scope.onMenuClick = function()
+    $scope.openSidenav = function()
     {
-        $scope.menu.open = !$scope.menu.open;
-    }
-
-    $scope.onFavClick = function()
-    {
-        $mdSidenav('right').toggle();
+        $mdSidenav('left').toggle();
     }
 
     $scope.getFavData = function()
