@@ -34,3 +34,9 @@ bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
+bower.css
+bower.min.css
+bower.js
+bower.min.js
+style.min.css
+app.min.js
