@@ -17,7 +17,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         loading: true
     }
 
-    $scope.openSidenav = function()
+    $scope.toggleSidenav = function()
     {
         $mdSidenav('left').toggle();
     }
