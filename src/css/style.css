@@ -24,9 +24,13 @@ tr:nth-child(even) {
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
-    margin-left: 12px;
-    padding: 0 11px 0 13px;
     text-overflow: ellipsis;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:16px;
+    margin-right:16px;
+    vertical-align: middle;
 }
 
 #pac-input:focus {

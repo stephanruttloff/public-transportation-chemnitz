@@ -138,7 +138,6 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
     $scope.$on('mapInitialized', function(event, map) {
         var markers = [];
         var input = /** @type {HTMLInputElement} */(document.getElementById('pac-input'));
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
         var searchBox = new google.maps.places.SearchBox(/** @type {HTMLInputElement} */(input));
         google.maps.event.addListener(searchBox, 'places_changed', function() {
             var places = searchBox.getPlaces();
@@ -178,7 +177,6 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
             map.fitBounds(bounds);
         });
         var menu = /** @type {HTMLInputElement} */(document.getElementById('pac-menu'));
-        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(menu);
 
         google.maps.event.addListener(map, 'bounds_changed', function() {
             var bounds = map.getBounds();
