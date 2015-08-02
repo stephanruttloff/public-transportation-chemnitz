@@ -9,8 +9,10 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.1",
+    "promise": "^7.0.3",
     "request": "^2.60.0",
-    "serve-static": "^1.10.0"
+    "serve-static": "^1.10.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "bower": "^1.4.1",
