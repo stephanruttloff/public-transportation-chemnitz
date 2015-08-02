@@ -2,14 +2,9 @@ var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angular
 app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "$cookieStore", "geolocation", "moment", "$mdSidenav",
                 function($scope, $http, $sce, $compile, $interval, $timeout, $cookieStore, geolocation, moment, $mdSidenav) {
 
-    $scope.favs = $cookieStore.get('favs');
-    if(angular.isUndefined($scope.favs))
-        $scope.favs = [];
-    $scope.favViewModel = [];
+//- GLOBALS --------------------------------------------------------------------
 
-    $scope.menu = {
-        open: false
-    }
+    $scope.favs = [];
 
     $scope.reactToMarker = true;
 
@@ -17,13 +12,35 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         loading: true
     }
 
+//- UI INTERACTION -------------------------------------------------------------
+
     $scope.toggleSidenav = function()
     {
         $mdSidenav('left').toggle();
     }
 
-    $scope.getFavData = function()
+    $scope.fav = function(stationId, line, destination)
     {
+        var i = getIndexOf($scope.favs, getFavKey(stationId, line, destination));
+        if(i < 0)
+            $scope.favs.push(getFavKey(stationId, line, destination))
+        else
+            $scope.favs.splice(i, 1);
+        $cookieStore.put('favs', $scope.favs);
+        getFavData();
+        console.log($scope.favs);
+    }
+
+    $scope.isFav = function(stationId, line, destination)
+    {
+        return getIndexOf($scope.favs, getFavKey(stationId, line, destination)) >= 0;
+    }
+
+//- PRIVATE --------------------------------------------------------------------
+
+    function getFavData()
+    {
+        /*
         if($scope.favViewModel.length == $scope.favs)
             return $scope.favViewModel;
         else
@@ -35,26 +52,28 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
                 $scope.favViewModel.push({
                     stationId: fav.stationId,
                     line: fav.line,
-                    destination: fav.destination
+                    destination: fav.destination,
+                    departure: 10
                 })
             }
             return $scope.favViewModel;
         }
+        */
     }
 
-    $scope.getIndexOf = function(array, object)
+    function getIndexOf(array, object)
     {
         for(var i = 0; i < array.length; i++)
             if(array[i] == object) return i;
         return -1;
     }
 
-    $scope.getFavKey = function(stationId, line, destination)
+    function getFavKey(stationId, line, destination)
     {
         return stationId + "|" + line + "|" + destination;
     }
 
-    $scope.decodeFavKey = function(favKey)
+    function decodeFavKey(favKey)
     {
         var parts = favKey.split("|");
         return {
@@ -64,24 +83,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         }
     }
 
-    $scope.isFav = function(stationId, line, destination)
-    {
-        return $scope.getIndexOf($scope.favs, $scope.getFavKey(stationId, line, destination)) >= 0;
-    }
-
-    $scope.fav = function(stationId, line, destination)
-    {
-        var i = $scope.getIndexOf($scope.favs, $scope.getFavKey(stationId, line, destination));
-        if(i < 0)
-            $scope.favs.push($scope.getFavKey(stationId, line, destination))
-        else
-            $scope.favs.splice(i, 1);
-        $cookieStore.put('favs', $scope.favs);
-        $scope.getFavData();
-        console.log($scope.favViewModel);
-    }
-
-    $scope.attachEventListener = function(marker, station)
+    function attachEventListener(marker, station)
     {
         marker.station = station;
         google.maps.event.addListener(marker, 'mouseup', function() {
@@ -99,7 +101,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
                     $scope.selectedStation.loading = true;
                     $scope.selectedStation  = marker.station;
 
-                    $scope.refreshStationData();
+                    refreshStationData();
 
                     if(!angular.isDefined($scope.refreshInterval))
                         $scope.refreshInterval = $interval($scope.refreshStationData, 60000);
@@ -108,7 +110,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         });
     };
 
-    $scope.refreshStationData = function()
+    function refreshStationData()
     {
         $http.get('departures/' + $scope.selectedStation.id).success(function(data) {
             try{
@@ -123,10 +125,12 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         });
     }
 
-    $scope.doReactToMarker = function()
+    function doReactToMarker()
     {
         $scope.reactToMarker = true;
     }
+
+//- EVENTS ---------------------------------------------------------------------
 
     $scope.$on('mapInitialized', function(event, map) {
         var markers = [];
@@ -178,7 +182,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
 
         google.maps.event.addListener(map, 'zoom_changed', function() {
             $scope.reactToMarker = false;
-            $timeout($scope.doReactToMarker, 500);
+            $timeout(doReactToMarker, 500);
         })
 
         google.maps.event.addListener(map, 'dragstart', function() {
@@ -186,7 +190,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
         })
 
         google.maps.event.addListener(map, 'dragend', function() {
-            $timeout($scope.doReactToMarker, 500);
+            $timeout(doReactToMarker, 500);
         })
 
         map.infowindow = new google.maps.InfoWindow({
@@ -222,10 +226,10 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
                     title: stations[i].displayName,
                     icon: image
                 });
-                $scope.attachEventListener(marker, stations[i]);
+                attachEventListener(marker, stations[i]);
             }
         });
 
-        $scope.getFavData();
+        getFavData();
     });
 }]);
