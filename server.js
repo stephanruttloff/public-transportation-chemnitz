@@ -3,6 +3,7 @@ var serveStatic = require('serve-static')
 var request = require('request')
 var promise = require('promise')
 var _ = require('underscore')
+var fs = require('fs')
 
 //------------------------------------------------------------------------------
 
@@ -15,7 +16,7 @@ app.get('/departures/:stationId', function(req, res){
     GetDepartures(stationId).then(function(departures){
         res.json(departures);
     }, function(error){
-        console.log(error);
+        console.error(error);
         res.json({});
     })
 })
@@ -25,7 +26,7 @@ app.get('/departures/:stationId/:lineNr', function(req, res){
     GetDeparturesLine(stationId, lineNr).then(function(departures){
         res.json(departures);
     }, function(error){
-        console.log(error);
+        console.error(error);
         res.json({});
     })
 })
@@ -36,7 +37,16 @@ app.get('/departures/:stationId/:lineNr/:destination', function(req, res){
     GetDeparturesDestination(stationId, lineNr, destination).then(function(departures){
         res.json(departures);
     }, function(error){
-        console.log(error);
+        console.error(error);
+        res.json({});
+    })
+})
+app.get('/station/:stationId', function(req, res){
+    var stationId = req.params.stationId;
+    GetStationData(stationId).then(function(station){
+        res.json(station);
+    }, function(error){
+        console.error(error);
         res.json({});
     })
 })
@@ -82,7 +92,6 @@ function GetDeparturesLine(stationId, lineNr)
 {
     return new promise(function(f, r){
         GetDepartures(stationId).then(function(departures){
-            console.log(departures);
             var departuresForLine = _.where(departures.stops, {line: String(lineNr)});
             f(departuresForLine);
         }, function(error){
@@ -99,6 +108,25 @@ function GetDeparturesDestination(stationId, lineNr, destination)
             f(departuresWithDestination);
         }, function(error){
             r(error);
+        })
+    })
+}
+
+function GetStationData(stationId)
+{
+    return new promise(function(f, r){
+        fs.readFile('src/resources/stops.json', function(error, data){
+            if(error) r(error);
+            else
+            {
+                try{
+                    var stops = JSON.parse(data);
+                    var station = _.where(stops.stations, {id: String(stationId)});
+                    f(station);
+                }catch(error){
+                    r(error);
+                }
+            }
         })
     })
 }

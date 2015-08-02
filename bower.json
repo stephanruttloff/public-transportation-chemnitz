@@ -25,6 +25,7 @@
     "angularjs-geolocation": "~0.1.1",
     "moment": "~2.10.5",
     "ngmap": "~1.9.1",
-    "angular-cookies": "~1.4.3"
+    "angular-cookies": "~1.4.3",
+    "angular-filter": "~0.5.4"
   }
 }

@@ -48,6 +48,10 @@ module.exports = function(grunt) {
                 }
             },
             app: {
+                options: {
+                    sourceMap: true,
+                    sourceMapIncludeSources: true
+                },
                 files: {
                     'public/js/app.min.js': ['src/js/app.js']
                 }
@@ -154,7 +158,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['src/css/style.css'],
-                tasks: ['cssmin:app'],
+                tasks: ['myth', 'cssmin:app'],
                 options: {
                     spawn: false
                 },

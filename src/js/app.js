@@ -1,10 +1,15 @@
-var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer", "ngCookies"]);
-app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "$cookieStore", "geolocation", "moment", "$mdSidenav",
-                function($scope, $http, $sce, $compile, $interval, $timeout, $cookieStore, geolocation, moment, $mdSidenav) {
+var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer", "ngCookies", "angular.filter"]);
+app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "$cookieStore", "geolocation", "moment", "$mdSidenav", "$q", "$filter",
+                function($scope, $http, $sce, $compile, $interval, $timeout, $cookieStore, geolocation, moment, $mdSidenav, $q, $filter) {
 
 //- GLOBALS --------------------------------------------------------------------
 
     $scope.favs = [];
+
+    $scope.sidenav = {
+        loading: true,
+        isOpen: false
+    }
 
     $scope.reactToMarker = true;
 
@@ -16,49 +21,121 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
 
     $scope.toggleSidenav = function()
     {
+        if($scope.sidenav.isOpen)
+           $scope.favs.length = 0;
+        else
+            loadFavsAsync();
         $mdSidenav('left').toggle();
     }
 
     $scope.fav = function(stationId, line, destination)
     {
-        var i = getIndexOf($scope.favs, getFavKey(stationId, line, destination));
+        var favs = getFavs();
+
+        var i = getIndexOf(favs, getFavKey(stationId, line, destination));
         if(i < 0)
-            $scope.favs.push(getFavKey(stationId, line, destination))
+            favs.push(getFavKey(stationId, line, destination))
         else
-            $scope.favs.splice(i, 1);
-        $cookieStore.put('favs', $scope.favs);
-        getFavData();
-        console.log($scope.favs);
+            favs.splice(i, 1);
+        setFavs(favs);
     }
 
     $scope.isFav = function(stationId, line, destination)
     {
-        return getIndexOf($scope.favs, getFavKey(stationId, line, destination)) >= 0;
+        var favs = getFavs();
+        return getIndexOf(favs, getFavKey(stationId, line, destination)) >= 0;
     }
 
 //- PRIVATE --------------------------------------------------------------------
 
-    function getFavData()
+    function getFavs()
     {
-        /*
-        if($scope.favViewModel.length == $scope.favs)
-            return $scope.favViewModel;
-        else
+        var favs = $cookieStore.get('favs');
+        if(angular.isUndefined(favs))
+            favs = [];
+        return favs;
+    }
+
+    function setFavs(favs)
+    {
+        $cookieStore.put('favs', favs);
+    }
+
+    function loadFavsAsync()
+    {
+        $scope.sidenav.loading = true;
+        var favs = getFavs();
+        if(favs.length == 0)
+            $scope.sidenav.loading = false;
+        var promises = [];
+        for(var i = 0; i < favs.length; i++)
         {
-            $scope.favViewModel.length = 0;
-            for(var i = 0; i < $scope.favs.length; i++)
-            {
-                var fav = $scope.decodeFavKey($scope.favs[i]);
-                $scope.favViewModel.push({
-                    stationId: fav.stationId,
-                    line: fav.line,
-                    destination: fav.destination,
-                    departure: 10
-                })
-            }
-            return $scope.favViewModel;
+            var decoded = decodeFavKey(favs[i]);
+            var p = getFavDataAsync(decoded);
+            promises.push(p);
         }
-        */
+        $q.all(promises).then(function(results){
+            $scope.favs.length = 0;
+            for(var i = 0; i < results.length; i++)
+            {
+                var found = $filter('filter')($scope.favs, {stationId: results[i].stationId}, true);
+
+                var entry = {};
+
+                if(found.length > 0)
+                    entry = found[0];
+                else{
+                    entry = {stationId: results[i].stationId, displayName: results[i].displayName, departures: []};
+                    $scope.favs.push(entry);
+                }
+
+                for(var j = 0; j < results[i].departures.length; j++)
+                {
+                    var departure = results[i].departures[j];
+                    departure.destination = results[i].destination;
+                    departure.line = results[i].line;
+                    entry.departures.push(departure);
+                }
+
+                $scope.sidenav.loading = false;
+            }
+        }, function(error){
+            console.error(error);
+            $scope.favs.length = 0;
+            $scope.sidenav.loading = false;
+        })
+    }
+
+    function getFavDataAsync(decoded)
+    {
+        return $q(function(f, r){
+            $http.get('station/' + decoded.stationId).then(function(response){
+                try{
+                    decoded.displayName = response.data[0].displayName;
+                    decoded.departures = [];
+                    $http.get(
+                        'departures/' +decoded.stationId +
+                        '/' + decoded.line +
+                        '/' + decoded.destination).then(function(response){
+                            for(var i = 0; i < response.data.length; i++)
+                            {
+                                decoded.departures.push({
+                                    serviceType: response.data[i].serviceType,
+                                    actualDeparture: response.data[i].actualDeparture
+                                });
+                            }
+                            f(decoded);
+                        }, function(error){
+                            r(error);
+                        })
+
+                }catch(error){
+                    r(error);
+                }
+            }, function(error){
+                r(error);
+            })
+        });
     }
 
     function getIndexOf(array, object)
@@ -116,7 +193,7 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
             try{
                 station = angular.fromJson(data);
             }catch(err){
-                console.log(data);
+                console.error(data);
             }
             $scope.selectedStation.now = station.now;
             $scope.selectedStation.stops = station.stops;
@@ -229,7 +306,5 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
                 attachEventListener(marker, stations[i]);
             }
         });
-
-        getFavData();
     });
 }]);
