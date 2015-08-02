@@ -115,7 +115,7 @@ function GetDeparturesDestination(stationId, lineNr, destination)
 function GetStationData(stationId)
 {
     return new promise(function(f, r){
-        fs.readFile('src/resources/stops.json', function(error, data){
+        fs.readFile(__dirname + '/src/resources/stops.json', function(error, data){
             if(error) r(error);
             else
             {
