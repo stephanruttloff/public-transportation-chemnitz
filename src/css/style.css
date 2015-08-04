@@ -1,7 +1,37 @@
-body {
+body,html {
     height: 100%;
     padding: 0;
     margin: 0;
+    background-color: rgb(249, 249, 249);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2{
+    font-weight: 300;
+    color:#0083CA;
+}
+
+h2{
+    margin: 1em;
+    text-align: center;
+}
+
+table{
+    border-width: 0;
+    border-spacing: 0;
+    margin-bottom: 8px;
+}
+
+td{
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+md-content{
+    background-color: rgb(249, 249, 249);
 }
 
 .box {
@@ -27,17 +57,6 @@ body {
   flex: 0 1 40px;
 }
 
-#map {
-    flex: 1;
-    height: 100% !important;
-    min-height: 100% !important;
-    width: 100%;
-    position: absolute;
-}
-
-tr:nth-child(even) {
-    background-color: #DFDFDF;
-}
 .controls {
     margin-top: 16px;
     border: 1px solid transparent;

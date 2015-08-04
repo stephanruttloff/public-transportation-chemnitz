@@ -1,0 +1,112 @@
+$radius: 48px;
+$thickness: 2px;
+$border-color: rgba(#0083CA, 0.25);
+$background-color: rgb(249, 249, 249);
+
+#map {
+    flex: 1;
+    height: 96px !important;
+    min-height: 96px !important;
+    width: 100%;
+    position: absolute;
+}
+
+.wrapper {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  margin: 8px;
+
+  & > i {
+    display: block;
+    position: absolute;
+
+    &.top {
+      top: 0;
+      border-top: $thickness solid $border-color;
+      &:after {
+        top: -$radius/2 - $thickness;
+        border-top: $radius/2 solid $background-color;
+      }
+    }
+    &.right {
+      right: 0;
+      border-right: $thickness solid $border-color;
+      &:after {
+        right: -$radius/2 - $thickness;
+        border-right: $radius/2 solid $background-color;
+      }
+    }
+    &.bottom {
+      bottom: 0;
+      border-bottom: $thickness solid $border-color;
+      &:after {
+        bottom: -$radius/2 - $thickness;
+        border-bottom: $radius/2 solid $background-color;
+      }
+    }
+    &.left {
+      left: 0;
+      border-left: $thickness solid $border-color;
+      &:after {
+        left: -$radius/2 - $thickness;
+        border-left: $radius/2 solid $background-color;
+      }
+    }
+
+    &.top:not(.right):not(.left),
+    &.bottom:not(.right):not(.left) {
+      height: $thickness;
+      left: $radius+$thickness;
+      right: $radius+$thickness;
+    }
+
+    &.left:not(.top):not(.bottom),
+    &.right:not(.top):not(.bottom) {
+      width: $thickness;
+      top: $radius+$thickness;
+      bottom: $radius+$thickness;
+    }
+
+    &.top.right,
+    &.top.left,
+    &.bottom.right,
+    &.bottom.left {
+      width: $radius;
+      height: $radius;
+
+      &:after {
+        content:"";
+        position: absolute;
+        width: 1.5*$radius;
+        height: 1.5*$radius;
+      }
+    }
+
+    &.top.right {
+      border-top-right-radius: $radius;
+      &:after { border-top-right-radius: 1.5*$radius; }
+    }
+    &.top.left {
+      border-top-left-radius: $radius;
+      &:after { border-top-left-radius: 1.5*$radius; }
+    }
+    &.bottom.right {
+      border-bottom-right-radius: $radius;
+      &:after { border-bottom-right-radius: 1.5*$radius; }
+    }
+    &.bottom.left {
+      border-bottom-left-radius: $radius;
+      &:after { border-bottom-left-radius: 1.5*$radius; }
+    }
+  }
+}
+
+#map {
+  width: inherit;
+  height: inherit;
+  .gmnoprint {
+    display: none;
+  }
+}

@@ -27,6 +27,7 @@
     "grunt-myth": "^1.0.1",
     "grunt-nodemon": "^0.4.0",
     "grunt-preprocess": "^5.0.1",
+    "grunt-sass": "^1.0.0",
     "open": "0.0.5"
   },
   "scripts": {

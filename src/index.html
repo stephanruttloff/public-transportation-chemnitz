@@ -16,24 +16,48 @@
 
     <link rel="stylesheet" type="text/css" href="css/bower.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/map.min.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet" type="text/css">
   </head>
   <body ng-controller="main">
-    <div class="box">
 
-      <div class="row header" layout="row">
-        <md-button class="md-icon-button" aria-label="Custom Icon Button" ng-click="toggleSidenav()">
-          <md-icon md-svg-icon="img/ic_menu_black_24px.svg"></md-icon>
-        </md-button>
-        <input id="pac-input" class="controls" type="text" placeholder="Search">
-      </div>
+    <header>
+      <h1>
+        <div layout="row" layout-align="center center">
+          <div class="wrapper" ng-click="toggleSidenav()">
+            <map class="map" id="map" center="50.831707,12.922202" zoom="14"></map>
+            <i class="top"></i>
+            <i class="right"></i>
+            <i class="bottom"></i>
+            <i class="left"></i>
+            <i class="top left"></i>
+            <i class="top right"></i>
+            <i class="bottom left"></i>
+            <i class="bottom right"></i>
+          </div>
+        </div>
+        <div style="text-align:center">CVAG</div>
+      </h1>
+    </header>
 
-      <div class="row content">
-        <map id="map" center="50.831707,12.922202" zoom="14"></map>
-      </div>
+    <h2>{{selectedStation.displayName}}</h2>
 
+    <div layout="row" layout-align="center start">
+      <table>
+        <tr>
+          <th align="left">Abf.</th>
+          <th align="center">Richtung</th>
+          <th align="right">Linie</th>
+        </tr>
+        <tr ng-repeat="stop in selectedStation.stops">
+          <td align="center"><timer max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer></td>
+          <td align="left">{{stop.destination}}</td>
+          <td align="center">{{stop.line}}</td>
+        </tr>
+      </table>
     </div>
 
-    <md-sidenav md-component-id="left" class="md-sidenav-left" ng-include="'partials/sidenav.html'" md-is-open="sidenav.isOpen"></md-sidenav>
     <!-- @if NODE_ENV='production' -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

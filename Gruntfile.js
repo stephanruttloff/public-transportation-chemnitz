@@ -9,8 +9,20 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-preprocess');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-myth');
+    grunt.loadNpmTasks('grunt-sass');
 
     grunt.initConfig({
+
+        sass: {
+            options: {
+                sourceMap: false
+            },
+            dist: {
+                files: {
+                    'src/sass/map.css': 'src/sass/map.scss'
+                }
+            }
+        },
 
         bower_concat: {
             all: {
@@ -25,7 +37,8 @@ module.exports = function(grunt) {
             },
             app: {
                 files: {
-                    'src/css/style.polyfill.css': 'src/css/style.css'
+                    'src/css/style.polyfill.css': 'src/css/style.css',
+                    'src/sass/map.polyfill.css': 'src/sass/map.css'
                 }
             }
         },
@@ -38,6 +51,10 @@ module.exports = function(grunt) {
             app:{
                 src: 'src/css/style.polyfill.css',
                 dest: 'public/css/style.min.css'
+            },
+            sass:{
+                src: 'src/sass/map.polyfill.css',
+                dest: 'public/css/map.min.css'
             }
         },
 
@@ -98,7 +115,7 @@ module.exports = function(grunt) {
         },
 
         clean: {
-            css: ['public/css/*.css', '!public/css/*.min.css', 'src/css/*.min.css', 'src/css/*.polyfill.css'],
+            css: ['public/css/*.css', '!public/css/*.min.css', 'src/css/*.min.css', 'src/css/*.polyfill.css', 'src/sass/*.css'],
             js: ['public/js/*.js', '!public/js/*.min.js', 'src/js/*.min.js'],
             bower: ['src/css/bower.*'],
             release: ['public/*']
@@ -177,6 +194,13 @@ module.exports = function(grunt) {
                     spawn: false
                 },
             },
+            sass: {
+                files: ['src/sass/*.scss'],
+                tasks: ['sass', 'myth', 'cssmin:sass', 'clean:css'],
+                options: {
+                    spawn: false
+                },
+            },
             server: {
                 files: ['.rebooted']
             },
@@ -186,6 +210,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', [
         'clean:release',
+        'sass',
         'bower_concat',
         'myth',
         'cssmin',
@@ -198,6 +223,7 @@ module.exports = function(grunt) {
     ]);
     grunt.registerTask('dev', [
         'clean:release',
+        'sass',
         'bower_concat',
         'myth',
         'cssmin',
