@@ -26,6 +26,10 @@
     "moment": "~2.10.5",
     "ngmap": "~1.9.1",
     "angular-cookies": "~1.4.3",
-    "angular-filter": "~0.5.4"
+    "angular-filter": "~0.5.4",
+    "angular-route": "~1.4.3",
+    "angular-cache": "~4.3.2",
+    "angular-hotkeys": "chieffancypants/angular-hotkeys#~1.4.5",
+    "angular-touch": "~1.4.3"
   }
 }

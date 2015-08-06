@@ -20,9 +20,11 @@ table{
     border-width: 0;
     border-spacing: 0;
     margin-bottom: 8px;
+    width: 100%;
+    max-width: 400px;
 }
 
-td{
+td,th{
     padding: 8px;
 }
 

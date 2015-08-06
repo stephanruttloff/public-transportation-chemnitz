@@ -35,9 +35,13 @@ module.exports = function(grunt) {
             options: {
                 sourcemap: true
             },
-            app: {
+            css: {
                 files: {
-                    'src/css/style.polyfill.css': 'src/css/style.css',
+                    'src/css/style.polyfill.css': 'src/css/style.css'
+                }
+            },
+            sass: {
+                files: {
                     'src/sass/map.polyfill.css': 'src/sass/map.css'
                 }
             }
@@ -175,7 +179,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['src/css/style.css'],
-                tasks: ['myth', 'cssmin:app'],
+                tasks: ['myth:css', 'cssmin:app', 'clean:css'],
                 options: {
                     spawn: false
                 },
@@ -196,7 +200,7 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: ['src/sass/*.scss'],
-                tasks: ['sass', 'myth', 'cssmin:sass', 'clean:css'],
+                tasks: ['sass', 'myth:sass', 'cssmin:sass', 'clean:css'],
                 options: {
                     spawn: false
                 },

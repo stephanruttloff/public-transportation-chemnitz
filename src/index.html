@@ -9,7 +9,7 @@
     + ':35729/livereload.js"></'
     + 'script>')</script>
     <!-- @endif -->
-    <script src="//maps.google.com/maps/api/js?libraries=places&sensor=false"></script>
+    <script src="//maps.google.com/maps/api/js?libraries=places&sensor=false&libraries=geometry"></script>
 
     <script src="js/bower.min.js"></script>
     <script src="js/app.min.js"></script>
@@ -20,43 +20,8 @@
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet" type="text/css">
   </head>
-  <body ng-controller="main">
-
-    <header>
-      <h1>
-        <div layout="row" layout-align="center center">
-          <div class="wrapper" ng-click="toggleSidenav()">
-            <map class="map" id="map" center="50.831707,12.922202" zoom="14"></map>
-            <i class="top"></i>
-            <i class="right"></i>
-            <i class="bottom"></i>
-            <i class="left"></i>
-            <i class="top left"></i>
-            <i class="top right"></i>
-            <i class="bottom left"></i>
-            <i class="bottom right"></i>
-          </div>
-        </div>
-        <div style="text-align:center">CVAG</div>
-      </h1>
-    </header>
-
-    <h2>{{selectedStation.displayName}}</h2>
-
-    <div layout="row" layout-align="center start">
-      <table>
-        <tr>
-          <th align="left">Abf.</th>
-          <th align="center">Richtung</th>
-          <th align="right">Linie</th>
-        </tr>
-        <tr ng-repeat="stop in selectedStation.stops">
-          <td align="center"><timer max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer></td>
-          <td align="left">{{stop.destination}}</td>
-          <td align="center">{{stop.line}}</td>
-        </tr>
-      </table>
-    </div>
+  <body>
+    <div ng-view style="height:100%;"></div>
 
     <!-- @if NODE_ENV='production' -->
     <script>
