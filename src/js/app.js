@@ -1,6 +1,25 @@
 var app = angular.module("cvag", ["geolocation", "ngMap", "ngMaterial", "angularMoment", "timer", "ngCookies", "angular.filter"]);
-app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "$cookieStore", "geolocation", "moment", "$mdSidenav", "$q", "$filter",
-                function($scope, $http, $sce, $compile, $interval, $timeout, $cookieStore, geolocation, moment, $mdSidenav, $q, $filter) {
+
+app.factory("stationFactory", ["$http", function($http){
+    return {
+        getDepartures: function(stationId) {
+            return $http.get('station/' + stationId).then(function(res){
+                var station = res.data[0];
+                return $http.get('departures/' + stationId).then(function(res){
+                    station.stops = res.data.stops;
+                    return station;
+                }, function(error){
+                    console.log(error);
+                })
+            }, function(error){
+                console.error(error);
+            })
+        }
+    }
+}])
+
+app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$timeout", "$cookieStore", "geolocation", "moment", "$mdSidenav", "$q", "$filter", "stationFactory",
+                function($scope, $http, $sce, $compile, $interval, $timeout, $cookieStore, geolocation, moment, $mdSidenav, $q, $filter, stationFactory) {
 
 //- GLOBALS --------------------------------------------------------------------
 
@@ -59,17 +78,9 @@ app.controller("main", [ "$scope", "$http", "$sce", "$compile", "$interval", "$t
 
     function refreshStationData()
     {
-        $http.get('departures/' + $scope.selectedStation.id).success(function(data) {
-            try{
-                station = angular.fromJson(data);
-            }catch(err){
-                console.error(data);
-            }
-            $scope.selectedStation.now = station.now;
-            $scope.selectedStation.stops = station.stops;
-            $scope.selectedStation.loading = false;
-            $scope.map.setOptions({draggable: true});
-        });
+        stationFactory.getDepartures($scope.selectedStation.id).then(function(station){
+            $scope.selectedStation = station;
+        })
     }
 
     function doReactToMarker()
