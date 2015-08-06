@@ -4,14 +4,15 @@ $border-color: rgba(#0083CA, 0.25);
 $background-color: rgb(249, 249, 249);
 
 #map {
-    flex: 1;
-    height: 96px !important;
-    min-height: 96px !important;
-    width: 100%;
-    position: absolute;
+  width: inherit;
+  height: inherit;
+  .gmnoprint {
+    display: none;
+  }
 }
 
 .wrapper {
+  cursor: pointer;
   position: relative;
   width: 96px;
   height: 96px;
@@ -100,13 +101,5 @@ $background-color: rgb(249, 249, 249);
       border-bottom-left-radius: $radius;
       &:after { border-bottom-left-radius: 1.5*$radius; }
     }
-  }
-}
-
-#map {
-  width: inherit;
-  height: inherit;
-  .gmnoprint {
-    display: none;
   }
 }

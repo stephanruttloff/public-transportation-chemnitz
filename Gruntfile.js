@@ -117,7 +117,7 @@ module.exports = function(grunt) {
         clean: {
             css: ['public/css/*.css', '!public/css/*.min.css', 'src/css/*.min.css', 'src/css/*.polyfill.css', 'src/sass/*.css'],
             js: ['public/js/*.js', '!public/js/*.min.js', 'src/js/*.min.js'],
-            bower: ['src/css/bower.*'],
+            bower: ['src/css/bower.*', 'src/js/bower.*'],
             release: ['public/*']
         },
 
