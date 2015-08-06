@@ -34,7 +34,7 @@ app.factory("stationFactory", ["$http", "$filter", "CacheFactory", "geolocation"
                 station.stops = res.data.stops;
                 return station;
             }, function(error){
-                console.log(error);
+                console.error(error);
             })
         }, function(error){
             console.error(error);
@@ -48,11 +48,9 @@ app.factory("stationFactory", ["$http", "$filter", "CacheFactory", "geolocation"
         })
     }
     factoryObj.getStationsByDistance = function() {
-        return geolocation.getLocation().then(function(data){
-            var myLatLng = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
-            var minDist = -1.0;
-            var minStation = {};
-            return factoryObj.getLocalStationData().then(function(stations){
+        return factoryObj.getLocalStationData().then(function(stations){
+            return geolocation.getLocation().then(function(data){
+                var myLatLng = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
                 for(var i = 0; i < stations.length; i++){
                     var station = stations[i];
                     var to = new google.maps.LatLng(station.latitude, station.longitude);
@@ -62,8 +60,18 @@ app.factory("stationFactory", ["$http", "$filter", "CacheFactory", "geolocation"
                 return $filter('orderBy')(stations, 'distance', false);
             }, function(error){
                 console.error(error);
-            })
-        });
+                var myLatLng = new google.maps.LatLng(50.83159596666668, 12.922535166666668);
+                for(var i = 0; i < stations.length; i++){
+                    var station = stations[i];
+                    var to = new google.maps.LatLng(station.latitude, station.longitude);
+                    var dist = google.maps.geometry.spherical.computeDistanceBetween(myLatLng, to);
+                    station.distance = dist;
+                }
+                return $filter('orderBy')(stations, 'distance', false);
+            });
+        }, function(error){
+            console.error(error);
+        })
     }
     factoryObj.getIndexOfById = function(id, array) {
         if(!angular.isDefined(array))
@@ -102,6 +110,9 @@ app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filt
     stationFactory.getStationsByDistance().then(function(stations){
         $rootScope.stations = stations;
         $location.path('station/' + stations[0].id);
+    }, function(error){
+        console.error(error);
+        $location.path('station/CAG-131');
     });
 }])
 
@@ -136,7 +147,6 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
     }
     stationFactory.getDepartures($routeParams.stationId).then(function(station){
         $scope.station = station;
-        console.log(station);
 
         var position = new google.maps.LatLng(station.latitude, station.longitude);
         var cvagMarker = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));
