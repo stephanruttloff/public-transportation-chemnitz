@@ -116,7 +116,7 @@ app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filt
     });
 }])
 
-app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$location", "stationFactory", "hotkeys", function($rootScope, $scope, $routeParams, $location, stationFactory, hotkeys){
+app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$location", "$interval", "stationFactory", "hotkeys", function($rootScope, $scope, $routeParams, $location, $interval, stationFactory, hotkeys){
     $scope.prevStation = function(){
         var i = stationFactory.getIndexOfById($routeParams.stationId, $rootScope.stations);
         if(i - 1 < 0) return;
@@ -145,28 +145,34 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
             console.error(error);
         })
     }
-    stationFactory.getDepartures($routeParams.stationId).then(function(station){
-        $scope.station = station;
+    function getDepartures(){
+        return stationFactory.getDepartures($routeParams.stationId).then(function(station){
+            $scope.station = station;
 
-        var position = new google.maps.LatLng(station.latitude, station.longitude);
-        var cvagMarker = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));
-        $scope.map.setCenter(position);
-        $scope.map.setZoom(15);
-        if(angular.isDefined($scope.marker)){
-            $scope.marker.position = position;
-            $scope.marker.title = station.displayName;
-        }else{
-            $scope.marker = new google.maps.Marker({
-            position: position,
-            map: $scope.map,
-            title: station.displayName,
-            animation: google.maps.Animation.DROP,
-            icon: cvagMarker
-        });
-        }
-    }, function(error){
-        console.error(error);
-    })
+            var position = new google.maps.LatLng(station.latitude, station.longitude);
+            var cvagMarker = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));
+            $scope.map.setCenter(position);
+            $scope.map.setZoom(15);
+            if(angular.isDefined($scope.marker)){
+                $scope.marker.position = position;
+                $scope.marker.title = station.displayName;
+            }else{
+                $scope.marker = new google.maps.Marker({
+                    position: position,
+                    map: $scope.map,
+                    title: station.displayName,
+                    animation: google.maps.Animation.DROP,
+                    icon: cvagMarker
+                });
+            }
+        }, function(error){
+            console.error(error);
+        })
+    }
+    getDepartures();
+    $interval(function(){
+        getDepartures();
+    }, 60000);
 }]);
 
 app.controller("OverviewController", ["$scope", "$location", "$timeout", "stationFactory", "geolocation", function($scope, $location, $timeout, stationFactory, geolocation){
