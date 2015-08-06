@@ -111,8 +111,9 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
         });
 }])
 
-app.controller("UsageController", ["$scope", function(){
-    
+app.controller("UsageController", ["$rootScope", "$scope", function($rootScope, $scope){
+    if(angular.isDefined($rootScope.refreshInterval))
+        $interval.cancel($rootScope.refreshInterval);
 }])
 
 app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filter", "$interval", "geolocation", "stationFactory", function($rootScope, $scope, $location, $filter, $interval, geolocation, stationFactory){
