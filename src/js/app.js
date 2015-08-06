@@ -111,7 +111,7 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
         });
 }])
 
-app.controller("UsageController", ["$rootScope", "$scope", function($rootScope, $scope){
+app.controller("UsageController", ["$rootScope", "$scope", "$interval", function($rootScope, $scope, $interval){
     if(angular.isDefined($rootScope.refreshInterval))
         $interval.cancel($rootScope.refreshInterval);
 }])
