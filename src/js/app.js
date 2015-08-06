@@ -224,5 +224,17 @@ app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$tim
         }, function(error){
             console.error(error);
         })
+
+        geolocation.getLocation().then(function(data){
+            var myLatLng = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
+            var positionMarker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'You are here',
+                animation: google.maps.Animation.DROP
+            })
+            map.setCenter(myLatLng);
+            map.setZoom(15);
+        })
     });
 }])
