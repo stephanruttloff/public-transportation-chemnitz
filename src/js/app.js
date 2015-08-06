@@ -102,9 +102,17 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
             templateUrl: 'partials/nearest.html',
             controller: 'NearestController'
         }).
+        when('/usage', {
+            templateUrl: 'partials/usage.html',
+            controller: 'UsageController'
+        }).
         otherwise({
             redirectTo: '/nearest'
         });
+}])
+
+app.controller("UsageController", ["$scope", function(){
+    
 }])
 
 app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filter", "$interval", "geolocation", "stationFactory", function($rootScope, $scope, $location, $filter, $interval, geolocation, stationFactory){
@@ -137,11 +145,11 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
     }
     hotkeys.bindTo($scope).add({
         combo: "left",
-        description: "Previous station by distance",
+        description: "Nächste Haltestelle",
         callback: function(){$scope.prevStation()}
     }).add({
         combo: "right",
-        description: "Next station by distance",
+        description: "Vorherige Haltestelle",
         callback: function(){$scope.nextStation()}
     })
     if(!angular.isDefined($rootScope.stations)){
