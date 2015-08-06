@@ -31,8 +31,11 @@
       </tr>
       <tr ng-repeat="stop in station.stops">
         <td align="left"><timer max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer></td>
-        <td align="center">{{stop.destination}}</td>
-        <td align="right">{{stop.line}}</td>
+        <td align="center" style="white-space:normal;">{{stop.destination}}</td>
+        <td align="right">
+          <span>{{stop.line}}</span>
+          <md-icon md-svg-icon="{{stop.serviceType == 'TRAM' && 'img/tram.svg' || 'img/bus.svg'}}"></md-icon>
+        </td>
       </tr>
     </table>
   </div>

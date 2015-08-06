@@ -26,6 +26,8 @@ table{
 
 td,th{
     padding: 8px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 tr:nth-child(even) {
