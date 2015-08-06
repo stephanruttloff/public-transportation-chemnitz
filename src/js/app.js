@@ -107,7 +107,10 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
         });
 }])
 
-app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filter", "geolocation", "stationFactory", function($rootScope, $scope, $location, $filter, geolocation, stationFactory){
+app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filter", "$interval", "geolocation", "stationFactory", function($rootScope, $scope, $location, $filter, $interval, geolocation, stationFactory){
+    if(angular.isDefined($rootScope.refreshInterval))
+        $interval.cancel($rootScope.refreshInterval);
+
     stationFactory.getStationsByDistance().then(function(stations){
         $rootScope.stations = stations;
         $location.path('station/' + stations[0].id);
@@ -180,9 +183,12 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
     }, 60000);
 }]);
 
-app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$timeout", "stationFactory", "geolocation", function($rootScope, $scope, $location, $timeout, stationFactory, geolocation){
+app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$timeout", "$interval", "stationFactory", "geolocation", function($rootScope, $scope, $location, $timeout, $interval, stationFactory, geolocation){
     $rootScope.swipeDirection = '';
     $scope.reactToMarker = true;
+
+    if(angular.isDefined($rootScope.refreshInterval))
+        $interval.cancel($rootScope.refreshInterval);
 
     function attachEventListener(marker, station) {
         google.maps.event.addListener(marker, 'mouseup', function() {
