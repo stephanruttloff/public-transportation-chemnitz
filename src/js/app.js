@@ -10,7 +10,8 @@ var app = angular.module("cvag",
         "ngRoute",
         "angular-cache",
         "cfp.hotkeys",
-        "ngTouch"
+        "ngTouch",
+        "ngAnimate"
     ]
 );
 
@@ -118,12 +119,14 @@ app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filt
 
 app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$location", "$interval", "stationFactory", "hotkeys", function($rootScope, $scope, $routeParams, $location, $interval, stationFactory, hotkeys){
     $scope.prevStation = function(){
+        //$rootScope.swipeDirection = 'ltr';
         var i = stationFactory.getIndexOfById($routeParams.stationId, $rootScope.stations);
         if(i - 1 < 0) return;
         var prev = $rootScope.stations[i - 1];
         $location.path('station/' + prev.id);
     }
     $scope.nextStation = function(){
+        //$rootScope.swipeDirection = 'rtl';
         var i = stationFactory.getIndexOfById($routeParams.stationId, $rootScope.stations);
         if(!angular.isDefined($rootScope.stations) || i + 1 > $rootScope.length - 1) return;
         var next = $rootScope.stations[i + 1];
@@ -170,13 +173,15 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
         })
     }
     getDepartures();
-    $interval(function(){
+    if(angular.isDefined($rootScope.refreshInterval))
+        $interval.cancel($rootScope.refreshInterval);
+    $rootScope.refreshInterval = $interval(function(){
         getDepartures();
     }, 60000);
 }]);
 
-app.controller("OverviewController", ["$scope", "$location", "$timeout", "stationFactory", "geolocation", function($scope, $location, $timeout, stationFactory, geolocation){
-
+app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$timeout", "stationFactory", "geolocation", function($rootScope, $scope, $location, $timeout, stationFactory, geolocation){
+    $rootScope.swipeDirection = '';
     $scope.reactToMarker = true;
 
     function attachEventListener(marker, station) {

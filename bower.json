@@ -30,6 +30,7 @@
     "angular-route": "~1.4.3",
     "angular-cache": "~4.3.2",
     "angular-hotkeys": "chieffancypants/angular-hotkeys#~1.4.5",
-    "angular-touch": "~1.4.3"
+    "angular-touch": "~1.4.3",
+    "angular-animate": "~1.4.3"
   }
 }

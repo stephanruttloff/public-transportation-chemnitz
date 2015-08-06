@@ -37,7 +37,8 @@ module.exports = function(grunt) {
             },
             css: {
                 files: {
-                    'src/css/style.polyfill.css': 'src/css/style.css'
+                    'src/css/style.polyfill.css': 'src/css/style.css',
+                    'src/css/animation.polyfill.css': 'src/css/animation.css'
                 }
             },
             sass: {
@@ -55,6 +56,10 @@ module.exports = function(grunt) {
             app:{
                 src: 'src/css/style.polyfill.css',
                 dest: 'public/css/style.min.css'
+            },
+            animation:{
+                src: 'src/css/animation.polyfill.css',
+                dest: 'public/css/animation.min.css'
             },
             sass:{
                 src: 'src/sass/map.polyfill.css',
@@ -180,6 +185,13 @@ module.exports = function(grunt) {
             css: {
                 files: ['src/css/style.css'],
                 tasks: ['myth:css', 'cssmin:app', 'clean:css'],
+                options: {
+                    spawn: false
+                },
+            },
+            animation: {
+                files: ['src/css/animation.css'],
+                tasks: ['myth:css', 'cssmin:animation', 'clean:css'],
                 options: {
                     spawn: false
                 },

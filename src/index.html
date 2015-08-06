@@ -17,11 +17,14 @@
     <link rel="stylesheet" type="text/css" href="css/bower.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="stylesheet" type="text/css" href="css/map.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.min.css">
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div ng-view style="height:100%;"></div>
+    <div class="view-animate-container" ng-class="swipeDirection">
+      <div ng-view style="height:100%;" class="view-animate"></div>
+    </div>
 
     <!-- @if NODE_ENV='production' -->
     <script>

@@ -1,0 +1,39 @@
+.view-animate-container {
+  position:relative;
+  height:100%;
+  overflow-x: hidden;
+}
+
+.rtl .view-animate.ng-enter, .rtl .view-animate.ng-leave, .ltr .view-animate.ng-enter, .ltr .view-animate.ng-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
+
+  display:block;
+  width:100%;
+
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.rtl .view-animate.ng-enter {
+  -webkit-transform: translate3d(100%, 0, 0);
+}
+.rtl .view-animate.ng-enter.ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.rtl .view-animate.ng-leave.ng-leave-active {
+  -webkit-transform: translate3d(-100%, 0, 0);
+}
+
+.ltr .view-animate.ng-enter {
+  -webkit-transform: translate3d(-100%, 0, 0);
+}
+.ltr .view-animate.ng-enter.ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.ltr .view-animate.ng-leave.ng-leave-active {
+  -webkit-transform: translate3d(100%, 0, 0);
+}
