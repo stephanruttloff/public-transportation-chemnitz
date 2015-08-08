@@ -111,23 +111,6 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
         });
 }])
 
-app.controller("HeaderController", ["$rootScope", "$scope", function($rootScope, $scope){
-    $scope.$on('mapInitialized', function(event, map) {
-        if(angular.isDefined($rootScope.marker)){
-            map.panTo($rootScope.marker.position);
-            $rootScope.marker.setMap(map);
-        }
-        $rootScope.$watch('marker', function(){
-            $rootScope.$watch('marker.position', function(){
-                if(angular.isDefined($rootScope.marker)){
-                    map.panTo($rootScope.marker.position);
-                    $rootScope.marker.setMap(map);
-                }
-            })
-        })
-    })
-}])
-
 app.controller("UsageController", ["$rootScope", "$scope", "$interval", function($rootScope, $scope, $interval){
     $rootScope.showMap = false;
     if(angular.isDefined($rootScope.refreshInterval))
@@ -185,7 +168,7 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
     }
     function getDepartures(){
         return stationFactory.getDepartures($routeParams.stationId).then(function(station){
-            $scope.station = station;
+            $rootScope.station = station;
             $scope.loading = false;
             var position = new google.maps.LatLng(station.latitude, station.longitude);
             var cvagMarker = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));

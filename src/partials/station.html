@@ -1,7 +1,7 @@
 <div ng-swipe-left="nextStation()" ng-swipe-right="prevStation()">
-  <h2>{{station.displayName}}</h2>
+  <h2 ng-hide="loading">{{station.displayName}}</h2>
 
-  <div layout="row" layout-align="center start">
+  <div layout="row" layout-align="center start" ng-hide="loading">
     <table>
       <tr>
         <th align="left">Abf.</th>

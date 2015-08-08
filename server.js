@@ -50,6 +50,15 @@ app.get('/station/:stationId', function(req, res){
         res.json({});
     })
 })
+app.get('/map/header/:stationId', function(req, res){
+    var stationId = req.params.stationId;
+    GetStaticMapImage(stationId).then(function(uri){
+        res.redirect(303, uri);
+    }, function(error){
+        console.error(error);
+        res.send("");
+    })
+})
 
 //------------------------------------------------------------------------------
 
@@ -57,6 +66,21 @@ app.use(serveStatic(__dirname + '/public', {'index': ['index.html', 'index.htm']
 app.listen(process.argv[2])
 
 //------------------------------------------------------------------------------
+
+function GetStaticMapImage(stationId)
+{
+    return new promise(function(f, r){
+        GetStationData(stationId).then(function(data){
+            var lat = data[0].latitude;
+            var lon = data[0].longitude;
+            var latlon = lat + "," + lon;
+            var uri = "https://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=15&size=96x96&maptype=roadmap&markers=scale:2|icon:http://i.imgur.com/0wgaUwk.png%7C" + latlon + "&scale=2";
+            f(uri);
+        }, function(error){
+            r(error);
+        })
+    })
+}
 
 function GetDepartures(stationId)
 {
