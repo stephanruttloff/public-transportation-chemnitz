@@ -130,6 +130,9 @@ app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filt
 }])
 
 app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$location", "$interval", "stationFactory", "hotkeys", function($rootScope, $scope, $routeParams, $location, $interval, stationFactory, hotkeys){
+
+    $scope.loading = true;
+
     $scope.prevStation = function(){
         //$rootScope.swipeDirection = 'ltr';
         var i = stationFactory.getIndexOfById($routeParams.stationId, $rootScope.stations);
@@ -163,7 +166,7 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
     function getDepartures(){
         return stationFactory.getDepartures($routeParams.stationId).then(function(station){
             $scope.station = station;
-
+            $scope.loading = false;
             var position = new google.maps.LatLng(station.latitude, station.longitude);
             var cvagMarker = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));
             $scope.map.setCenter(position);
