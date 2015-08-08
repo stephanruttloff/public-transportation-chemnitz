@@ -111,12 +111,31 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
         });
 }])
 
+app.controller("HeaderController", ["$rootScope", "$scope", function($rootScope, $scope){
+    $scope.$on('mapInitialized', function(event, map) {
+        if(angular.isDefined($rootScope.marker)){
+            map.panTo($rootScope.marker.position);
+            $rootScope.marker.setMap(map);
+        }
+        $rootScope.$watch('marker', function(){
+            $rootScope.$watch('marker.position', function(){
+                if(angular.isDefined($rootScope.marker)){
+                    map.panTo($rootScope.marker.position);
+                    $rootScope.marker.setMap(map);
+                }
+            })
+        })
+    })
+}])
+
 app.controller("UsageController", ["$rootScope", "$scope", "$interval", function($rootScope, $scope, $interval){
+    $rootScope.showMap = false;
     if(angular.isDefined($rootScope.refreshInterval))
         $interval.cancel($rootScope.refreshInterval);
 }])
 
 app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filter", "$interval", "geolocation", "stationFactory", function($rootScope, $scope, $location, $filter, $interval, geolocation, stationFactory){
+    $rootScope.showMap = false;
     if(angular.isDefined($rootScope.refreshInterval))
         $interval.cancel($rootScope.refreshInterval);
 
@@ -132,6 +151,7 @@ app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filt
 app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$location", "$interval", "stationFactory", "hotkeys", function($rootScope, $scope, $routeParams, $location, $interval, stationFactory, hotkeys){
 
     $scope.loading = true;
+    $rootScope.showMap = true;
 
     $scope.prevStation = function(){
         //$rootScope.swipeDirection = 'ltr';
@@ -169,15 +189,12 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
             $scope.loading = false;
             var position = new google.maps.LatLng(station.latitude, station.longitude);
             var cvagMarker = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));
-            $scope.map.setCenter(position);
-            $scope.map.setZoom(15);
-            if(angular.isDefined($scope.marker)){
-                $scope.marker.position = position;
-                $scope.marker.title = station.displayName;
+            if(angular.isDefined($rootScope.marker)){
+                $rootScope.marker.setPosition(position);
+                $rootScope.marker.setTitle(station.displayName);
             }else{
-                $scope.marker = new google.maps.Marker({
+                $rootScope.marker = new google.maps.Marker({
                     position: position,
-                    map: $scope.map,
                     title: station.displayName,
                     animation: google.maps.Animation.DROP,
                     icon: cvagMarker
@@ -196,6 +213,8 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
 }]);
 
 app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$timeout", "$interval", "stationFactory", "geolocation", function($rootScope, $scope, $location, $timeout, $interval, stationFactory, geolocation){
+    $rootScope.showMap = false;
+
     $rootScope.swipeDirection = '';
     $scope.reactToMarker = true;
 
