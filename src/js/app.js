@@ -15,7 +15,7 @@ var app = angular.module("cvag",
     ]
 );
 
-app.factory("stationFactory", ["$http", "$filter", "CacheFactory", "geolocation", function($http, $filter, CacheFactory, geolocation){
+app.factory("stationFactory", ["$rootScope", "$http", "$filter", "CacheFactory", "geolocation", function($rootScope, $http, $filter, CacheFactory, geolocation){
     if(!CacheFactory.get('localStationData'))
     {
         CacheFactory.createCache('localStationData', {
@@ -51,6 +51,7 @@ app.factory("stationFactory", ["$http", "$filter", "CacheFactory", "geolocation"
     factoryObj.getStationsByDistance = function() {
         return factoryObj.getLocalStationData().then(function(stations){
             return geolocation.getLocation().then(function(data){
+                $rootScope.locationEnabled = true;
                 var myLatLng = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
                 for(var i = 0; i < stations.length; i++){
                     var station = stations[i];
@@ -162,13 +163,25 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
     if(!angular.isDefined($rootScope.stations)){
         stationFactory.getStationsByDistance().then(function(stations){
             $rootScope.stations = stations;
+            if(angular.isDefined($scope.station))
+                $scope.station.distance = getDistance($scope.station, stations);
         }, function(error){
             console.error(error);
         })
     }
+    function getDistance(currentStation, stationsByDistance)
+    {
+        for(var i = 0; i < stationsByDistance.length; i++){
+            if(stationsByDistance[i].id != currentStation.id)
+                continue;
+            return stationsByDistance[i].distance;
+        }
+    }
     function getDepartures(){
         return stationFactory.getDepartures($routeParams.stationId).then(function(station){
             $rootScope.station = station;
+            if(angular.isDefined($rootScope.stations))
+                $rootScope.station.distance = getDistance($rootScope.station, $rootScope.stations)
             $scope.loading = false;
             var position = new google.maps.LatLng(station.latitude, station.longitude);
             var cvagMarker = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));

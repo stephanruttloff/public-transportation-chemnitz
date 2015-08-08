@@ -1,5 +1,5 @@
 <div ng-swipe-left="nextStation()" ng-swipe-right="prevStation()">
-  <h2 ng-hide="loading">{{station.displayName}}</h2>
+  <h2 ng-hide="loading">{{station.displayName}}<span ng-if="station.distance && locationEnabled" style="font-size:0.5em;white-space:nowrap;"> ({{station.distance.toFixed(0)}}m)</span></h2>
 
   <div layout="row" layout-align="center start" ng-hide="loading">
     <table>
