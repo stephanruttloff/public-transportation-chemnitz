@@ -242,16 +242,20 @@ app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$tim
         })
 
         stationFactory.getLocalStationData().then(function(stations){
-            var image = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));;
+            var image = new google.maps.MarkerImage('img/CVAG@2x.png', null, null, null, new google.maps.Size(25,41));
 
             for(i = 0; i < stations.length; i++)
             {
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(stations[i].latitude, stations[i].longitude),
                     map: map,
-                    title: stations[i].displayName,
-                    icon: image
+                    title: stations[i].displayName
                 });
+                if(angular.isDefined($rootScope.station) && $rootScope.station.id == stations[i].id){
+                    marker.setLabel(stations[i].displayName[0])
+                }
+                else
+                    marker.setIcon(image);
                 attachEventListener(marker, stations[i]);
             }
         }, function(error){
@@ -264,6 +268,7 @@ app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$tim
                 position: myLatLng,
                 map: map,
                 title: 'You are here',
+                label: '',
                 animation: google.maps.Animation.DROP
             })
             map.setCenter(myLatLng);
