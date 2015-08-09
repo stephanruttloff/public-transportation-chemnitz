@@ -1,3 +1,27 @@
+/* HEADER FADE */
+
+img.fader {
+  display: none;
+  height: 96px;
+  position: absolute;
+  width: 96px;
+  z-index: 2;
+  border-radius: 48px;
+}
+
+img.fader.show {
+  display: block;
+  transition: opacity 250ms ease;
+}
+
+img.fader.fadeOut {
+  opacity: 0;
+}
+
+
+/* ------------- */
+
+
 .view-animate-container {
   position:relative;
   height:100%;

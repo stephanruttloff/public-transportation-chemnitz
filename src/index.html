@@ -25,8 +25,8 @@
     <header ng-show="showMap">
       <h1>
         <div layout="row" layout-align="center center">
-          <a ng-href="#/overview">
-            <img id="headerMap" ng-src="{{station.id && 'map/header/' + station.id || ''}}">
+          <a ng-href="#/overview" fade-helper>
+            <img id="headerMap" ng-src="{{station.id && 'map/header/' + station.id || ''}}" class="image">
           </a>
         </div>
         <div style="text-align:center">CVAG</div>

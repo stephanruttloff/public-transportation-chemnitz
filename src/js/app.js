@@ -15,6 +15,51 @@ var app = angular.module("cvag",
     ]
 );
 
+app.directive("fadeHelper", function() {
+
+    function compile($element, attributes, transclude){
+        $element.prepend("<img class='fader' />");
+        return(link);
+    }
+
+    function link($scope, $element, attributes){
+        var fader = angular.element($element[0].querySelector('.fader'));
+        var primary = angular.element($element[0].querySelector('.image'));
+
+        $scope.$watch("station.id", function( newValue, oldValue ) {
+                if (newValue === oldValue ||
+                    isFading())
+                    return;
+
+                initFade( 'map/header/' + oldValue );
+            }
+        );
+
+        function initFade( fadeSource ){
+            fader.prop( "src", fadeSource ).addClass( "show" );
+            primary.one( "load", startFade );
+        }
+
+        function isFading(){
+            return(fader.hasClass( "show" ) || fader.hasClass( "fadeOut" ));
+        }
+
+        function startFade() {
+            fader.addClass("fadeOut");
+            setTimeout(teardownFade, 250);
+        }
+
+        function teardownFade(){
+            fader.removeClass("show fadeOut");
+        }
+    }
+
+    return({
+        compile: compile,
+        restrict: "A"
+    });
+});
+
 app.factory("stationFactory", ["$rootScope", "$http", "$filter", "CacheFactory", "geolocation", function($rootScope, $http, $filter, CacheFactory, geolocation){
     if(!CacheFactory.get('localStationData'))
     {
