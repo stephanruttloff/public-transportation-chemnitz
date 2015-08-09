@@ -15,6 +15,20 @@ var app = angular.module("cvag",
     ]
 );
 
+app.directive("fadeIn", ["$timeout", function($timeout){
+    return {
+        restrict: 'A',
+        link: function($scope, $element, attrs){
+            console.log('link')
+            $element.addClass("ng-hide-remove");
+            $element.on('load', function() {
+                console.log('load')
+                $element.addClass("ng-hide-add");
+            });
+        }
+    }
+}])
+
 app.directive("fadeHelper", function() {
 
     function compile($element, attributes, transclude){
