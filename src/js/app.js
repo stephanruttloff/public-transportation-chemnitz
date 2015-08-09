@@ -39,9 +39,10 @@ app.directive("fadeHelper", function() {
         var primary = angular.element($element[0].querySelector('.image'));
 
         $scope.$watch("station.id", function( newValue, oldValue ) {
-                if (newValue === oldValue ||
-                    isFading())
-                    return;
+            if (newValue === oldValue ||
+                !angular.isDefined(oldValue) ||
+                isFading())
+                return;
 
                 initFade( 'map/header/' + oldValue );
             }
