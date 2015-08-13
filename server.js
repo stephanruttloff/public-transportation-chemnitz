@@ -4,6 +4,7 @@ var request = require('request')
 var promise = require('promise')
 var _ = require('underscore')
 var fs = require('fs')
+var md5 = require('md5')
 
 //------------------------------------------------------------------------------
 
@@ -103,6 +104,13 @@ function GetDepartures(stationId)
             {
                 try{
                     var departures = JSON.parse(body);
+                    departures['stops'] = _.map(departures['stops'], function(value) {
+                        var hash = md5(value.line),
+                            maxRange = parseInt('ffffffffffffffffffffffffffffffff', 16),
+                            hue = parseInt(hash, 16) / maxRange * 256;
+                        value['hue'] = hue;
+                        return value;
+                    });
                     f(departures);
                 }catch(error){
                     r(error);

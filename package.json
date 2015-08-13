@@ -9,6 +9,7 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.1",
+    "md5": "^2.0.0",
     "promise": "^7.0.3",
     "request": "^2.60.0",
     "serve-static": "^1.10.0",
