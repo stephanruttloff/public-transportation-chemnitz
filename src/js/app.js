@@ -1,6 +1,6 @@
 var app = angular.module("cvag",
     [
-        "geolocation",
+        "ngGeolocation",
         "ngMap",
         "ngMaterial",
         "angularMoment",
@@ -73,7 +73,7 @@ app.directive("fadeHelper", function() {
     });
 });
 
-app.factory("stationFactory", ["$rootScope", "$http", "$filter", "CacheFactory", "geolocation", function($rootScope, $http, $filter, CacheFactory, geolocation){
+app.factory("stationFactory", ["$rootScope", "$http", "$filter", "CacheFactory", "$geolocation", "$q", "$timeout", function($rootScope, $http, $filter, CacheFactory, $geolocation, $q, $timeout){
     if(!CacheFactory.get('localStationData'))
     {
         CacheFactory.createCache('localStationData', {
@@ -106,32 +106,44 @@ app.factory("stationFactory", ["$rootScope", "$http", "$filter", "CacheFactory",
             console.error(error);
         })
     }
-    factoryObj.getStationsByDistance = function() {
+    factoryObj.getStationsByDistance = function(timeout) {
+        var myLatLng = new google.maps.LatLng(50.83159596666668, 12.922535166666668);
+        var t = timeout;
         return factoryObj.getLocalStationData().then(function(stations){
-            return geolocation.getLocation().then(function(data){
-                $rootScope.locationEnabled = true;
-                var myLatLng = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
+            return $q(function(f, r){
                 for(var i = 0; i < stations.length; i++){
                     var station = stations[i];
                     var to = new google.maps.LatLng(station.latitude, station.longitude);
                     var dist = google.maps.geometry.spherical.computeDistanceBetween(myLatLng, to);
                     station.distance = dist;
                 }
-                return $filter('orderBy')(stations, 'distance', false);
-            }, function(error){
-                console.error(error);
-                var myLatLng = new google.maps.LatLng(50.83159596666668, 12.922535166666668);
-                for(var i = 0; i < stations.length; i++){
-                    var station = stations[i];
-                    var to = new google.maps.LatLng(station.latitude, station.longitude);
-                    var dist = google.maps.geometry.spherical.computeDistanceBetween(myLatLng, to);
-                    station.distance = dist;
+                var byDistance = $filter('orderBy')(stations, 'distance', false);
+                if(angular.isDefined(t)){
+                    var runningTimeout = $timeout(function(){
+                        f(byDistance);
+                    }, t)
                 }
-                return $filter('orderBy')(stations, 'distance', false);
-            });
-        }, function(error){
-            console.error(error);
-        })
+                $geolocation.getCurrentPosition({
+                    timeout: 60000
+                }).then(function(data){
+                    $rootScope.locationEnabled = true;
+                    var myLatLng = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
+                    for(var i = 0; i < stations.length; i++){
+                        var station = stations[i];
+                        var to = new google.maps.LatLng(station.latitude, station.longitude);
+                        var dist = google.maps.geometry.spherical.computeDistanceBetween(myLatLng, to);
+                        station.distance = dist;
+                    }
+                    var byDistance = $filter('orderBy')(stations, 'distance', false);
+                    if(angular.isDefined(runningTimeout))
+                        $timeout.cancel(runningTimeout);
+                    f(byDistance);
+                }, function(error){
+                    console.error(error);
+                    f(byDistance);
+                })
+            })
+        });
     }
     factoryObj.getIndexOfById = function(id, array) {
         if(!angular.isDefined(array))
@@ -157,16 +169,16 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
             templateUrl: 'partials/overview.html',
             controller: 'OverviewController'
         }).
-        when('/nearest', {
-            templateUrl: 'partials/nearest.html',
-            controller: 'NearestController'
-        }).
         when('/usage', {
             templateUrl: 'partials/usage.html',
             controller: 'UsageController'
         }).
+        when('/', {
+            templateUrl: 'partials/nearest.html',
+            controller: 'NearestController'
+        }).
         otherwise({
-            redirectTo: '/nearest'
+            redirectTo: '/'
         });
 }])
 
@@ -176,8 +188,15 @@ app.controller("UsageController", ["$rootScope", "$scope", "$interval", function
         $interval.cancel($rootScope.refreshInterval);
 }])
 
-app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filter", "$interval", "geolocation", "stationFactory", function($rootScope, $scope, $location, $filter, $interval, geolocation, stationFactory){
+app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filter", "$interval", "$geolocation", "stationFactory", function($rootScope, $scope, $location, $filter, $interval, $geolocation, stationFactory){
     $rootScope.showMap = false;
+    $rootScope.canceledPositioning = false;
+
+    $scope.cancelPositioning = function(){
+        $rootScope.canceledPositioning = true;
+        $location.path('station/CAG-131')
+    }
+
     if(angular.isDefined($rootScope.refreshInterval))
         $interval.cancel($rootScope.refreshInterval);
 
@@ -219,7 +238,10 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
         callback: function(){$scope.nextStation()}
     })
     if(!angular.isDefined($rootScope.stations)){
-        stationFactory.getStationsByDistance().then(function(stations){
+        var timeout = 1000;
+        if($rootScope.canceledPositioning)
+            timeout = 0;
+        stationFactory.getStationsByDistance(0).then(function(stations){
             $rootScope.stations = stations;
             if(angular.isDefined($scope.station))
                 $scope.station.distance = getDistance($scope.station, stations);
@@ -266,7 +288,7 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
     }, 60000);
 }]);
 
-app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$timeout", "$interval", "stationFactory", "geolocation", function($rootScope, $scope, $location, $timeout, $interval, stationFactory, geolocation){
+app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$timeout", "$interval", "stationFactory", "$geolocation", function($rootScope, $scope, $location, $timeout, $interval, stationFactory, $geolocation){
     $rootScope.showMap = false;
 
     $rootScope.swipeDirection = '';
@@ -320,7 +342,9 @@ app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$tim
             console.error(error);
         })
 
-        geolocation.getLocation().then(function(data){
+        $geolocation.getCurrentPosition({
+                timeout: 60000
+            }).then(function(data){
             var myLatLng = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
             var positionMarker = new google.maps.Marker({
                 position: myLatLng,
