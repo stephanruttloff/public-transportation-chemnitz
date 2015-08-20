@@ -117,3 +117,13 @@ md-content{
     overflow: hidden;
     white-space: nowrap;
 }
+
+#time-switch md-icon{
+    margin-left:0px;
+    margin-right:0px;
+    color:#0083CA;
+}
+
+#time-switch md-switch .md-container{
+    margin-right: 0px;
+}

@@ -11,9 +11,17 @@ var app = angular.module("cvag",
         "angular-cache",
         "cfp.hotkeys",
         "ngTouch",
-        "ngAnimate"
+        "ngAnimate",
+        "angularMoment"
     ]
 );
+
+app.run(["$rootScope", function($rootScope){
+    $rootScope.persistent = {
+        showMap: false,
+        showTime: false
+    }
+}])
 
 app.directive("fadeIn", ["$timeout", function($timeout){
     return {
@@ -183,13 +191,13 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
 }])
 
 app.controller("UsageController", ["$rootScope", "$scope", "$interval", function($rootScope, $scope, $interval){
-    $rootScope.showMap = false;
+    $rootScope.persistent.showMap = false;
     if(angular.isDefined($rootScope.refreshInterval))
         $interval.cancel($rootScope.refreshInterval);
 }])
 
 app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filter", "$interval", "$geolocation", "stationFactory", function($rootScope, $scope, $location, $filter, $interval, $geolocation, stationFactory){
-    $rootScope.showMap = false;
+    $rootScope.persistent.showMap = false;
     $rootScope.canceledPositioning = false;
 
     $scope.cancelPositioning = function(){
@@ -212,7 +220,7 @@ app.controller("NearestController", ["$rootScope", "$scope", "$location", "$filt
 app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$location", "$interval", "stationFactory", "hotkeys", function($rootScope, $scope, $routeParams, $location, $interval, stationFactory, hotkeys){
 
     $scope.loading = true;
-    $rootScope.showMap = true;
+    $rootScope.persistent.showMap = true;
 
     $scope.prevStation = function(){
         //$rootScope.swipeDirection = 'ltr';
@@ -289,7 +297,7 @@ app.controller("StationController", ["$rootScope", "$scope", "$routeParams", "$l
 }]);
 
 app.controller("OverviewController", ["$rootScope", "$scope", "$location", "$timeout", "$interval", "stationFactory", "$geolocation", function($rootScope, $scope, $location, $timeout, $interval, stationFactory, $geolocation){
-    $rootScope.showMap = false;
+    $rootScope.persistent.showMap = false;
 
     $rootScope.swipeDirection = '';
     $scope.reactToMarker = true;
