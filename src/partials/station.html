@@ -9,7 +9,10 @@
         <th align="right">Linie</th>
       </tr>
       <tr ng-repeat="stop in station.stops">
-        <td align="left"><timer max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer></td>
+        <td align="left">
+          <timer ng-hide="persistent.showTime" max-time-unit="'minute'" end-time="stop.actualDeparture">{{mminutes}}:{{sseconds}}</timer>
+          <span ng-show="persistent.showTime">{{stop.actualDeparture | amDateFormat:'HH:mm'}}</span>
+        </td>
         <td align="center" style="white-space:normal;">{{stop.destination}}</td>
         <td align="right" style="color: hsl({{ stop.hue }}, 50%, 45%);">
           <span style="font-weight: bold;position:relative;top:1px;">{{stop.line}}</span>
@@ -21,6 +24,12 @@
 
   <div layout="row" layout-align="center start" ng-show="loading">
     <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+  </div>
+
+  <div layout="row" layout-align="center center" id="time-switch">
+    <md-icon md-svg-icon="img/ic_av_timer_black_18px.svg"></md-icon>
+    <md-switch md-no-ink ng-model="persistent.showTime" class="md-primary" aria-label="show departure time"></md-switch>
+    <md-icon md-svg-icon="img/ic_access_time_black_18px.svg"></md-icon>
   </div>
 
   <div layout="row" layout-align="center start">
