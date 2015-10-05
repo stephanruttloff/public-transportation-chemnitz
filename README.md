@@ -51,8 +51,11 @@ Development
 Tests
 =====
 
-ToDo
+![BrowserStack](src/img/BrowserStack.png)
+
+Cross-Browser Tests wurden durch die freundliche Unterstützung von [BrowserStack](https://www.browserstack.com/) ermöglicht.
 
 Lizenz
 ======
+
 WTFPL

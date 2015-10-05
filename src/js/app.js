@@ -177,9 +177,9 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
             templateUrl: 'partials/overview.html',
             controller: 'OverviewController'
         }).
-        when('/usage', {
-            templateUrl: 'partials/usage.html',
-            controller: 'UsageController'
+        when('/info', {
+            templateUrl: 'partials/info.html',
+            controller: 'InfoController'
         }).
         when('/', {
             templateUrl: 'partials/nearest.html',
@@ -190,7 +190,7 @@ app.config(["$routeProvider", "CacheFactoryProvider", function($routeProvider, C
         });
 }])
 
-app.controller("UsageController", ["$rootScope", "$scope", "$interval", function($rootScope, $scope, $interval){
+app.controller("InfoController", ["$rootScope", "$scope", "$interval", function($rootScope, $scope, $interval){
     $rootScope.persistent.showMap = false;
     if(angular.isDefined($rootScope.refreshInterval))
         $interval.cancel($rootScope.refreshInterval);
